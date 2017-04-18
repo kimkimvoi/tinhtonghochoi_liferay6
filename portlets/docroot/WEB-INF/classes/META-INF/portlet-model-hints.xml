@@ -1,0 +1,180 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<hint-collection name="TXT_NAME">
+		<hint name="max-length">255</hint>
+	</hint-collection>
+	<hint-collection name="TXT_CONTENT">
+		<hint name="max-length">4000</hint>
+	</hint-collection>
+	<model name="com.fsoft.bn.model.Answer">
+		<field name="answer_id" type="String" />
+		<field name="answer_content" type="String">
+			<hint-collection name="TXT_CONTENT" />
+		</field>
+		<field name="user_id" type="String" />
+		<field name="created_date" type="Date" />
+		<field name="modified_date" type="Date" />
+		<field name="deleted" type="boolean" />
+	</model>
+	<model name="com.fsoft.bn.model.AnswerAttachedFile">
+		<field name="answer_attached_id" type="String" />
+		<field name="answer_id" type="String" />
+		<field name="attached_file_id" type="String" />
+		<field name="created_date" type="Date" />
+		<field name="modified_date" type="Date" />
+		<field name="deleted" type="boolean" />
+	</model>
+	<model name="com.fsoft.bn.model.BNContact">
+		<field name="contactId" type="long" />
+		<field name="departmentKey" type="String" />
+		<field name="name" type="String" />
+		<field name="regency" type="String" />
+		<field name="phoneNumber" type="String" />
+		<field name="email" type="String" />
+		<field name="createdDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="deleted" type="boolean" />
+	</model>
+	<model name="com.fsoft.bn.model.BNNews">
+		<field name="newsId" type="long" />
+		<field name="newsTitle" type="String" >
+			<hint-collection name="TXT_NAME" />
+		</field>
+		<field name="newsContent" type="String" >
+			<hint-collection name="TXT_CONTENT" />
+		</field>
+		<field name="createdDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="deleted" type="boolean" />
+	</model>
+	<model name="com.fsoft.bn.model.InvestmentProjects">
+		<field name="project_id" type="String" />
+		<field name="project_name" type="String">
+			<hint-collection name="TXT_NAME" />
+		</field>
+		<field name="total_investment_min" type="String" />
+		<field name="total_investment_max" type="String" />
+		<field name="implementation_location" type="String">
+			<hint-collection name="TXT_NAME" />
+		</field>
+		<field name="start_time" type="Date" />
+		<field name="end_time" type="Date" />
+		<field name="project_purpose" type="String">
+			<hint-collection name="TXT_CONTENT" />
+		</field>
+		<field name="charter_capital" type="String" />
+		<field name="project_category_id" type="String" />
+		<field name="project_status_id" type="String" />
+		<field name="investment_form_id" type="String" />
+		<field name="competent_organization_id" type="String" />
+		<field name="key_project" type="boolean" />
+		<field name="technical_specifications" type="String">
+			<hint-collection name="TXT_CONTENT" />
+		</field>
+		<field name="currency_type_id" type="String" />
+		<field name="created_date" type="Date" />
+		<field name="modified_date" type="Date" />
+		<field name="deleted" type="boolean" />
+	</model>
+	<model name="com.fsoft.bn.model.Organizations">
+		<field name="organizations_id" type="long" />
+		<field name="organizations_name" type="String" >
+			<hint-collection name="TXT_NAME" />
+		</field>
+		<field name="organizations_description" type="String" >
+			<hint-collection name="TXT_CONTENT" />
+		</field>
+		<field name="organizations_address" type="String" >
+			<hint-collection name="TXT_NAME" />
+		</field>
+		<field name="deleted" type="boolean" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+	</model>
+	<model name="com.fsoft.bn.model.Question">
+		<field name="question_id" type="String" />
+		<field name="question_title" type="String">
+			<hint-collection name="TXT_NAME" />
+		</field>
+		<field name="question_type_id" type="String" />
+		<field name="question_content" type="String">
+			<hint-collection name="TXT_CONTENT" />
+		</field>
+		<field name="citizen_name" type="String">
+			<hint-collection name="TXT_NAME" />
+		</field>
+		<field name="citizen_mail" type="String">
+			<hint-collection name="TXT_NAME" />
+		</field>
+		<field name="citizen_phone" type="String" />
+		<field name="citizen_address" type="String">
+			<hint-collection name="TXT_NAME" />
+		</field>
+		<field name="question_status_id" type="String" />
+		<field name="answer_id" type="String" />
+		<field name="created_date" type="Date" />
+		<field name="modified_date" type="Date" />
+		<field name="deleted" type="boolean" />
+	</model>
+	<model name="com.fsoft.bn.model.QuestionAttachedFile">
+		<field name="question_attached_id" type="String" />
+		<field name="question_id" type="String" />
+		<field name="attached_file_id" type="String" />
+		<field name="created_date" type="Date" />
+		<field name="modified_date" type="Date" />
+		<field name="deleted" type="boolean" />
+	</model>
+	<model name="com.fsoft.bn.model.Schedule">
+		<field name="schedule_id" type="String" />
+		<field name="schedule_date" type="Date" />
+		<field name="content" type="String" >
+			<hint-collection name="TXT_CONTENT" />
+		</field>
+		<field name="user_id" type="String" />
+		<field name="created_date" type="Date" />
+		<field name="modified_date" type="Date" />
+		<field name="deleted" type="boolean" />
+	</model>
+	<model name="com.fsoft.bn.model.StaffInfo">
+		<field name="staff_id" type="long" />
+		<field name="staff_firstname" type="String" >
+			<hint-collection name="TXT_NAME" />
+		</field>
+		<field name="staff_middlename" type="String" >
+			<hint-collection name="TXT_NAME" />
+		</field>
+		<field name="staff_lastname" type="String" >
+			<hint-collection name="TXT_NAME" />
+		</field>
+		<field name="staff_birthday" type="Date" />
+		<field name="staff_phone" type="String" />
+		<field name="staff_email" type="String" >
+			<hint-collection name="TXT_NAME" />
+		</field>
+		<field name="staff_sex" type="String" />
+		<field name="staff_role" type="String" />
+		<field name="deleted" type="boolean" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="organizations_id" type="long" />
+	</model>
+	<model name="com.fsoft.bn.model.UserfulContactPhone">
+		<field name="userful_contact_phone_id" type="String" />
+		<field name="userful_contact_name" type="String" />
+		<field name="userful_contact_phone" type="String" />
+		<field name="userful_contact_email" type="String" />
+		<field name="userful_contact_position" type="String" />
+		<field name="userful_contact_address" type="String" />
+		<field name="created_date" type="Date" />
+		<field name="modified_date" type="Date" />
+		<field name="deleted" type="boolean" />
+	</model>
+	<model name="com.fsoft.bn.model.UserSchedule">
+		<field name="user_schedule_id" type="String" />
+		<field name="user_id" type="String" />
+		<field name="created_date" type="Date" />
+		<field name="modified_date" type="Date" />
+		<field name="deleted" type="boolean" />
+	</model>
+</model-hints>

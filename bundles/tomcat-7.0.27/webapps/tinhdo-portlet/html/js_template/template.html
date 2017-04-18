@@ -1,0 +1,186 @@
+<script id="paging">
+<style>
+.disabled, .disabled:HOVER{
+	color: #CACACA;
+	cursor: default;
+}
+.pagingNumber{
+	margin-right: 2px;
+	cursor: pointer
+}
+.pagingLoadingIndicator{
+	height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: #FFF;
+}
+.pagingLoadingIndicator_default{
+	background: url('{{{contextPath}}}/bacninh-portlet/html/images/default_loading_indicator.gif') no-repeat center ;
+}
+.activePage{
+	cursor: default;
+}
+</style>
+<div style="padding: 0 5px 10px; display: inline-block; margin-top:-10px;">
+	<br>
+	<span style="margin-right: 5px; display: none">{{itemsPerPageText}}</span> 
+	<input type="hidden" onchange="updateItemsPerPageNum_new({{id}}, this)" style="width: 25px; margin-right: 10px;" value="{{recordPerPage}}" type="text">
+	
+	<span style="margin-right: 20px;">
+		{{currentPageText}}
+		<span>{{currentPageNum}}</span>
+		/
+		<span>{{totalPageNum}}</span>
+	</span>
+	
+	 <span>
+		{{#hasFirtPageButton}}
+			<span class="pagingNumber padding" onclick="getPage_new({{id}}, 1)">|&lt; </span>
+		{{/hasFirtPageButton}}
+		{{^hasFirtPageButton}}
+			<span class="pagingNumber padding disabled">|&lt; </span>
+		{{/hasFirtPageButton}}
+	</span> 
+	
+	<span>
+		{{#hasPreviousPageButton}}
+			<span class="pagingNumber padding" onclick="getPage_new({{id}}, {{currentPageNum}} -1)">&lt;</span>
+		{{/hasPreviousPageButton}}
+		{{^hasPreviousPageButton}}
+			<span class="pagingNumber padding disabled">&lt;</span>
+		{{/hasPreviousPageButton}}
+	</span> 
+		
+	<span>
+		{{#pages}}
+		<!-- TODO: handle display a limited number of page badge -->
+			{{^active}} 
+				<span style="cursor: pointer;" onclick="getPage_new({{id}}, {{index}})" class="pagingNumber"> {{index}} </span>
+			{{/active}}
+			{{#active}}
+				 <span class="pagingNumber activePage"> {{index}} </span>
+			{{/active}}
+		{{/pages}}
+	</span>
+	
+	 <span>
+		{{#hasNextPageButton}}
+			<span class="pagingNumber padding" onclick="getPage_new({{id}}, {{currentPageNum}} + 1 )">&gt;</span>
+		{{/hasNextPageButton}}
+		{{^hasNextPageButton}}
+			<span class="pagingNumber padding disabled">&gt;</span>
+		{{/hasNextPageButton}}
+	</span>
+	
+	 <span >
+		{{#hasLastPageButton}}
+			<span class="pagingNumber padding" onclick="getPage_new({{id}}, {{totalPageNum}})">&gt;|</span>
+		{{/hasLastPageButton}}
+		{{^hasLastPageButton}}
+			<span class="pagingNumber padding disabled">&gt;|</span>
+		{{/hasLastPageButton}}
+	</span> 
+</div>
+</script>
+
+
+<script id="news_display_type_summary">
+<ul>
+	{{#items}}
+	<li>
+		<a href="{{urlDetail}}">
+			<img src="{{{imageURL}}}" class="photo">
+		</a>
+		<div class="tex_list">
+			<div class="title_v">
+				<a href="{{urlDetail}}"> {{title}} </a>
+				<span class="time">({{createdDate}})</span>
+			</div>
+			<div class="content_small">{{summary}} &nbsp; <a href="{{urlDetail}}"> {{viewMoreText}} >> </a></div>
+		</div>
+	</li>
+	{{/items}}
+</ul>
+</script>
+
+
+<script id="news_display_type_table">
+<div class="box_question">
+	<table>
+		<thead class="title">
+			<th> STT </th>
+			<th> Nội dung </th>
+		</thead>
+		{{#items}}
+			<tr class="dataRow" onclick="toggleDetailRow(this)">
+				<td> {{ordinal}}</td>	
+				<td> {{title}}</td>	
+			</tr>
+			
+			<tr class="rowDetail" style="display:none;">
+					<td colspan="2"> 
+						<table>
+							{{#newOtherProps}}
+								<tr>
+									<td> {{key}}</td>							
+									<td> {{value}}</td>							
+								</tr>
+							{{/newOtherProps}}
+							{{#attachFiles}}
+								<tr>
+									<td> {{key}}</td>							
+									<td>
+										{{#value}}
+											<a href="{{link}}">Tài liệu đính kèm</a>
+										{{/value}}
+									</td>							
+								</tr>
+							{{/attachFiles}}
+						</table>
+					</td>
+			</tr>
+		{{/items}}
+	</table>
+</div>
+</script>
+
+
+<script id="news_display_type_title_only">
+<ul class='list'>
+	{{#items}}
+		<li>
+			<div class="text">
+				<div class="title_v">
+					<a href="{{{urlDetail}}}"> {{title}} <span class="time">{{createdDate}}</span></a>
+				</div>
+			</div>
+		</li>
+	{{/items}}
+</ul>
+</script>
+
+<script id="news_display_type_visitor">
+<div class="first_record">
+	<a href="{{{first.urlDetail}}}"> <img src="{{first.imageURL}}" alt="imageIcon">
+	<h3 class="title_portlet">
+		{{first.title}}
+	<h3/>
+	<span class="time">{{first.createdDate}}</span></a>
+	<span class="summary">
+		{{first.summary}}
+	</span>
+</div>
+<ul class='list_visitor'>
+	{{#items}}
+		<li>
+			<div class="text">
+				<div class="title_v">
+					<a href="{{{urlDetail}}}"> {{title}} <span class="time">{{createdDate}}</span></a>
+				</div>
+			</div>
+		</li>
+	{{/items}}
+</ul>
+</script>

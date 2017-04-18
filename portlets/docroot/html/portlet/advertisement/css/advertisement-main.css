@@ -1,0 +1,89 @@
+.advertisement-portlet {
+	.portlet{
+		display: inline-block;
+		width:100%;
+	}
+	ul.list_photo {
+    float: left;
+    width: 100%;
+	}
+	ul.list_photo li {
+	    float: left;
+	    list-style: none outside none;
+	    margin: 10px 14px 5px 0;
+	    position: relative;
+	    width: 160px;
+	}
+	ul.list_photo li .photo {
+	    background-color: #FFFFFF;
+	    border: 1px solid #dedede;
+	    display: inline-block;
+	    height: 120px;
+	    position: relative;
+	    width: 155px;
+	}
+	ul.list_photo li .photo:hover, ul.list_photo li .photo a:hover, .thumb_video:hover {
+	    border: 1px solid #dedede;
+	    opacity: 0.8;
+	}
+	ul.list_photo li .photo div {
+	    background-color: #FFFFFF;
+	    border: 1px solid #CCCCCC;
+	    display: inline-block;
+	    height: 120px;
+	    left: 5px;
+	    overflow: hidden;
+	    position: absolute;
+	    top: 5px;
+	    width: 155px;
+	    z-index: 1;
+	}
+	ul.list_photo li .photo div img {
+	    height: 120px;
+	    width: 160px;
+	}
+	ul.list_photo li .photo .checkbox {
+		position: absolute;
+		 z-index: 2;
+		 bottom:0px;
+		 right:0px;
+	}
+	ul.list_photo li p {
+	    color: #333333;
+	    float: left;
+	    font-size: 11px;
+	    font-weight: bold;
+	    height: 28px;
+	    margin-top: 10px;
+	    overflow: hidden;
+	    text-align: left;
+	    width: 100%;
+	}
+	ul.list_photo li p a {
+	    color: #333333;
+	    float: left;
+	    padding-left: 5px;
+	}
+	.time_slide {
+		width: 550px;
+	}
+	.slide_input {
+		background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+	    border: medium none;
+	    color: #000000;
+	    font-weight: bold;
+	    width: 20px;
+	}
+	.advertisement_box {
+	    clear: both;
+	    margin-bottom: 10px;
+	    text-align: center;
+	}
+	.box_banner #slide_news_hot div.photo {
+	    margin-right: 13px;
+	    position: relative;
+	}
+	.photo_adv {
+		
+	}
+}

@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 6.1.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_6_1_0.dtd">
+<service-builder package-path="com.fsoft.bn">
+	<author>FSOFT</author>
+	<namespace>BN</namespace>
+
+	<entity name="BNNews" local-service="true" remote-service="false">
+
+		<!-- PK fields -->
+
+		<column name="newsId" type="long" primary="true" />
+
+		<!-- Views fields  -->
+		<column name="newsTitle" type="String" />
+		<column name="newsContent" type="String" />
+		
+		<!-- Audit fields -->
+		<column name="createdDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+		<column name="deleted" type="boolean"/>
+
+		<!-- Order
+		Finder methods -->
+	</entity>
+	<entity name="BNContact" local-service="true" remote-service="false">
+
+		<!-- PK fields -->
+
+		<column name="contactId" type="long" primary="true" />
+
+		<!-- Views fields  -->
+		<column name="departmentKey" type="String"></column>
+		<column name="name" type="String" />
+		<column name="regency" type="String"></column>
+		<column name="phoneNumber" type="String" />
+		<column name="email" type="String"></column>
+		
+		<!-- Audit fields -->
+		<column name="createdDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+		<column name="deleted" type="boolean"/>
+
+		<!-- Order
+		Finder methods -->
+	</entity>
+	
+	<entity name="Question" local-service="true" remote-service="false">
+		<!-- PK fields -->
+		<column name="question_id" type="String" primary="true"/>
+		
+		<!-- Views fields  -->
+		<column name="question_title" type="String"/>
+		<column name="question_type_id" type="String"/>
+		<column name="question_content" type="String"/>
+		<column name="citizen_name" type="String"/>
+		<column name="citizen_mail" type="String"/>
+		<column name="citizen_phone" type="String"/>
+		<column name="citizen_address" type="String"/>
+		<column name="question_status_id" type="String"/>
+		<column name="answer_id" type="String"/>
+		
+		<!-- Audit fields -->
+		<column name="created_date" type="Date"/>
+		<column name="modified_date" type="Date"/>
+		<column name="deleted" type="boolean"/>
+		
+	</entity>
+	
+	<entity name="Answer" local-service="true" remote-service="false">
+		<!-- PK fields -->
+		<column name="answer_id" type="String" primary="true"/>
+		
+		<!-- Views fields  -->
+		<column name="answer_content" type="String"/>
+		<column name="user_id" type="String"/>
+		
+		<!-- Audit fields -->
+		<column name="created_date" type="Date"/>
+		<column name="modified_date" type="Date"/>
+		<column name="deleted" type="boolean"/>
+		
+	</entity>
+	
+	<entity name="QuestionAttachedFile" local-service="true" remote-service="false">
+		<!-- PK fields -->
+		<column name="question_attached_id" type="String" primary="true"/>
+		
+		<!-- Views fields  -->
+		<column name="question_id" type="String"/>
+		<column name="attached_file_id" type="String"/>
+		
+		<!-- Audit fields -->
+		<column name="created_date" type="Date"/>
+		<column name="modified_date" type="Date"/>
+		<column name="deleted" type="boolean"/>
+		
+	</entity>
+	
+	<entity name="AnswerAttachedFile" local-service="true" remote-service="false">
+		<!-- PK fields -->
+		<column name="answer_attached_id" type="String" primary="true"/>
+		
+		<!-- Views fields  -->
+		<column name="answer_id" type="String"/>
+		<column name="attached_file_id" type="String"/>
+		
+		<!-- Audit fields -->
+		<column name="created_date" type="Date"/>
+		<column name="modified_date" type="Date"/>
+		<column name="deleted" type="boolean"/>
+		
+	</entity>
+	
+	<!-- StaffInfo -->
+	
+	<entity name="StaffInfo" local-service="true" remote-service="false">
+
+		<!-- PK fields -->
+
+		<column name="staff_id" type="long" primary="true" />
+		
+		<!-- Other fields -->
+		
+		<column name="staff_firstname" type="String" />
+		<column name="staff_middlename" type="String" />
+		<column name="staff_lastname" type="String" />
+		<column name="staff_birthday" type="Date" />
+		<column name="staff_phone" type="String" />
+		<column name="staff_email" type="String" />
+		<column name="staff_sex" type="String" />
+		<column name="staff_role" type="String" />
+		
+		<!-- Audit fields -->
+		
+		<column name="deleted" type="boolean" />
+		<column name="createDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+
+		<!-- Order -->
+        <column name="organizations_id" type="long"></column>
+
+		<order by="asc">
+			<order-column name="staff_id" />
+		</order>
+
+		<!-- Finder methods -->
+		
+		<finder name="Deleted" return-type="Collection">
+			<finder-column name="deleted" />
+		</finder>
+		
+		<finder name="Name" return-type="Collection">
+			<finder-column name="staff_firstname" />
+			<finder-column name="staff_middlename" />
+			<finder-column name="staff_lastname" />
+			<finder-column name="deleted" />
+		</finder>
+		
+		<finder name="Email" return-type="Collection">
+			<finder-column name="staff_email" />
+			<finder-column name="deleted" />
+		</finder>
+		
+		<finder name="Role" return-type="Collection">
+			<finder-column name="staff_role" />
+			<finder-column name="deleted" />
+		</finder>
+		
+		<finder name="Phone" return-type="Collection">
+			<finder-column name="staff_phone" />
+			<finder-column name="deleted" />
+		</finder>
+	</entity>
+	
+	<!-- Organizations -->
+	
+	<entity name="Organizations" local-service="true" remote-service="false">
+
+		<!-- PK fields -->
+
+		<column name="organizations_id" type="long" primary="true" />
+		
+		<!-- Other fields -->
+		
+		<column name="organizations_name" type="String" />
+		<column name="organizations_description" type="String" />
+		<column name="organizations_address" type="String" />
+		
+		<!-- Audit fields -->
+		
+		<column name="deleted" type="boolean" />
+		<column name="createDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+
+		<!-- Order -->
+
+		<order by="asc">
+			<order-column name="organizations_id" />
+		</order>
+
+		<!-- Finder methods -->
+		
+		<finder name="Deleted" return-type="Collection">
+			<finder-column name="deleted" />
+		</finder>
+		
+		<finder name="Name" return-type="Collection">
+			<finder-column name="organizations_name" />
+			<finder-column name="deleted" />
+		</finder>
+	</entity>
+	
+	<!-- Schedule -->
+	<entity name="Schedule" local-service="true" remote-service="false">
+		<!-- PK fields -->
+		<column name="schedule_id" type="String" primary="true"/>
+
+		<!-- Views fields  -->
+		<column name="schedule_date" type="Date"/>
+		<column name="content" type="String"/>
+		<column name="user_id" type="String"/>
+		
+		<!-- Audit fields -->
+		<column name="created_date" type="Date"/>
+		<column name="modified_date" type="Date"/>
+		<column name="deleted" type="boolean"/>
+
+	</entity>
+	
+	<entity name="UserSchedule" local-service="true" remote-service="false">
+		<!-- PK fields -->
+		<column name="user_schedule_id" type="String" primary="true"/>
+
+		<!-- Views fields  -->
+		<column name="user_id" type="String"/>
+		
+		<!-- Audit fields -->
+		<column name="created_date" type="Date"/>
+		<column name="modified_date" type="Date"/>
+		<column name="deleted" type="boolean"/>
+
+	</entity>
+	
+	<entity name="UserfulContactPhone" local-service="true" remote-service="false">
+		<!-- PK fields -->
+		<column name="userful_contact_phone_id" type="String" primary="true"/>
+		
+		<!-- Views fields  -->
+		<column name="userful_contact_name" type="String"/>
+		<column name="userful_contact_phone" type="String"/>
+		<column name="userful_contact_email" type="String"/>
+		<column name="userful_contact_position" type="String"/>
+		<column name="userful_contact_address" type="String"/>
+		
+		<!-- Audit fields -->
+		<column name="created_date" type="Date"/>
+		<column name="modified_date" type="Date"/>
+		<column name="deleted" type="boolean"/>
+		
+	</entity>	
+	 <entity name="InvestmentProjects" local-service="true">
+	  <!-- PK fields -->
+	  <column name="project_id" type="String" primary="true"/>
+	  
+	  <!-- Views fields  -->
+	  <column name="project_name" type="String" />
+	  <column name="total_investment_min" type="String" />
+	  <column name="total_investment_max" type="String" />
+	  <column name="implementation_location" type="String" />
+	  <column name="start_time" type="Date" />
+	  <column name="end_time" type="Date" />
+	  <column name="project_purpose" type="String" />
+	  <column name="charter_capital" type="String" />
+	  <column name="project_category_id" type="String" />
+	  <column name="project_status_id" type="String" />
+	  <column name="investment_form_id" type="String" />
+	  <column name="competent_organization_id" type="String" />
+	  <column name="key_project" type="boolean" />
+	  <column name="technical_specifications" type="String" />
+	  <column name="currency_type_id" type="String" />
+	  
+	  <!-- Audit fields -->
+	  <column name="created_date" type="Date"/>
+	  <column name="modified_date" type="Date"/>
+	  <column name="deleted" type="boolean"/>
+	 </entity>
+	 
+	  <entity name="BNJournalArticle" local-service="true">
+	 </entity>
+</service-builder>

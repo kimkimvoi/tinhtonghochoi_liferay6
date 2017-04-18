@@ -1,0 +1,358 @@
+.legal_documents .legal_doc_content-padding {
+    border-color: -moz-use-text-color #CCCCCC #CCCCCC;
+    border-image: none;
+    border-style: none solid solid;
+    border-width: 0 1px 1px;
+    margin-bottom: 10px;
+}
+
+.legal_documents h2.title_tab {
+	margin-top: 0px;
+}
+
+.legal_documents h2.title_tab span{
+	padding-left: 5px;
+    text-align: left;
+}
+
+.legal_documents .list_result {
+    margin: 5px;
+}
+
+.legal_documents .list_result table {
+	width: 100%;
+	border: 1px solid #cdcdcd;
+	border-collapse: collapse;
+}
+
+.legal_documents .list_result table th {
+    background-color: #EFEFEF;
+    color: #111111;
+    font-weight: bold;
+}
+
+.legal_documents .list_result table td,.list_result table th {
+	border: 1px solid #cdcdcd;
+	font-size: 12px;
+	color: #333;
+	padding: 3px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.legal_documents .list_result table td {
+	line-height: 20px;
+}
+
+
+.legal_documents .list_result table tr:hover {
+	background-color: #fcf5d6;
+	cursor: pointer;
+}
+
+.legal_documents .list_result table td a {
+	color: #6F310A;
+}
+
+.legal_documents .list_result table td a:hover {
+	text-decoration: underline;
+}
+
+.legal_documents .detail_documnet table td {
+	font-size: 12px;
+	font-family: Arial,Helvetica,sans-serif;
+    font-weight: normal;
+}
+
+.legal_documents .detail_documnet{
+	margin-bottom: 5px;
+	font-size: 12px;
+}
+.legal_documents.legal_doc_detail_content_css{
+	padding: 5px;
+}
+
+
+.legal_doc_detail_content_css {
+	margin: 10px;
+}
+
+.legal_doc_detail_content_css table {
+	width:100%;
+	border:1px solid #cdcdcd;
+	border-collapse:collapse;
+	margin-bottom:20px;
+	}
+.legal_doc_detail_content_css table td, .legal_doc_detail_content_css table th {
+	border:1px solid #cdcdcd;
+	font-size:12px;
+	color:#333;
+	padding:3px;
+	padding-top:5px;
+	padding-bottom:5px;
+	}
+.legal_doc_detail_content_css table td { line-height:20px;}	
+.legal_doc_detail_content_css table th {
+	font-weight:bold;
+	background-color:#efefef;
+	color:#111;
+	}
+.legal_doc_detail_content_css table tr:hover {
+	background-color:#fcf5d6;
+	}
+.legal_doc_detail_content_css table td a {color:#6F310A;}	
+.legal_doc_detail_content_css table td a:hover { text-decoration:underline;}
+
+div.legal_domain_list_content {
+	width: 45%;
+	float: left;
+	padding-left: 5%;
+}
+
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+
+.vbpq-search{
+    margin: 5px;
+    padding: 10px;
+}
+
+.legalDocsSearch-contentField {
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.legalDocsSearch-buttonField {
+	width: 100%;
+	padding-left: 13%;
+	margin-bottom: 10px;
+}
+.legalDocsSearch-contentRowA {
+	float: left;
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 15px;
+    padding-top: 5px;
+    text-align: right;
+    width: 25%;
+}
+
+.legalDocsSearch-contentRowB {
+	width: 70%;
+}
+
+.legal_documents .textbox-search {
+	border: 1px solid #CCCCCC;
+    color: #555555;
+	font-size: 12px;
+    line-height: 20px;
+    padding: 5px;
+    text-align: left;
+    width: 241px;
+}
+
+.legal_documents .short_textbox-search {
+	background: url("../images/calendar-green.gif") no-repeat scroll 148px 5px rgba(0, 0, 0, 0);
+	border: 1px solid #CCCCCC;
+    color: #555555;
+	font-size: 12px;
+    line-height: 20px;
+    padding: 5px;
+    text-align: left;
+    width: 160px;
+}
+
+.legal_documents .selectbox-search{
+	border: 1px solid #CCCCCC;
+    color: #555555;
+	font-size: 12px;
+    line-height: 20px;
+    padding: 5px;
+    text-align: left;
+    width: 252px;
+}
+
+.legal_documents .legalDocsSearch-button-search {
+	margin-left: 99px;	
+}
+/*calender*/
+.ui-datepicker {
+	width: 17em;
+	padding: .2em .2em 0;
+	display: none;
+	background:#FFF;
+	border:1px solid #ccc;
+}
+.ui-datepicker .ui-datepicker-header {
+	position: relative;
+	padding: .2em 0;
+}
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-next {
+	position: absolute;
+	top: 2px;
+	width: 1.8em;
+	height: 1.8em;
+}
+.ui-datepicker .ui-datepicker-prev-hover,
+.ui-datepicker .ui-datepicker-next-hover {
+	top: 1px;
+}
+.ui-datepicker .ui-datepicker-prev {
+	left: 2px;
+}
+.ui-datepicker .ui-datepicker-next {
+	right: 2px;
+}
+.ui-datepicker .ui-datepicker-prev-hover {
+	left: 1px;
+}
+.ui-datepicker .ui-datepicker-next-hover {
+	right: 1px;
+}
+.ui-datepicker .ui-datepicker-prev span,
+.ui-datepicker .ui-datepicker-next span {
+	display: block;
+	position: absolute;
+	left: 50%;
+	margin-left: -8px;
+	top: 50%;
+	margin-top: -8px;
+}
+.ui-datepicker .ui-datepicker-title {
+	margin: 0 2.3em;
+	line-height: 1.8em;
+	text-align: center;
+}
+.ui-datepicker .ui-datepicker-title select {
+	font-size: 1em;
+	margin: 1px 0;
+}
+.ui-datepicker select.ui-datepicker-month-year {
+	width: 100%;
+}
+.ui-datepicker select.ui-datepicker-month,
+.ui-datepicker select.ui-datepicker-year {
+	width: 49%;
+}
+.ui-datepicker table {
+	width: 100%;
+	font-size: .9em;
+	border-collapse: collapse;
+	margin: 0 0 .4em;
+}
+.ui-datepicker th {
+	padding: .7em .3em;
+	text-align: center;
+	font-weight: bold;
+	border: 0;
+}
+.ui-datepicker td {
+	border: 0;
+	padding: 1px;
+}
+.ui-datepicker td span,
+.ui-datepicker td a {
+	display: block;
+	padding: .2em;
+	text-align: right;
+	text-decoration: none;
+}
+.ui-datepicker .ui-datepicker-buttonpane {
+	background-image: none;
+	margin: .7em 0 0 0;
+	padding: 0 .2em;
+	border-left: 0;
+	border-right: 0;
+	border-bottom: 0;
+}
+.ui-datepicker .ui-datepicker-buttonpane button {
+	float: right;
+	margin: .5em .2em .4em;
+	cursor: pointer;
+	padding: .2em .6em .3em .6em;
+	width: auto;
+	overflow: visible;
+}
+.ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current {
+	float: left;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    background: url(../../images/icons/ui-bg_glass_75_e6e6e6_1x400.png) repeat-x scroll 50% 50% #E6E6E6;
+    border: 1px solid #D3D3D3;
+    color: #555555;
+    font-weight: normal;
+}
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+    background: url(../../images/icons/ui-bg_glass_65_ffffff_1x400.png) repeat-x scroll 50% 50% #FFFFFF;
+    border: 1px solid #AAAAAA;
+    color: #212121;
+    font-weight: normal;
+}
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+    background: url(../../images/icons/ui-bg_glass_55_fbf9ee_1x400.png) repeat-x scroll 50% 50% #FBF9EE;
+    border: 1px solid #FCEFA1;
+    color: #363636;
+}
+
+.ui-helper-clearfix:before, .ui-helper-clearfix:after {
+    border-collapse: collapse;
+    content: "";
+    display: table;
+}
+.ui-datepicker .ui-datepicker-prev {
+    left: 2px;
+}
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {
+    height: 1.8em;
+    position: absolute;
+    top: 2px;
+    width: 1.8em;
+}
+.ui-datepicker .ui-datepicker-next {
+    right: 2px;
+}
+
+.ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span {
+    display: block;
+    left: 50%;
+    margin-left: -8px;
+    margin-top: -8px;
+    position: absolute;
+    top: 50%;
+}
+.ui-icon-circle-triangle-w {
+    background-position: -80px -192px;
+}
+.ui-icon-circle-triangle-e {
+    background-position: -48px -192px;
+}
+.ui-widget-header .ui-icon {
+    background-image: url(../../images/icons/ui-icons_222222_256x240.png);
+}
+.ui-icon {
+    height: 16px;
+    width: 16px;
+}
+.ui-icon {
+    background-repeat: no-repeat;
+    display: block;
+    overflow: hidden;
+    text-indent: -99999px;
+}
+
+#details_file_attach .file_attach_icon{
+	background-image: url("../../../images/icons/icon_attachment.png");
+	height: 25px;
+    margin: 0 5px;
+    width: 25px;
+	float: left;
+}
+/*en calender*/

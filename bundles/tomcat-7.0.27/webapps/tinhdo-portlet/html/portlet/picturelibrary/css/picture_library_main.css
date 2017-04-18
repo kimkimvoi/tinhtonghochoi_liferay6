@@ -1,0 +1,37 @@
+.picturelibrary-portlet {
+	.portlet-body {
+		background: none !important;
+		display: inline-block;
+		width: 100%;
+	}
+	
+	.photo {
+	    margin: 16px 6px 6px;
+	    width: 236px;
+	}
+	.box-commons .box-content {
+	    -moz-border-bottom-colors: none;
+	    -moz-border-left-colors: none;
+	    -moz-border-right-colors: none;
+	    -moz-border-top-colors: none;
+	    background: none repeat scroll 0 0 #FFFFFF;
+	    border-color: -moz-use-text-color #CCCCCC #CCCCCC;
+	    border-image: none;
+	    border-right: 1px solid #CCCCCC;
+	    border-style: none solid solid;
+	    border-width: 0 1px 1px;
+	    border-radius: 0 0 5px 5px;
+	    float: left;
+	    width: 248px;
+	    margin-bottom: 10px;
+	}
+	
+	.picture_config {width: 100%}
+	.picture_config img {width: 100px; height: 100px}
+	.picture_config .picture_option {float: left;margin-right: 20px}
+	.btnSubmit {clear:both; margin: 20px 0px; float: left;}
+	.divFullTreeView {float: left; width: 20%}
+	.pictures {float: right; width: 75%}
+	
+}
+

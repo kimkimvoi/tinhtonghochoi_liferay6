@@ -1,0 +1,56 @@
+.weather_portlet .weather_portlet_wapper{
+	border-color: -moz-use-text-color #CCCCCC #CCCCCC;
+    border-image: none;
+    border-style: none solid solid;
+    border-width: 0 1px 1px;
+    margin-bottom: 10px;
+}
+
+.weather_portlet h2.title_tab {
+	margin-top: 0px;
+	text-align: left;
+}
+
+.weather_portlet h2.title_tab span{
+	padding-left: 5px;
+}
+
+.weather_portlet h3.weather_porlet_title-h3 {
+	text-align: center;
+	color: #0000FF;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	font-weight: bold;
+	font-family: Palatino Linotype; 
+	font-size: 20px;
+}
+.weather_portlet .weather_content_detail_css{
+	margin: 10px;	
+}
+.div-current-tem {
+	font-size: 20px;
+    font-weight: bold;
+    color: #0000FF;
+}
+
+.div-minmax-temp {
+	font-size: 12px;
+	color: #808080;
+	padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.div-current-weather {
+	font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: Palatino Linotype;
+    color: #11DD11;
+}
+
+.weather_style2 {
+	text-align: center;
+	font-family: Palatino Linotype; 
+	font-size: 15px; 
+	border: solid 1px #cccccc;
+}

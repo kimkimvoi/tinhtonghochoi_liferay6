@@ -1,0 +1,48 @@
+.foreign_exchang_porlet .foreign_exchang_wapper {
+  border-color: -moz-use-text-color #CCCCCC #CCCCCC;
+  border-image: none;
+  border-style: none solid solid;
+  border-width: 0 1px 1px;
+  margin-bottom: 10px; }
+
+.foreign_exchang_porlet h2.title_tab {
+  margin-top: 0px; }
+
+.foreign_exchang_porlet .foreign_exchange_table_content {
+  margin: 7px; }
+
+h3.foreign_exchange_porlet_title-h3 {
+  text-align: center;
+  color: #0000FF;
+  font-weight: bold;
+  font-size: 18px; }
+
+.table-foreignexchange {
+  border: 2; }
+
+tr.tr-title-foreignexchange {
+  padding-top: 5;
+  padding-bottom: 5;
+  text-align: center;
+  font-weight: bold;
+  background-color: #F5E2FA; }
+
+tr.tr-title-foreignexchange td {
+  font-weight: bold; }
+
+tr.tr-content-foreignexchange_uneven {
+  padding-top: 5;
+  padding-bottom: 5;
+  padding-left: 10;
+  text-align: center;
+  font-family: arial;
+  background-color: #F7F7DE; }
+
+.tr-content-foreignexchange_even {
+  padding-top: 5;
+  padding-bottom: 5;
+  padding-left: 10;
+  text-align: center;
+  font-family: arial;
+  background-color: #F9FBF9; }
+

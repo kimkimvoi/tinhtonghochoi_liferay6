@@ -1,0 +1,55 @@
+.useful_info_porlet .useful_info_wapper {
+  border-color: -moz-use-text-color #CCCCCC #CCCCCC;
+  border-image: none;
+  border-style: none solid solid;
+  border-width: 0 1px 1px;
+  margin-bottom: 10px; }
+
+.useful_info_porlet h2.title_tab {
+  margin-top: 0px; }
+
+.useful_phone_porlet {
+  margin-bottom: 10px;
+  width: 100%; }
+
+ul.userful_info_box_tienich {
+  padding: 20px; }
+
+ul.userful_info_box_tienich li {
+  width: 100%;
+  padding-top: 8px;
+  padding-bottom: 0px;
+  text-align: left;
+  font-size: 12px;
+  color: #333;
+  font-weight: bold;
+  line-height: 31px;
+  list-style: none; }
+
+.useful_info_porlet ul.userful_info_box_tienich li a {
+  color: #333;
+  text-decoration: none; }
+
+.useful_info_porlet ul.userful_info_box_tienich li a:hover {
+  text-decoration: underline; }
+
+.userful_info_icon_thoitiet, .userful_info_icon_tigia, .userful_info_icon_giaca, .userful_info_icon_tell {
+  width: 31px;
+  height: 31px;
+  float: left;
+  margin-right: 10px;
+  background-image: url(../../usefulinformation/images/icon_tienich.png);
+  background-repeat: no-repeat; }
+
+.userful_info_icon_tell {
+  background-position: 0px -95px; }
+
+.userful_info_icon_giaca {
+  background-position: 0px -56px; }
+
+.userful_info_icon_tigia {
+  background-position: 0px -27px; }
+
+.userful_info_icon_thoitiet {
+  background-position: 0px 2px; }
+

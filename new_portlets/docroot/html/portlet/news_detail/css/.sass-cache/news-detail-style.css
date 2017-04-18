@@ -1,0 +1,88 @@
+.news-detail-portlet .portlet-content {
+  margin: 0;
+  padding: 0; }
+.news-detail-portlet .content_detail_news {
+  margin: 20px; }
+.news-detail-portlet .content_detail_news h1.title {
+  color: #333333;
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: left; }
+.news-detail-portlet .content_detail_news .date_time {
+  color: #888888;
+  float: left;
+  font-size: 12px;
+  margin-bottom: 15px;
+  text-align: right;
+  width: 100%; }
+.news-detail-portlet .content_detail_news .date_time span {
+  float: left;
+  text-align: left; }
+.news-detail-portlet .content_detail_news .supdetail {
+  color: #555555;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 18px;
+  margin-bottom: 20px;
+  text-align: left; }
+.news-detail-portlet .content_detail_news .textdetail {
+  color: #333333;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: left; }
+.news-detail-portlet .content_detail_news .textdetail a {
+  color: blue;
+  text-decoration: underline!important; }
+.news-detail-portlet ul.list_detail {
+  border-top: 1px dotted #CCCCCC;
+  float: left;
+  margin-bottom: 20px;
+  margin-top: 15px;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 20px;
+  width: 96%; }
+.news-detail-portlet ul.list_detail li {
+  background: url(@theme_image_path@/icons/icon_row_back.png) no-repeat scroll 5px 10px rgba(0, 0, 0, 0);
+  color: #333333;
+  float: left;
+  font-size: 12px;
+  list-style: none outside none;
+  padding-bottom: 4px;
+  padding-top: 4px;
+  text-align: left;
+  width: 100%; }
+.news-detail-portlet ul.list_detail li a {
+  color: #333;
+  padding-left: 15px;
+  float: left; }
+.news-detail-portlet ul.list_detail li.title {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  background: none; }
+.news-detail-portlet ul.list_detail li a:hover {
+  color: #ff6600; }
+.news-detail-portlet ul.list_detail li.icon_news {
+  float: left; }
+.news-detail-portlet .portlet {
+  display: inline-block; }
+.news-detail-portlet .box_news_detail {
+  background-color: #FFFFFF;
+  float: left;
+  margin-bottom: 10px;
+  border-radius: 0 0 5px 5px; }
+.news-detail-portlet .author, .news-detail-portlet .source {
+  text-align: right;
+  font-weight: bold;
+  padding: 0 10px; }
+.news-detail-portlet .site_path {
+  color: #888888;
+  font-style: italic;
+  margin-bottom: 10px; }
+.news-detail-portlet .site_path a {
+  font-size: 14px;
+  font-style: italic; }
+

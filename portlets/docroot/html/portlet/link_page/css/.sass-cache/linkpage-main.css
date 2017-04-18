@@ -1,0 +1,23 @@
+.linkpage-portlet #tabs_sobannganh {
+  min-height: 380px; }
+.linkpage-portlet #tabs_sobannganh a {
+  outline: medium none;
+  text-decoration: none; }
+.linkpage-portlet .tab_box_mn {
+  margin-top: 0px;
+  margin-left: 0px; }
+.linkpage-portlet ul.list_sbn li a {
+  color: #333333;
+  float: left;
+  padding-left: 12px; }
+.linkpage-portlet ul.list_sbn li a:hover {
+  text-decoration: underline !important; }
+.linkpage-portlet ul.list_sbn {
+  float: left;
+  margin-right: 10px;
+  margin-top: 20px;
+  padding-bottom: 30px;
+  width: 211px; }
+.linkpage-portlet .portlet-borderless-container {
+  float: right; }
+

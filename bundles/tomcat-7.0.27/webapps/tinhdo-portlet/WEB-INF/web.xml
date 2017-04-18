@@ -1,0 +1,596 @@
+<?xml version="1.0"?>
+
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:javaee="http://java.sun.com/xml/ns/javaee" xmlns:jsp="http://java.sun.com/xml/ns/javaee/jsp" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd" id="WebApp_ID" version="2.4">
+	<display-name>tinhdo-portlet</display-name>
+	<filter>
+		<filter-name>Invoker Filter - ERROR</filter-name>
+		<filter-class>com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilter</filter-class>
+		<init-param>
+			<param-name>dispatcher</param-name>
+			<param-value>ERROR</param-value>
+		</init-param>
+	</filter>
+	<filter>
+		<filter-name>Invoker Filter - FORWARD</filter-name>
+		<filter-class>com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilter</filter-class>
+		<init-param>
+			<param-name>dispatcher</param-name>
+			<param-value>FORWARD</param-value>
+		</init-param>
+	</filter>
+	<filter>
+		<filter-name>Invoker Filter - INCLUDE</filter-name>
+		<filter-class>com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilter</filter-class>
+		<init-param>
+			<param-name>dispatcher</param-name>
+			<param-value>INCLUDE</param-value>
+		</init-param>
+	</filter>
+	<filter>
+		<filter-name>Invoker Filter - REQUEST</filter-name>
+		<filter-class>com.liferay.portal.kernel.servlet.filters.invoker.InvokerFilter</filter-class>
+		<init-param>
+			<param-name>dispatcher</param-name>
+			<param-value>REQUEST</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>Invoker Filter - ERROR</filter-name>
+		<url-pattern>/*</url-pattern>
+		<dispatcher>ERROR</dispatcher>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>Invoker Filter - FORWARD</filter-name>
+		<url-pattern>/*</url-pattern>
+		<dispatcher>FORWARD</dispatcher>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>Invoker Filter - INCLUDE</filter-name>
+		<url-pattern>/*</url-pattern>
+		<dispatcher>INCLUDE</dispatcher>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>Invoker Filter - REQUEST</filter-name>
+		<url-pattern>/*</url-pattern>
+		<dispatcher>REQUEST</dispatcher>
+	</filter-mapping>
+	<listener>
+		<listener-class>com.liferay.portal.kernel.servlet.PluginContextListener</listener-class>
+	</listener>
+	<listener>
+		<listener-class>com.liferay.portal.kernel.servlet.SerializableSessionAttributeListener</listener-class>
+	</listener>
+	<servlet>
+		<servlet-name>view-servlet</servlet-name>
+		<servlet-class>org.springframework.web.servlet.ViewRendererServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet>
+		<servlet-name>hotnews Servlet</servlet-name>
+		<servlet-class>com.liferay.portal.kernel.servlet.PortletServlet</servlet-class>
+		<init-param>
+			<param-name>portlet-class</param-name>
+			<param-value>com.fsoft.bn.portlet.news.hot.HotNewsPortlet</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet>
+		<servlet-name>newsbycategory Servlet</servlet-name>
+		<servlet-class>com.liferay.portal.kernel.servlet.PortletServlet</servlet-class>
+		<init-param>
+			<param-name>portlet-class</param-name>
+			<param-value>com.fsoft.bn.portlet.news.NewsByCategoryPortlet</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet>
+		<servlet-name>newsbycategoriestab Servlet</servlet-name>
+		<servlet-class>com.liferay.portal.kernel.servlet.PortletServlet</servlet-class>
+		<init-param>
+			<param-name>portlet-class</param-name>
+			<param-value>com.fsoft.bn.portlet.news.NewsByCategoriesTabPortlet</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet>
+		<servlet-name>newsbycategorytable Servlet</servlet-name>
+		<servlet-class>com.liferay.portal.kernel.servlet.PortletServlet</servlet-class>
+		<init-param>
+			<param-name>portlet-class</param-name>
+			<param-value>com.fsoft.bn.portlet.news.NewsByCategoriesTablePortlet</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet>
+		<servlet-name>maps Servlet</servlet-name>
+		<servlet-class>com.liferay.portal.kernel.servlet.PortletServlet</servlet-class>
+		<init-param>
+			<param-name>portlet-class</param-name>
+			<param-value>com.fsoft.bn.portlet.maps.MapsPortlet</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet>
+		<servlet-name>onestoreonline Servlet</servlet-name>
+		<servlet-class>com.liferay.portal.kernel.servlet.PortletServlet</servlet-class>
+		<init-param>
+			<param-name>portlet-class</param-name>
+			<param-value>com.fsoft.bn.portlet.one_store.OneStoreAction</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet>
+		<servlet-name>contactmanage Servlet</servlet-name>
+		<servlet-class>com.liferay.portal.kernel.servlet.PortletServlet</servlet-class>
+		<init-param>
+			<param-name>portlet-class</param-name>
+			<param-value>com.fsoft.bn.portlet.contact_manage.ContactManage</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet>
+		<servlet-name>linkpage Servlet</servlet-name>
+		<servlet-class>com.liferay.portal.kernel.servlet.PortletServlet</servlet-class>
+		<init-param>
+			<param-name>portlet-class</param-name>
+			<param-value>com.fsoft.bn.portlet.linkpage.LinkPage</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet>
+		<servlet-name>newsdetail Servlet</servlet-name>
+		<servlet-class>com.liferay.portal.kernel.servlet.PortletServlet</servlet-class>
+		<init-param>
+			<param-name>portlet-class</param-name>
+			<param-value>com.fsoft.bn.portlet.news.detail.NewsDetailPortlet</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet>
+		<servlet-name>analytic Servlet</servlet-name>
+		<servlet-class>com.liferay.portal.kernel.servlet.PortletServlet</servlet-class>
+		<init-param>
+			<param-name>portlet-class</param-name>
+			<param-value>com.fsoft.bn.portlet.analytic.Analytic</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet>
+		<servlet-name>questionsubmit Servlet</servlet-name>
+		<servlet-class>com.liferay.portal.kernel.servlet.PortletServlet</servlet-class>
+		<init-param>
+			<param-name>portlet-class</param-name>
+			<param-value>com.fsoft.bn.portlet.questionsubmit.QuestionSubmit</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet>
+		<servlet-name>answered_questions Servlet</servlet-name>
+		<servlet-class>com.liferay.portal.kernel.servlet.PortletServlet</servlet-class>
+		<init-param>
+			<param-name>portlet-class</param-name>
+			<param-value>org.springframework.web.portlet.DispatcherPortlet</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet>
+		<servlet-name>Schedule Servlet</servlet-name>
+		<servlet-class>com.liferay.portal.kernel.servlet.PortletServlet</servlet-class>
+		<init-param>
+			<param-name>portlet-class</param-name>
+			<param-value>org.springframework.web.portlet.DispatcherPortlet</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet>
+		<servlet-name>adminqamanagement Servlet</servlet-name>
+		<servlet-class>com.liferay.portal.kernel.servlet.PortletServlet</servlet-class>
+		<init-param>
+			<param-name>portlet-class</param-name>
+			<param-value>com.fsoft.bn.portlet.admin.qamanagement.AdminQaManagement</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet>
+		<servlet-name>adminschedule Servlet</servlet-name>
+		<servlet-class>com.liferay.portal.kernel.servlet.PortletServlet</servlet-class>
+		<init-param>
+			<param-name>portlet-class</param-name>
+			<param-value>org.springframework.web.portlet.DispatcherPortlet</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet>
+		<servlet-name>searchstaffinfo Servlet</servlet-name>
+		<servlet-class>com.liferay.portal.kernel.servlet.PortletServlet</servlet-class>
+		<init-param>
+			<param-name>portlet-class</param-name>
+			<param-value>com.fsoft.bn.portlet.staffinfo.search.SearchStaffInfoPortlet</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet>
+		<servlet-name>videoplayer Servlet</servlet-name>
+		<servlet-class>com.liferay.portal.kernel.servlet.PortletServlet</servlet-class>
+		<init-param>
+			<param-name>portlet-class</param-name>
+			<param-value>com.fsoft.bn.portlet.video.player.VideoPlayerPortlet</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet>
+		<servlet-name>videogallery Servlet</servlet-name>
+		<servlet-class>com.liferay.portal.kernel.servlet.PortletServlet</servlet-class>
+		<init-param>
+			<param-name>portlet-class</param-name>
+			<param-value>org.springframework.web.portlet.DispatcherPortlet</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet>
+		<servlet-name>usefulphone Servlet</servlet-name>
+		<servlet-class>com.liferay.portal.kernel.servlet.PortletServlet</servlet-class>
+		<init-param>
+			<param-name>portlet-class</param-name>
+			<param-value>com.fsoft.bn.portlet.usefulphone.UsefulPhonePortlet</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet>
+		<servlet-name>foreignexchange Servlet</servlet-name>
+		<servlet-class>com.liferay.portal.kernel.servlet.PortletServlet</servlet-class>
+		<init-param>
+			<param-name>portlet-class</param-name>
+			<param-value>com.fsoft.bn.portlet.foreignexchange.ForeignExchangePortlet</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet>
+		<servlet-name>usefulinformation Servlet</servlet-name>
+		<servlet-class>com.liferay.portal.kernel.servlet.PortletServlet</servlet-class>
+		<init-param>
+			<param-name>portlet-class</param-name>
+			<param-value>com.fsoft.bn.portlet.userfulinformation.UsefulInformation</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet>
+		<servlet-name>weather Servlet</servlet-name>
+		<servlet-class>com.liferay.portal.kernel.servlet.PortletServlet</servlet-class>
+		<init-param>
+			<param-name>portlet-class</param-name>
+			<param-value>com.fsoft.bn.portlet.weather.WeatherPortlet</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet>
+		<servlet-name>marketinfomation Servlet</servlet-name>
+		<servlet-class>com.liferay.portal.kernel.servlet.PortletServlet</servlet-class>
+		<init-param>
+			<param-name>portlet-class</param-name>
+			<param-value>com.fsoft.bn.portlet.marketinfomation.MarketInfomationPortlet</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet>
+		<servlet-name>visitor Servlet</servlet-name>
+		<servlet-class>com.liferay.portal.kernel.servlet.PortletServlet</servlet-class>
+		<init-param>
+			<param-name>portlet-class</param-name>
+			<param-value>com.fsoft.bn.portlet.visitor.VisitorPortlet</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet>
+		<servlet-name>rightcategories Servlet</servlet-name>
+		<servlet-class>com.liferay.portal.kernel.servlet.PortletServlet</servlet-class>
+		<init-param>
+			<param-name>portlet-class</param-name>
+			<param-value>com.fsoft.bn.portlet.menu.rightcategories.RightCategories</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet>
+		<servlet-name>publicnews Servlet</servlet-name>
+		<servlet-class>com.liferay.portal.kernel.servlet.PortletServlet</servlet-class>
+		<init-param>
+			<param-name>portlet-class</param-name>
+			<param-value>com.fsoft.bn.portlet.public_news.PublicNewsPortlet</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet>
+		<servlet-name>legaldocuments Servlet</servlet-name>
+		<servlet-class>com.liferay.portal.kernel.servlet.PortletServlet</servlet-class>
+		<init-param>
+			<param-name>portlet-class</param-name>
+			<param-value>com.fsoft.bn.portlet.legaldocuments.LegalDocumentsPortlet</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet>
+		<servlet-name>NewsBoxTinhDolist Servlet</servlet-name>
+		<servlet-class>com.liferay.portal.kernel.servlet.PortletServlet</servlet-class>
+		<init-param>
+			<param-name>portlet-class</param-name>
+			<param-value>com.fsoft.bn.portlet.newsboxtinhdo.list.NewsBoxTinhDoList</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet>
+		<servlet-name>investmentadmin Servlet</servlet-name>
+		<servlet-class>com.liferay.portal.kernel.servlet.PortletServlet</servlet-class>
+		<init-param>
+			<param-name>portlet-class</param-name>
+			<param-value>com.fsoft.bn.portlet.investmentadmin.InvestmentAdmin</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet>
+		<servlet-name>publicadministrationprocedure Servlet</servlet-name>
+		<servlet-class>com.liferay.portal.kernel.servlet.PortletServlet</servlet-class>
+		<init-param>
+			<param-name>portlet-class</param-name>
+			<param-value>com.fsoft.bn.portlet.publicadministrationprocedure.PublicAdministrationProcedurePortlet</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet>
+		<servlet-name>investmentanddevelopment Servlet</servlet-name>
+		<servlet-class>com.liferay.portal.kernel.servlet.PortletServlet</servlet-class>
+		<init-param>
+			<param-name>portlet-class</param-name>
+			<param-value>com.fsoft.bn.portlet.investmentAndDevelopment.InvestmentAndDevelopment</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet>
+		<servlet-name>administrativeorganization Servlet</servlet-name>
+		<servlet-class>com.liferay.portal.kernel.servlet.PortletServlet</servlet-class>
+		<init-param>
+			<param-name>portlet-class</param-name>
+			<param-value>com.fsoft.bn.portlet.administrative.organization.AdministrativeOrganizationPortlet</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet>
+		<servlet-name>cultureandtraveler Servlet</servlet-name>
+		<servlet-class>com.liferay.portal.kernel.servlet.PortletServlet</servlet-class>
+		<init-param>
+			<param-name>portlet-class</param-name>
+			<param-value>com.fsoft.bn.portlet.cultureandtraveler.CultureAndTravelerPortlet</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet>
+		<servlet-name>picturelibrary Servlet</servlet-name>
+		<servlet-class>com.liferay.portal.kernel.servlet.PortletServlet</servlet-class>
+		<init-param>
+			<param-name>portlet-class</param-name>
+			<param-value>com.fsoft.bn.portlet.picturelibrary.PictureLibraryPortlet</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet>
+		<servlet-name>picturegallery Servlet</servlet-name>
+		<servlet-class>com.liferay.portal.kernel.servlet.PortletServlet</servlet-class>
+		<init-param>
+			<param-name>portlet-class</param-name>
+			<param-value>com.fsoft.bn.portlet.picturegallery.PictureGalleryPortlet</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet>
+		<servlet-name>advertisement Servlet</servlet-name>
+		<servlet-class>com.liferay.portal.kernel.servlet.PortletServlet</servlet-class>
+		<init-param>
+			<param-name>portlet-class</param-name>
+			<param-value>org.springframework.web.portlet.DispatcherPortlet</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet>
+		<servlet-name>legaldocumentbydomain Servlet</servlet-name>
+		<servlet-class>com.liferay.portal.kernel.servlet.PortletServlet</servlet-class>
+		<init-param>
+			<param-name>portlet-class</param-name>
+			<param-value>org.springframework.web.portlet.DispatcherPortlet</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet>
+		<servlet-name>operatorsteering Servlet</servlet-name>
+		<servlet-class>com.liferay.portal.kernel.servlet.PortletServlet</servlet-class>
+		<init-param>
+			<param-name>portlet-class</param-name>
+			<param-value>com.fsoft.bn.portlet.operatorsteering.OperatorSteeringPortlet</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>view-servlet</servlet-name>
+		<url-pattern>/WEB-INF/servlet/view</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>hotnews Servlet</servlet-name>
+		<url-pattern>/hotnews/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>newsbycategory Servlet</servlet-name>
+		<url-pattern>/newsbycategory/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>newsbycategoriestab Servlet</servlet-name>
+		<url-pattern>/newsbycategoriestab/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>newsbycategorytable Servlet</servlet-name>
+		<url-pattern>/newsbycategorytable/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>maps Servlet</servlet-name>
+		<url-pattern>/maps/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>onestoreonline Servlet</servlet-name>
+		<url-pattern>/onestoreonline/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>contactmanage Servlet</servlet-name>
+		<url-pattern>/contactmanage/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>linkpage Servlet</servlet-name>
+		<url-pattern>/linkpage/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>newsdetail Servlet</servlet-name>
+		<url-pattern>/newsdetail/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>analytic Servlet</servlet-name>
+		<url-pattern>/analytic/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>questionsubmit Servlet</servlet-name>
+		<url-pattern>/questionsubmit/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>answered_questions Servlet</servlet-name>
+		<url-pattern>/answered_questions/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Schedule Servlet</servlet-name>
+		<url-pattern>/Schedule/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>adminqamanagement Servlet</servlet-name>
+		<url-pattern>/adminqamanagement/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>adminschedule Servlet</servlet-name>
+		<url-pattern>/adminschedule/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>searchstaffinfo Servlet</servlet-name>
+		<url-pattern>/searchstaffinfo/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>videoplayer Servlet</servlet-name>
+		<url-pattern>/videoplayer/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>videogallery Servlet</servlet-name>
+		<url-pattern>/videogallery/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>usefulphone Servlet</servlet-name>
+		<url-pattern>/usefulphone/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>foreignexchange Servlet</servlet-name>
+		<url-pattern>/foreignexchange/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>usefulinformation Servlet</servlet-name>
+		<url-pattern>/usefulinformation/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>weather Servlet</servlet-name>
+		<url-pattern>/weather/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>marketinfomation Servlet</servlet-name>
+		<url-pattern>/marketinfomation/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>visitor Servlet</servlet-name>
+		<url-pattern>/visitor/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>rightcategories Servlet</servlet-name>
+		<url-pattern>/rightcategories/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>publicnews Servlet</servlet-name>
+		<url-pattern>/publicnews/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>legaldocuments Servlet</servlet-name>
+		<url-pattern>/legaldocuments/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>NewsBoxTinhDolist Servlet</servlet-name>
+		<url-pattern>/NewsBoxTinhDolist/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>investmentadmin Servlet</servlet-name>
+		<url-pattern>/investmentadmin/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>publicadministrationprocedure Servlet</servlet-name>
+		<url-pattern>/publicadministrationprocedure/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>investmentanddevelopment Servlet</servlet-name>
+		<url-pattern>/investmentanddevelopment/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>administrativeorganization Servlet</servlet-name>
+		<url-pattern>/administrativeorganization/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>cultureandtraveler Servlet</servlet-name>
+		<url-pattern>/cultureandtraveler/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>picturelibrary Servlet</servlet-name>
+		<url-pattern>/picturelibrary/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>picturegallery Servlet</servlet-name>
+		<url-pattern>/picturegallery/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>advertisement Servlet</servlet-name>
+		<url-pattern>/advertisement/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>legaldocumentbydomain Servlet</servlet-name>
+		<url-pattern>/legaldocumentbydomain/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>operatorsteering Servlet</servlet-name>
+		<url-pattern>/operatorsteering/*</url-pattern>
+	</servlet-mapping>
+	<jsp-config>
+		<taglib>
+			<taglib-uri>http://java.sun.com/portlet_2_0</taglib-uri>
+			<taglib-location>/WEB-INF/tld/liferay-portlet.tld</taglib-location>
+		</taglib>
+		<taglib>
+			<taglib-uri>http://liferay.com/tld/aui</taglib-uri>
+			<taglib-location>/WEB-INF/tld/aui.tld</taglib-location>
+		</taglib>
+		<taglib>
+			<taglib-uri>http://liferay.com/tld/portlet</taglib-uri>
+			<taglib-location>/WEB-INF/tld/liferay-portlet-ext.tld</taglib-location>
+		</taglib>
+		<taglib>
+			<taglib-uri>http://liferay.com/tld/security</taglib-uri>
+			<taglib-location>/WEB-INF/tld/liferay-security.tld</taglib-location>
+		</taglib>
+		<taglib>
+			<taglib-uri>http://liferay.com/tld/theme</taglib-uri>
+			<taglib-location>/WEB-INF/tld/liferay-theme.tld</taglib-location>
+		</taglib>
+		<taglib>
+			<taglib-uri>http://liferay.com/tld/ui</taglib-uri>
+			<taglib-location>/WEB-INF/tld/liferay-ui.tld</taglib-location>
+		</taglib>
+		<taglib>
+			<taglib-uri>http://liferay.com/tld/util</taglib-uri>
+			<taglib-location>/WEB-INF/tld/liferay-util.tld</taglib-location>
+		</taglib>
+	</jsp-config>
+</web-app>

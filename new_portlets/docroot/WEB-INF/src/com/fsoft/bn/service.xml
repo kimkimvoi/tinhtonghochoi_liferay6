@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 6.1.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_6_1_0.dtd">
+<service-builder package-path="com.fsoft.bn">
+	<author>FSOFT</author>
+	<namespace>BN</namespace>
+
+	<entity name="BNNews" local-service="true" remote-service="false">
+
+		<!-- PK fields -->
+
+		<column name="newsId" type="long" primary="true" />
+
+		<!-- Views fields  -->
+		<column name="newsTitle" type="String" />
+		<column name="newsContent" type="String" />
+		
+		<!-- Audit fields -->
+		<column name="createdDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+		<column name="deleted" type="boolean"/>
+
+		<!-- Order
+		Finder methods -->
+	</entity>
+	<entity name="BNContact" local-service="true" remote-service="false">
+
+		<!-- PK fields -->
+
+		<column name="contactId" type="long" primary="true" />
+
+		<!-- Views fields  -->
+		<column name="departmentKey" type="String"></column>
+		<column name="name" type="String" />
+		<column name="regency" type="String"></column>
+		<column name="phoneNumber" type="String" />
+		<column name="email" type="String"></column>
+		
+		<!-- Audit fields -->
+		<column name="createdDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+		<column name="deleted" type="boolean"/>
+
+		<!-- Order
+		Finder methods -->
+	</entity>	
+
+	<entity name="Question" local-service="true" remote-service="false">
+		<!-- PK fields -->
+		<column name="question_id" type="String" primary="true"/>
+		
+		<!-- Views fields  -->
+		<column name="question_title" type="String"/>
+		<column name="question_type_id" type="String"/>
+		<column name="question_content" type="String"/>
+		<column name="citizen_name" type="String"/>
+		<column name="citizen_mail" type="String"/>
+		<column name="citizen_phone" type="String"/>
+		<column name="citizen_address" type="String"/>
+		<column name="question_status_id" type="String"/>
+		<column name="answer_id" type="String"/>
+		
+		<!-- Audit fields -->
+		<column name="created_date" type="Date"/>
+		<column name="modified_date" type="Date"/>
+		<column name="deleted" type="boolean"/>
+		
+	</entity>
+	
+	<entity name="Answer" local-service="true" remote-service="false">
+		<!-- PK fields -->
+		<column name="answer_id" type="String" primary="true"/>
+		
+		<!-- Views fields  -->
+		<column name="answer_content" type="String"/>
+		<column name="user_id" type="String"/>
+		
+		<!-- Audit fields -->
+		<column name="created_date" type="Date"/>
+		<column name="modified_date" type="Date"/>
+		<column name="deleted" type="boolean"/>
+		
+	</entity>
+	
+	<entity name="QuestionAttachedFile" local-service="true" remote-service="false">
+		<!-- PK fields -->
+		<column name="question_attached_id" type="String" primary="true"/>
+		
+		<!-- Views fields  -->
+		<column name="question_id" type="String"/>
+		<column name="attached_file_id" type="String"/>
+		
+		<!-- Audit fields -->
+		<column name="created_date" type="Date"/>
+		<column name="modified_date" type="Date"/>
+		<column name="deleted" type="boolean"/>
+		
+	</entity>
+	
+	<entity name="AnswerAttachedFile" local-service="true" remote-service="false">
+		<!-- PK fields -->
+		<column name="answer_attached_id" type="String" primary="true"/>
+		
+		<!-- Views fields  -->
+		<column name="answer_id" type="String"/>
+		<column name="attached_file_id" type="String"/>
+		
+		<!-- Audit fields -->
+		<column name="created_date" type="Date"/>
+		<column name="modified_date" type="Date"/>
+		<column name="deleted" type="boolean"/>
+		
+	</entity>
+	
+	<!-- StaffInfo -->
+	
+	<entity name="StaffInfo" local-service="true" remote-service="false">
+
+		<!-- PK fields -->
+
+		<column name="staff_id" type="long" primary="true" />
+		
+		<!-- Other fields -->
+		
+		<column name="staff_firstname" type="String" />
+		<column name="staff_middlename" type="String" />
+		<column name="staff_lastname" type="String" />
+		<column name="staff_birthday" type="Date" />
+		<column name="staff_phone" type="String" />
+		<column name="staff_email" type="String" />
+		<column name="staff_sex" type="String" />
+		<column name="staff_role" type="String" />
+		
+		<!-- Audit fields -->
+		
+		<column name="deleted" type="boolean" />
+		<column name="createDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+
+		<!-- Order -->
+        <column name="organizations_id" type="long"></column>
+
+		<order by="asc">
+			<order-column name="staff_id" />
+		</order>
+
+		<!-- Finder methods -->
+		
+		<finder name="Deleted" return-type="Collection">
+			<finder-column name="deleted" />
+		</finder>
+		
+		<finder name="Name" return-type="Collection">
+			<finder-column name="staff_firstname" />
+			<finder-column name="staff_middlename" />
+			<finder-column name="staff_lastname" />
+			<finder-column name="deleted" />
+		</finder>
+		
+		<finder name="Email" return-type="Collection">
+			<finder-column name="staff_email" />
+			<finder-column name="deleted" />
+		</finder>
+		
+		<finder name="Role" return-type="Collection">
+			<finder-column name="staff_role" />
+			<finder-column name="deleted" />
+		</finder>
+		
+		<finder name="Phone" return-type="Collection">
+			<finder-column name="staff_phone" />
+			<finder-column name="deleted" />
+		</finder>
+	</entity>
+	
+	<!-- Organizations -->
+	
+	<entity name="Organizations" local-service="true" remote-service="false">
+
+		<!-- PK fields -->
+
+		<column name="organizations_id" type="long" primary="true" />
+		
+		<!-- Other fields -->
+		
+		<column name="organizations_name" type="String" />
+		<column name="organizations_description" type="String" />
+		<column name="organizations_address" type="String" />
+		
+		<!-- Audit fields -->
+		
+		<column name="deleted" type="boolean" />
+		<column name="createDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+
+		<!-- Order -->
+
+		<order by="asc">
+			<order-column name="organizations_id" />
+		</order>
+
+		<!-- Finder methods -->
+		
+		<finder name="Deleted" return-type="Collection">
+			<finder-column name="deleted" />
+		</finder>
+		
+		<finder name="Name" return-type="Collection">
+			<finder-column name="organizations_name" />
+			<finder-column name="deleted" />
+		</finder>
+	</entity>
+	
+	<!-- Schedule -->
+	<entity name="Schedule" local-service="true" remote-service="false">
+		<!-- PK fields -->
+		<column name="schedule_id" type="String" primary="true"/>
+
+		<!-- Views fields  -->
+		<column name="schedule_date" type="Date"/>
+		<column name="content" type="String"/>
+		<column name="user_id" type="String"/>
+		
+		<!-- Audit fields -->
+		<column name="created_date" type="Date"/>
+		<column name="modified_date" type="Date"/>
+		<column name="deleted" type="boolean"/>
+
+	</entity>
+	
+	<entity name="UserSchedule" local-service="true" remote-service="false">
+		<!-- PK fields -->
+		<column name="user_schedule_id" type="String" primary="true"/>
+
+		<!-- Views fields  -->
+		<column name="user_id" type="String"/>
+		
+		<!-- Audit fields -->
+		<column name="created_date" type="Date"/>
+		<column name="modified_date" type="Date"/>
+		<column name="deleted" type="boolean"/>
+
+	</entity>
+	
+	<entity name="UserfulContactPhone" local-service="true" remote-service="false">
+		<!-- PK fields -->
+		<column name="userful_contact_phone_id" type="String" primary="true"/>
+		
+		<!-- Views fields  -->
+		<column name="userful_contact_name" type="String"/>
+		<column name="userful_contact_phone" type="String"/>
+		<column name="userful_contact_email" type="String"/>
+		<column name="userful_contact_position" type="String"/>
+		<column name="userful_contact_address" type="String"/>
+		
+		<!-- Audit fields -->
+		<column name="created_date" type="Date"/>
+		<column name="modified_date" type="Date"/>
+		<column name="deleted" type="boolean"/>
+		
+	</entity>	
+	 <entity name="InvestmentProjects" local-service="true">
+	  <!-- PK fields -->
+	  <column name="project_id" type="String" primary="true"/>
+	  
+	  <!-- Views fields  -->
+	  <column name="project_name" type="String" />
+	  <column name="total_investment_min" type="String" />
+	  <column name="total_investment_max" type="String" />
+	  <column name="implementation_location" type="String" />
+	  <column name="start_time" type="Date" />
+	  <column name="end_time" type="Date" />
+	  <column name="project_purpose" type="String" />
+	  <column name="charter_capital" type="String" />
+	  <column name="project_category_id" type="String" />
+	  <column name="project_status_id" type="String" />
+	  <column name="investment_form_id" type="String" />
+	  <column name="competent_organization_id" type="String" />
+	  <column name="key_project" type="boolean" />
+	  <column name="technical_specifications" type="String" />
+	  <column name="currency_type_id" type="String" />
+	  
+	  <!-- Audit fields -->
+	  <column name="created_date" type="Date"/>
+	  <column name="modified_date" type="Date"/>
+	  <column name="deleted" type="boolean"/>
+	 </entity>
+	 
+	  <entity name="BNJournalArticle" local-service="true">
+	 </entity>
+	 
+	 <entity name="Enrolment" local-service="true" remote-service="false">
+		<!-- PK fields -->
+		<column name="enrolment_id" type="String" primary="true"/>
+		
+		<!-- Views fields  -->
+		<column name="hs_ten" type="String"/>
+		<column name="hs_ho" type="String"/>
+		<column name="hs_quoc_tich" type="String"/>
+		<column name="hs_ngay_sinh" type="Date"/>
+		<column name="hs_so_dien_thoai" type="String"/>
+		<column name="hs_nguoi_lien_he" type="String"/>
+		<column name="hs_quan_he_voi_hoc_sinh" type="String"/>
+		<column name="hk_dia_chi" type="String"/>
+		<column name="hk_thanh_pho" type="String"/>
+		<column name="hk_tinh" type="String"/>
+		<column name="hk_quoc_gia" type="String"/>
+		<column name="cm_ten" type="String"/>
+		<column name="cm_ho" type="String"/>
+		<column name="cm_quan_he_voi_hoc_sinh" type="String"/>
+		<column name="cm_dia_chi_email" type="String"/>
+		<column name="cm_so_dien_thoai_di_dong" type="String"/>
+		<column name="cm_dien_thoai_noi_lam_viec" type="String"/>
+		<column name="cm_ten_cong_ty" type="String"/>
+		<column name="cm_chuc_danh" type="String"/>
+		<column name="k_lop" type="String"/>
+		<column name="k_nam_hoc" type="String"/>
+		<column name="k_truong_hien_dang_hoc" type="String"/>
+		<column name="k_sao_ma_biet_den" type="String"/>
+		<column name="k_nguoi_gioi_thieu" type="String"/>
+		<column name="k_thac_mac" type="String"/>
+		<column name="trang_thai" type="String"/>
+		
+		<!-- Audit fields -->
+		<column name="created_date" type="Date"/>
+		<column name="modified_date" type="Date"/>
+		<column name="deleted" type="boolean"/>
+		
+	</entity>
+	
+	<entity name="EnrolmentAttachedFile" local-service="true" remote-service="false">
+		<!-- PK fields -->
+		<column name="enrolment_attached_id" type="String" primary="true"/>
+		
+		<!-- Views fields  -->
+		<column name="enrolment_id" type="String"/>
+		<column name="attached_file_id" type="String"/>
+		
+		<!-- Audit fields -->
+		<column name="created_date" type="Date"/>
+		<column name="modified_date" type="Date"/>
+		<column name="deleted" type="boolean"/>
+		
+	</entity>
+	
+	<entity name="Recruitment" local-service="true" remote-service="false">
+		<!-- PK fields -->
+		<column name="recruitment_id" type="String" primary="true"/>
+		
+		<!-- Views fields  -->
+		<column name="candidate_name" type="String"/>
+		<column name="candidate_sex" type="String"/>
+		<column name="candidate_dob" type="String"/>
+		<column name="candidate_placeOfBirth" type="String"/>
+		<column name="candidate_nationality" type="String"/>
+		<column name="candidate_race" type="String"/>
+		<column name="candidate_religion" type="String"/>
+		<column name="candidate_IdCardNumber" type="String"/>
+		<column name="candidate_placeOfIssue" type="String"/>
+		<column name="candidate_permanentPlace" type="String"/>
+		<column name="candidate_temporaryPlace" type="String"/>
+		<column name="candidate_phoneNumber" type="String"/>
+		<column name="candidate_email" type="String"/>
+		<column name="candidate_position" type="String"/>
+		<column name="candidate_canStartDate" type="String"/>
+		<column name="candidate_currentSalary" type="String"/>
+		<column name="candidate_expectedSalary" type="String"/>
+		<column name="candidate_howToKnowBM" type="String"/>
+		<column name="candidate_whoIntroduce" type="String"/>
+		<column name="candidate_anyConfuse" type="String"/>
+		<column name="status" type="String"/>
+		
+		<!-- Audit fields -->
+		<column name="created_date" type="Date"/>
+		<column name="modified_date" type="Date"/>
+		<column name="deleted" type="boolean"/>
+		
+	</entity>
+	
+	<entity name="RecruitmentAttachedFile" local-service="true" remote-service="false">
+		<!-- PK fields -->
+		<column name="recruitment_attached_id" type="String" primary="true"/>
+		
+		<!-- Views fields  -->
+		<column name="recruitment_id" type="String"/>
+		<column name="attached_file_id" type="String"/>
+		
+		<!-- Audit fields -->
+		<column name="created_date" type="Date"/>
+		<column name="modified_date" type="Date"/>
+		<column name="deleted" type="boolean"/>
+		
+	</entity>
+	
+	<entity name="RecruitmentEducationalHistory" local-service="true" remote-service="false">
+		<!-- PK fields -->
+		<column name="recruitment_educational_history_id" type="String" primary="true"/>
+		
+		<!-- Views fields  -->
+		<column name="recruitment_id" type="String"/>
+		<column name="school" type="String"/>
+		<column name="typeOfTraining" type="String"/>
+		<column name="speciality" type="String"/>
+		<column name="typeOfDegree" type="String"/>
+		<column name="graduatedYear" type="String"/>
+		
+		<!-- Audit fields -->
+		<column name="created_date" type="Date"/>
+		<column name="modified_date" type="Date"/>
+		<column name="deleted" type="boolean"/>
+		
+	</entity>
+	
+	<entity name="RecruitmentTrainingCourses" local-service="true" remote-service="false">
+		<!-- PK fields -->
+		<column name="recruitment_training_courses_id" type="String" primary="true"/>
+		
+		<!-- Views fields  -->
+		<column name="recruitment_id" type="String"/>
+		<column name="conductedBy" type="String"/>
+		<column name="courseName" type="String"/>
+		<column name="courseDesc" type="String"/>
+		<column name="courseDate" type="String"/>
+		<column name="certificate" type="String"/>
+		
+		<!-- Audit fields -->
+		<column name="created_date" type="Date"/>
+		<column name="modified_date" type="Date"/>
+		<column name="deleted" type="boolean"/>
+		
+	</entity>
+	
+	<entity name="RecruitmentLanguages" local-service="true" remote-service="false">
+		<!-- PK fields -->
+		<column name="recruitment_languages_id" type="String" primary="true"/>
+		
+		<!-- Views fields  -->
+		<column name="recruitment_id" type="String"/>
+		<column name="language" type="String"/>
+		<column name="level" type="String"/>
+		<column name="certificate" type="String"/>
+		
+		<!-- Audit fields -->
+		<column name="created_date" type="Date"/>
+		<column name="modified_date" type="Date"/>
+		<column name="deleted" type="boolean"/>
+		
+	</entity>
+	
+	<entity name="RecruitmentProgrammings" local-service="true" remote-service="false">
+		<!-- PK fields -->
+		<column name="recruitment_programmings_id" type="String" primary="true"/>
+		
+		<!-- Views fields  -->
+		<column name="recruitment_id" type="String"/>
+		<column name="course" type="String"/>
+		<column name="level" type="String"/>
+		<column name="certificate" type="String"/>
+		
+		<!-- Audit fields -->
+		<column name="created_date" type="Date"/>
+		<column name="modified_date" type="Date"/>
+		<column name="deleted" type="boolean"/>
+		
+	</entity>
+	
+	<entity name="PreschoolStudent" local-service="true" remote-service="false">
+		<!-- PK fields -->
+		<column name="student_id" type="String" primary="true"/>
+		
+		<!-- Views fields  -->
+		<column name="student_name" type="String"/>
+		<column name="student_sex" type="String"/>
+		<column name="student_dob" type="String"/>
+		<column name="student_placeOfBirth" type="String"/>
+		<column name="student_nationality" type="String"/>
+		<column name="student_phoneNumber" type="String"/>
+		<column name="student_address" type="String"/>
+		<column name="student_heatlhStatus" type="String"/>
+		<column name="student_height" type="String"/>
+		<column name="student_weight" type="String"/>
+		<column name="student_contactName" type="String"/>
+		<column name="student_contactRelationship" type="String"/>
+		<column name="student_contactPhoneNumber" type="String"/>
+		<column name="student_contactEmail" type="String"/>
+		<column name="student_howToKnowBM" type="String"/>
+		<column name="student_whoIntroduce" type="String"/>
+		<column name="student_anyConfuse" type="String"/>
+		<column name="status" type="String"/>
+		
+		<!-- Audit fields -->
+		<column name="created_date" type="Date"/>
+		<column name="modified_date" type="Date"/>
+		<column name="deleted" type="boolean"/>
+		
+	</entity>
+	
+	<entity name="PreschoolParent" local-service="true" remote-service="false">
+		<!-- PK fields -->
+		<column name="preschoolParent_id" type="String" primary="true"/>
+		
+		<!-- Views fields  -->		
+		<column name="student_id" type="String"/>
+		<column name="name" type="String"/>
+		<column name="dob" type="String"/>
+		<column name="placeOfBirth" type="String"/>
+		<column name="nationality" type="String"/>
+		<column name="idCardNumber" type="String"/>
+		<column name="job" type="String"/>
+		<column name="phoneNumber" type="String"/>
+		<column name="Email" type="String"/>
+		<column name="isMother" type="boolean"/>
+		
+		<!-- Audit fields -->
+		<column name="created_date" type="Date"/>
+		<column name="modified_date" type="Date"/>
+		<column name="deleted" type="boolean"/>
+		
+	</entity>
+	
+	<entity name="PreschoolAttachedFile" local-service="true" remote-service="false">
+		<!-- PK fields -->
+		<column name="preschool_attached_id" type="String" primary="true"/>
+		
+		<!-- Views fields  -->
+		<column name="student_id" type="String"/>
+		<column name="attached_file_id" type="String"/>
+		
+		<!-- Audit fields -->
+		<column name="created_date" type="Date"/>
+		<column name="modified_date" type="Date"/>
+		<column name="deleted" type="boolean"/>
+		
+	</entity>
+	
+	<entity name="PrimarySchoolStudent" local-service="true" remote-service="false">
+		<!-- PK fields -->
+		<column name="primaryStudent_id" type="String" primary="true"/>
+		
+		<!-- Views fields  -->
+		<column name="student_name" type="String"/>
+		<column name="student_sex" type="String"/>
+		<column name="student_dob" type="String"/>
+		<column name="student_placeOfBirth" type="String"/>
+		<column name="student_nationality" type="String"/>
+		<column name="student_address" type="String"/>
+		<column name="student_contactName" type="String"/>
+		<column name="student_contactRelationship" type="String"/>
+		<column name="student_contactPhoneNumber" type="String"/>
+		<column name="student_contactEmail" type="String"/>
+		<column name="student_schoolName" type="String"/>
+		<column name="student_schoolYear" type="String"/>
+		<column name="student_academicLevel" type="String"/>
+		<column name="student_studiedLanguage" type="String"/>
+		<column name="student_languageCenter" type="String"/>
+		<column name="student_prizes" type="String"/>
+		<column name="student_skippedGrade" type="String"/>
+		<column name="student_penalty" type="String"/>
+		<column name="student_interests" type="String"/>
+		<column name="student_note" type="String"/>
+		<column name="student_registrationClass" type="String"/>
+		<column name="student_expectedEnrollTime" type="String"/>
+		<column name="student_userCar" type="String"/>
+		<column name="student_theLightClub" type="String"/>
+		<column name="student_oversea" type="String"/>
+		<column name="student_howToKnowBM" type="String"/>
+		<column name="student_whoIntroduce" type="String"/>
+		<column name="student_anyConfuse" type="String"/>
+		<column name="status" type="String"/>
+		
+		<!-- Audit fields -->
+		<column name="created_date" type="Date"/>
+		<column name="modified_date" type="Date"/>
+		<column name="deleted" type="boolean"/>
+		
+	</entity>
+	
+	<entity name="PrimarySchoolParent" local-service="true" remote-service="false">
+		<!-- PK fields -->
+		<column name="primarySchoolParent_id" type="String" primary="true"/>
+		
+		<!-- Views fields  -->		
+		<column name="primaryStudent_id" type="String"/>
+		<column name="name" type="String"/>
+		<column name="nationality" type="String"/>
+		<column name="idCardNumber" type="String"/>
+		<column name="phoneNumber" type="String"/>
+		<column name="Email" type="String"/>
+		<column name="job" type="String"/>
+		<column name="job_position" type="String"/>
+		<column name="workplace" type="String"/>
+		<column name="isMother" type="boolean"/>
+		
+		<!-- Audit fields -->
+		<column name="created_date" type="Date"/>
+		<column name="modified_date" type="Date"/>
+		<column name="deleted" type="boolean"/>
+		
+	</entity>
+	
+	<entity name="PrimarySchoolAttachedFile" local-service="true" remote-service="false">
+		<!-- PK fields -->
+		<column name="primarySchool_attached_id" type="String" primary="true"/>
+		
+		<!-- Views fields  -->
+		<column name="primaryStudent_id" type="String"/>
+		<column name="attached_file_id" type="String"/>
+		
+		<!-- Audit fields -->
+		<column name="created_date" type="Date"/>
+		<column name="modified_date" type="Date"/>
+		<column name="deleted" type="boolean"/>
+		
+	</entity>
+	 
+</service-builder>

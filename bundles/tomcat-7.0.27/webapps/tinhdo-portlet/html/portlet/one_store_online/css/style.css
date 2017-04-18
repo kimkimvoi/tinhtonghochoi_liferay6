@@ -1,0 +1,73 @@
+.onestoreonline-portlet {
+	.portlet-content, .portlet-minimized .portlet-content-container {
+	    padding:0;
+	}
+	.portlet-topper {
+		border-width: 0;
+	}
+	.portlet-title {
+		display:none;
+	}
+	.portlet {
+		background:none!important;
+		padding:0;
+		margin:0;
+		border: none;
+	}
+	
+	.box_cdtu {
+	    background: url("../../../images/bg_content_right.png") no-repeat scroll left bottom rgba(0, 0, 0, 0);
+	    float: left;
+	    height: 225px;
+	    width: 250px;
+	}
+	
+	.box_cdtu .title {
+	    background: url("../../../images/tab_right.png") no-repeat scroll left top rgba(0, 0, 0, 0);
+	    color: #FFFFFF;
+	    float: left;
+	    font-size: 13px;
+	    font-weight: bold;
+	    height: 23px;
+	    line-height: 20px;
+	    padding-top: 7px;
+	    text-align: center;
+	    text-transform: uppercase;
+	    width: 100%;
+	}
+	
+	.box_cdtu .title span {
+	    display: inline-block;
+	    float: left;
+	}
+	
+	 .box_cdtu .content_small {
+	    color: #6F310A;
+	    font-size: 12px;
+	    font-weight: bold;
+	    text-align: center;
+	    width: 100%;
+	}
+	
+	.box_cdtu .content_small .text_big {
+	    color: #FF0000;
+	    display: inline-block;
+	    font-size: 50px;
+	    font-weight: bold;
+	    text-align: center;
+	    
+	}
+	
+	.box_cdtu .content_small .time {
+	    color: #6F310A;
+	    display: inline-block;
+	    font-size: 11px;
+	    font-style: italic;
+	    font-weight: normal;
+	    text-align: center;
+	}
+	p {
+		margin: 0;
+	}
+	
+}

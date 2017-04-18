@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" default-destroy-method="destroy" default-init-method="afterPropertiesSet" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="com.fsoft.bn.service.AnswerLocalService" class="com.fsoft.bn.service.impl.AnswerLocalServiceImpl" />
+	<bean id="com.fsoft.bn.service.persistence.AnswerPersistence" class="com.fsoft.bn.service.persistence.AnswerPersistenceImpl" parent="basePersistence" />
+	<bean id="com.fsoft.bn.service.AnswerAttachedFileLocalService" class="com.fsoft.bn.service.impl.AnswerAttachedFileLocalServiceImpl" />
+	<bean id="com.fsoft.bn.service.persistence.AnswerAttachedFilePersistence" class="com.fsoft.bn.service.persistence.AnswerAttachedFilePersistenceImpl" parent="basePersistence" />
+	<bean id="com.fsoft.bn.service.BNContactLocalService" class="com.fsoft.bn.service.impl.BNContactLocalServiceImpl" />
+	<bean id="com.fsoft.bn.service.persistence.BNContactPersistence" class="com.fsoft.bn.service.persistence.BNContactPersistenceImpl" parent="basePersistence" />
+	<bean id="com.fsoft.bn.service.BNJournalArticleLocalService" class="com.fsoft.bn.service.impl.BNJournalArticleLocalServiceImpl" />
+	<bean id="com.fsoft.bn.service.BNJournalArticleService" class="com.fsoft.bn.service.impl.BNJournalArticleServiceImpl" />
+	<bean id="com.fsoft.bn.service.persistence.BNJournalArticleFinder" class="com.fsoft.bn.service.persistence.BNJournalArticleFinderImpl" parent="basePersistence" />
+	<bean id="com.fsoft.bn.service.BNNewsLocalService" class="com.fsoft.bn.service.impl.BNNewsLocalServiceImpl" />
+	<bean id="com.fsoft.bn.service.persistence.BNNewsPersistence" class="com.fsoft.bn.service.persistence.BNNewsPersistenceImpl" parent="basePersistence" />
+	<bean id="com.fsoft.bn.service.InvestmentProjectsLocalService" class="com.fsoft.bn.service.impl.InvestmentProjectsLocalServiceImpl" />
+	<bean id="com.fsoft.bn.service.InvestmentProjectsService" class="com.fsoft.bn.service.impl.InvestmentProjectsServiceImpl" />
+	<bean id="com.fsoft.bn.service.persistence.InvestmentProjectsPersistence" class="com.fsoft.bn.service.persistence.InvestmentProjectsPersistenceImpl" parent="basePersistence" />
+	<bean id="com.fsoft.bn.service.OrganizationsLocalService" class="com.fsoft.bn.service.impl.OrganizationsLocalServiceImpl" />
+	<bean id="com.fsoft.bn.service.persistence.OrganizationsPersistence" class="com.fsoft.bn.service.persistence.OrganizationsPersistenceImpl" parent="basePersistence" />
+	<bean id="com.fsoft.bn.service.QuestionLocalService" class="com.fsoft.bn.service.impl.QuestionLocalServiceImpl" />
+	<bean id="com.fsoft.bn.service.persistence.QuestionPersistence" class="com.fsoft.bn.service.persistence.QuestionPersistenceImpl" parent="basePersistence" />
+	<bean id="com.fsoft.bn.service.persistence.QuestionFinder" class="com.fsoft.bn.service.persistence.QuestionFinderImpl" parent="basePersistence" />
+	<bean id="com.fsoft.bn.service.QuestionAttachedFileLocalService" class="com.fsoft.bn.service.impl.QuestionAttachedFileLocalServiceImpl" />
+	<bean id="com.fsoft.bn.service.persistence.QuestionAttachedFilePersistence" class="com.fsoft.bn.service.persistence.QuestionAttachedFilePersistenceImpl" parent="basePersistence" />
+	<bean id="com.fsoft.bn.service.ScheduleLocalService" class="com.fsoft.bn.service.impl.ScheduleLocalServiceImpl" />
+	<bean id="com.fsoft.bn.service.persistence.SchedulePersistence" class="com.fsoft.bn.service.persistence.SchedulePersistenceImpl" parent="basePersistence" />
+	<bean id="com.fsoft.bn.service.persistence.ScheduleFinder" class="com.fsoft.bn.service.persistence.ScheduleFinderImpl" parent="basePersistence" />
+	<bean id="com.fsoft.bn.service.StaffInfoLocalService" class="com.fsoft.bn.service.impl.StaffInfoLocalServiceImpl" />
+	<bean id="com.fsoft.bn.service.persistence.StaffInfoPersistence" class="com.fsoft.bn.service.persistence.StaffInfoPersistenceImpl" parent="basePersistence" />
+	<bean id="com.fsoft.bn.service.UserfulContactPhoneLocalService" class="com.fsoft.bn.service.impl.UserfulContactPhoneLocalServiceImpl" />
+	<bean id="com.fsoft.bn.service.persistence.UserfulContactPhonePersistence" class="com.fsoft.bn.service.persistence.UserfulContactPhonePersistenceImpl" parent="basePersistence" />
+	<bean id="com.fsoft.bn.service.UserScheduleLocalService" class="com.fsoft.bn.service.impl.UserScheduleLocalServiceImpl" />
+	<bean id="com.fsoft.bn.service.persistence.UserSchedulePersistence" class="com.fsoft.bn.service.persistence.UserSchedulePersistenceImpl" parent="basePersistence" />
+</beans>

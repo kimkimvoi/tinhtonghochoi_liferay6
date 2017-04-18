@@ -1,0 +1,370 @@
+#+++++++++++++++++++++++++++++++++++ START COMMON ++++++++++++++++++++++++++++++++++
+#button
+common.button.save=Ghi lại
+common.button.cancel=Huỷ
+# Message
+common.msg.success=Yêu cầu của bạn được thực hiện thành công.
+common.msg.fail=Yêu cầu của bạn được thực hiện không thành công.
+
+day.sunday = Chủ Nhật
+day.monday = Thứ Hai
+day.tuesday = Thứ Ba
+day.wednesday = Thứ Tư
+day.thursday = Thứ Năm
+day.friday = Thứ Sáu
+day.saturday = Thứ Bảy
+#paging
+portlet.common.paging.curPageStatusText = Trang
+portlet.comfmon.paging.itemsPerPageText = Số dòng trên một trang
+portlet.common.form.dropdownlist.firstoption=Chọn
+#----------------------------------- END COMMON ------------------------------------
+# Start language common #
+common.questionAnswer.questiontype = Chuyên mục hỏi đáp 
+common.questionAnswer.questionkeyword = Từ khóa 
+common.questionAnswer.questionstatus = Trạng thái
+common.questionAnswer.button.search = Tìm kiếm
+# End language common #
+
+#Custome title portlet
+maps-title=Bản đồ hành chính
+on-store-title=MỘT CỬA ĐIỆN TỬ
+
+## Thống kê - Ananytic
+portlet.analytic.title=một cửa điện tử
+portlet.analytic.tostart=Đến tháng 7
+portlet.analytic.city.solution=thành phố đã giải quyết
+portlet.analytic.tofinish=hồ sơ đúng hạn
+portlet.analytic.update=(Tự động cập nhật vào lúc: 06/07/2013 12:00 ) 
+
+##Maps
+porlet.sitemap.title = Sơ đồ Cổng thông tin điện tử Tỉnh Bắc Ninh  
+portlet.maps.title = Bản đô tỉnh Bắc Ninh
+
+political=Chính trị
+economy=Kinh tế
+culture=Văn hóa
+education=Giáo dục
+useful-information=Tiện ích
+social= Xã hội
+local-news=Tin trong tỉnh
+lang-nghe-truyen-thong=Làng nghề truyền thống
+danh-nhan-kinh-bac=Danh nhân kinh bắc
+di-tich-le-hoi-truyen-thong=Di tích lễ hội truyền thống
+bao-tang-thu-vien=Bảo tàng - thư viện
+khong-gian-van-hoa-quan-ho=Không gian văn hóa quan họ
+## HOME PAGE #########
+#hot and latest news portlet
+portlet.hot.news.no-news-input=Vui lòng nhập tin tức để hiển thị!
+
+
+portlet.display.maincategory=Bắc Ninh
+portlet.display.news-category=Tin tức
+portlet.news-detail.display-name=Tóm tắt hạng mục tin
+
+#Contact us
+contact.license.value =154/GP - TTĐT, cấp ngày 22/8/2011
+contact.agency.value = ỦY BAN NHÂN DÂN TỈNH BẮC NINH
+contact.responsible.value = Ông Nguyễn Đình Thắng - Giám đốc Sở Thông tin và Truyền thông Tỉnh Bắc Ninh 
+contact.headquarters.value = 11A Lý Thái Tổ, Suối Hoa, Bắc Ninh 
+contact.phone.value = 0241.3875555
+contact.fax.value = 0241.3875000
+contact.email.value = banbientap@bacninh.gov.vn
+
+contact.license.title = Số giấy phép :
+contact.agency.title = Cơ quan chủ quản :
+contact.responsible.title = Chịu trách nhiệm chính :
+contact.headquarters.title = Trụ sở :
+contact.phone.title = Số điện thoại :
+contact.fax.title = Fax : 
+contact.email.title = Email :
+
+#Search staff info
+portlet.search_staff.portlet.title = Tra cứu cán bộ, nhân viên
+portlet.search-staff.title = THÔNG TIN LIÊN HỆ
+portlet.search-staff.portal = Cổng Thông Tin Điện Tử Tỉnh Bắc Ninh
+portlet.search-staff.search.title = THÔNG TIN LIÊN HỆ CỦA CÁN BỘ, CÔNG CHỨC
+portlet.search-staff.search.button.label = Tìm kiếm
+portlet.search-staff.search.content.title = Nội dung tìm :
+portlet.search-staff.search.type.title = Tìm kiếm theo :
+portlet.search-staff.search.organizations.title = Đơn vị công tác :
+portlet.search-staff.search.no-result = Không tìm thấy kết quả theo yêu cầu
+portlet.search-staff.search.total-result = Tổng số :
+
+portlet.search-staff.search.type.all.value = Toàn bộ
+portlet.search-staff.search.type.name.value = Họ và tên
+portlet.search-staff.search.type.role.value = Chức vụ
+portlet.search-staff.search.type.phone.value = Số điện thoại
+portlet.search-staff.search.type.email.value = Email
+
+portlet.search-staff.search.type.all.title = All
+portlet.search-staff.search.type.name.title = Name
+portlet.search-staff.search.type.role.title = Role
+portlet.search-staff.search.type.phone.title = Phone
+portlet.search-staff.search.type.email.title = Email
+
+#Userful portlet
+portlet.useful-information = Thông tin cần biết
+portlet.useful-information-market = Thông tin thị trường
+portlet.userfull_info.weather = Thời tiết
+portlet.userfull_info.foreignexchange = Tỷ giá
+portlet.userfull_info.market = Giá cả thị trường
+portlet.userfull_info.userfulphone = Số điện thoại cần biết
+
+portlet.userfull_phone.useful-contact-title = Danh bạ điện tử
+portlet.userfull_phone.useful-contact-name = Họ tên
+portlet.userfull_phone.useful-contact-phone = Số điện thoại
+portlet.userfull_phone.useful-contact-email = Email
+portlet.userfull_phone.useful-contact-works = Chức vụ
+portlet.userfull_phone.useful-contact-address = Địa chỉ
+portlet.userfull_phone.get-data-error = Không lấy được dữ liệu
+
+portlet.userfull_phone.weather-title = Thời tiết trong ngày
+portlet.userfull_phone.weather-wind-deg = Gió
+portlet.userfull_phone.weather-wind-speed = Tốc độ
+portlet.userfull_phone.weather-humidity = Độ ẩm
+portlet.userfull_phone.weather-pressure = Áp suất
+portlet.userfull_phone.weather-sunrise = Bình minh
+portlet.userfull_phone.weather-sunset = Hoàng hôn
+
+portlet.foreignexchane-title = Tỷ giá ngoại tệ trong ngày
+portlet.foreignexchange-exchangecode = Mã NT
+portlet.foreignexchange-exchangname = Tên ngoại tệ
+portlet.foreignexchange-exchangebuy = Mua tiền mặt
+portlet.foreignexchange-exchangetransfer = Mua chuyển khoản
+portlet.foreignexchange-exchangesell = Bán
+portlet.foreignexchange-loaderror = Không lấy được dữ liệu từ server
+portlet.common.paging.curPageStatusText = Trang
+
+portlet.search-staff.search.headerlist.stt = STT
+portlet.search-staff.search.headerlist.id = ID
+portlet.search-staff.search.headerlist.name = HỌ VÀ TÊN
+portlet.search-staff.search.headerlist.role = CHỨC VỤ
+portlet.search-staff.search.headerlist.phone = SỐ ĐIỆN THOẠI
+portlet.search-staff.search.headerlist.email = EMAIL
+portlet.search-staff.search.headerlist.organization = ĐƠN VỊ CÔNG TÁC
+portlet.search-staff.search.curPageStatusText = Trang
+
+#legal documents
+portlet.legaldocument.title = Văn bản quy phạm pháp luật
+portlet.search-legaldocs.search.domain.title = Chọn lĩnh vực:
+portlet.search-staff.search.type.selectlegalDomail.value = [Lĩnh vực]
+portlet.search-legaldocs.search.doccategory.title = Loại văn bản:
+portlet.search-staff.search.type.doccategory.value = [Loại văn bản]
+portlet.search-legaldocs.search.abstract.title = Trích yếu:
+portlet.search-legaldocs.search.releaseyear.title = Năm phát hành
+portlet.search-legaldocs.search.releaseyear.value = [Năm phát hành]
+portlet.search-legaldocs.search.textsymbols.title = Ký hiệu văn bản:
+portlet.search-legaldocs.search.startdatesearch.title = Từ ngày:
+portlet.search-legaldocs.search.enddatesearch.title = Đến ngày:
+portlet.search-staff.search.buttonlegalsearch.label = Tìm kiếm
+portlet.search-staff.search.buttonlegalredo.label = Làm lại
+portlet.legal_documents.table.header.doc_symbols = Số ký hiệu
+portlet.legal_documents.table.header.date_publish = Ngày ban hành
+portlet.legal_documents.table.header.description = Trích yếu
+portlet.legal_documents.table.header.doc_domain = Lĩnh vực
+portlet.legal.document.detail.label = CHI TIẾT VĂN BẢN
+portlet.legal_documents.table.header.doc.description = Trích yếu nội dung
+portlet.legaldocument.detail.date.publish = Ngày ban hành
+portlet.legaldocument.detail.category = Hình thức văn bản
+portlet.legaldocument.detail.lable.grade_publisher = Cấp ban hành
+portlet.legaldocument.detail.lable.organ_publisher = Cơ quan ban hành
+portlet.legaldocument.detail.lable.signer = Người ký
+
+#---START-----AnsweredQuestionsPortlet------------------------------
+portlet.answeredquestions.header.stt=STT	
+portlet.answeredquestions.header.cauhoi=Câu hỏi
+portlet.answeredquestions.header.nguoihoi=Người hỏi
+portlet.answeredquestions.header.ngayhoi=Ngày hỏi
+portlet.answeredquestions.header.trangthai=Trạng thái
+portlet.answeredquestions.header.portletheader=Danh sách câu hỏi và trả lời:
+#---END-----AnsweredQuestionsPortlet--------------------------------
+
+#---START-----InvestmentAdminPortlet------------------------------
+portlet.investmentadmin.form.projectname=Tên dự án
+portlet.investmentadmin.form.investmentotal=Vốn đầu tư
+portlet.investmentadmin.form.implementlocation= Địa điểm thực hiện
+portlet.investmentadmin.form.starttime=Thời gian bắt đầu
+portlet.investmentadmin.form.endtime=Thời gian kết thúc
+portlet.investmentadmin.form.projectpurpose=Mục tiêu dự án
+portlet.investmentadmin.form.chartercapital=Vốn điều lệ
+portlet.investmentadmin.form.projectcategory=Danh mục dự án
+portlet.investmentadmin.form.investmentform=Hình thức đầu tư
+portlet.investmentadmin.form.competentorganization=Cơ quan nhà nước có thẩm quyền
+portlet.investmentadmin.form.keyproject=Dự án trọng điểm
+portlet.investmentadmin.form.technicalspecifications=Tóm tắt thông số kỹ thuật
+portlet.investmentadmin.title=Thêm dự án 
+portlet.investmentadmin.table.action=Thay đổi
+portlet.investmentadmin.header.action=Hành động
+
+#AdminScheduleQuestionsPortlet
+portlet.adminschedule.header.no=STT
+portlet.adminschedule.header.username=Họ Tên
+portlet.adminschedule.jobname=Chức Vụ
+portlet.adminschedule.allowdisplay=Hiển Thị Lịch
+portlet.adminschedule.userstable.title=Cấu Hình Hiển Thị Lịch Làm Việc Theo Người Dùng
+portlet.adminschedule.usersweektable.title=Lịch Làm Việc
+portlet.adminschedule.usersweektable.edittitle=Thay Đổi Lịch Làm Việc
+
+portlet.schedule.header.userName = 
+portlet.schedule.button.search=Tìm kiếm
+portlet.schedule.title=Lịch làm việc của Ủy ban nhân dân
+portlet.schedule.month=Tháng
+portlet.schedule.year=Năm
+portlet.schedule.weektitle=Lịch làm việc tuần
+portlet.schedule.weekstart=Từ ngày
+portlet.schedule.weeksuffix= 
+portlet.schedule.header.dateformat=(dd/MM)
+portlet.schedule.title.dateformat=dd/MM/yyyy
+portlet.schedule.config.title=Hiển thị lịch làm việc
+portlet.schedule.viewmode.currentweek=Theo tuần hiện tại
+portlet.schedule.viewmode.all=Tất cả
+
+#++START QUESTION SUBMIT AREA
+portlet.questionsubmit.title = Hỏi &amp; Đáp
+portlet.questionsubmit.notice1 = Chú ý
+portlet.questionsubmit.notice2 = thông tin bắt buộc
+portlet.questionsubmit.citizenname = Họ tên người hỏi
+portlet.questionsubmit.citizenaddress = Địa chỉ liên lạc
+portlet.questionsubmit.citizenphone = Điện thoại
+portlet.questionsubmit.citizenemail = Email
+portlet.questionsubmit.questiontitle = Tóm tắt nội dung, vướng mắc, bất cập của vấn đề cần phản ánh kiến nghị
+portlet.questionsubmit.questiontypes = Chủ đề phản ánh - kiến nghị
+portlet.questionsubmit.questioncontent = Nội dung, vướng mắc, bất cập của vấn đề cần phản ánh kiến nghị
+portlet.questionsubmit.captchacode = Nhập mã xác nhận
+portlet.questionsubmit.submitbutton = Gửi câu hỏi
+portlet.questionsubmit.error.captcha = Sai mã xác nhận
+portlet.questionsubmit.success = Gửi câu hỏi thành công
+
+#++END QUESTION SUBMIT AREA
+# Start Admin Qa management #
+
+portlet.questionLists.header.ques_stt = STT
+portlet.questionLists.header.ques_title = Câu hỏi
+portlet.questionLists.header.ques_cityzen = Người hỏi
+portlet.questionLists.header.ques_date_create = Ngày hỏi
+portlet.questionLists.header.ques_status = Trạng thái
+portlet.questionLists.citizen_name = Người hỏi :
+portlet.questionLists.citizen_add = Địa chỉ liên lạc :
+portlet.questionLists.ques_title = Tiêu đề :
+portlet.questionLists.ques_content = Nội dung câu hỏi :
+portlet.questionLists.ques_answer = Nội dung trả lời :
+portlet.questionLists.button.submit = Gửi câu trả lời
+portlet.questionLists.button.reject = Loại bỏ câu hỏi
+portlet.questionLists.button.cancel = Bỏ qua câu hỏi
+
+# End Admin Qa management #
+
+#+++ START ++++++++ CONG BAO TINH PORTLET ++++++
+portlet.public_news.title = Công báo tỉnh
+portlet.public_news.result.title = Kết quả tìm kiếm
+portlet.public_news.details.title = Chi tiết công báo : 
+portlet.public_news.search.content.label = Tìm kiếm 
+portlet.public_news.search.year.label = Năm phát hành
+portlet.public_news.search.publisher_date.label = Ngày phát hành
+portlet.public_news.search.effect_date.label = Ngày hiệu lực
+portlet.public_news.search.number.label = Số công báo
+portlet.public_news.search.key.label = Số/Ký hiệu
+portlet.public_news.search.signer.label = Người ký
+portlet.public_news.search.type.label = Loại
+portlet.public_news.search.fields.label = Lĩnh Vực
+portlet.public_news.search.quote.label = Trích dẫn
+portlet.public_news.search.publisher.label = Cơ quan ban hành
+portlet.public_news.search.attach_file.label = File đính kèm
+portlet.public_news.search.button = Tìm kiếm
+portlet.public_news.search.all.title = Toàn bộ
+portlet.public_news.table.header.stt = STT
+portlet.public_news.table.header.number = SỐ/KÝ HIỆU
+portlet.public_news.table.header.date_publish = NGÀY BAN HÀNH
+portlet.public_news.table.header.publish = CƠ QUAN BAN HÀNH
+portlet.public_news.table.page = Trang
+#+++ END ++++++++ CONG BAO TINH PORTLET ++++++
+
+portlet.adminsitemap.message.confirm.delete=Bạn có chắc muốn xóa?
+portlet.adminsitemap.message.delete.success=Xóa thành công!
+portlet.adminsitemap.select.choose.option=Chọn làm thư mục gốc
+portlet.adminsitemap.sitemap.name= Nhập tên trang ở đây
+portlet.adminsitemap.sitemap.link=Nhập đường đẫn
+portlet.adminsitemap.list.sitemap=Danh sách sơ đồ cổng
+portlet.adminsitemap.addsitemap=Thêm một trang
+portlet.adminsitemap.update.sitemap = Cập nhật 
+portlet.adminsitemap.message.alert.name = Không được bỏ trống tên trang
+portlet.adminsitemap.message.alert.link = Không được bỏ trống đường đẫn
+portlet.adminsitemap.reset=Hủy bỏ
+
+# Start investment and development portlet #
+portlet.investmentanddevelopment.investamount=Tổng vốn đầu tư
+portlet.investmentanddevelopment.header.ques_stt=STT
+portlet.investmentanddevelopment.header.investmentname=Tên dự án đầu tư
+portlet.investmentanddevelopment.header.ques_title=Danh mục đầu tư
+portlet.investmentanddevelopment.checkbox.keyproject=Dự án trọng điểm
+portlet.investmentanddevelopment.category=Danh mục
+portlet.investmentanddevelopment.usd=(Triệu USD)
+portlet.investmentanddevelopment.vnd=(Tỷ VND)
+portlet.investmentanddevelopment.chartercapitar=Vốn điều lệ
+portlet.investmentanddevelopment.localtion=Địa điểm thực hiện
+portlet.investmentanddevelopment.timeprocess=Thời gian dự án
+portlet.investmentanddevelopment.target=Mục tiêu hoạt động
+portlet.investmentanddevelopment.attachfile=Văn bản đính kèm
+
+# End investment and development portlet #
+
+#+++ START ++++++++ CONTACT PORTLET ++++++
+portlet.contact.title = Danh bạ điện tử
+portlet.contact.table.header.stt = STT
+portlet.contact.table.header.name = Họ Tên
+portlet.contact.table.header.regency = Chức vụ
+portlet.contact.table.header.phone = Điện thoại
+portlet.contact.table.header.email = Thư điện tử
+portlet.contact.department = Đơn vị
+
+#+++ END ++++++++ CONTACT PORTLET ++++++
+
+#+++ END ++++++++ CONTACT PORTLET ++++++
+
+#+++ START ++++++++ VIDEO PLAYER PORTLET ++++++
+portlet.video_player.title = Video
+#+++ END ++++++++ VIDEO PLAYER PORTLET ++++++
+
+############## START - STRUCTURE NAME ##############  
+portal.structure.name.publicnews=Công báo
+portal.structure.name.publicadministrationprocedure=Danh mục thủ tục hành chính
+############## END - STRUCTURE NAME ##############
+
+############## START - STRUCTURE SELECTION LIST ##############
+portal.structure.selectionlist.publicnews.fields=fields
+portal.structure.selectionlist.publicnews.type=type
+portal.structure.selectionlist.publicnews.publisher=publisher
+portal.structure.selectionlist.publicadministrationprocedure.field=field
+portal.structure.selectionlist.publicadministrationprocedure.organizations=organizations
+
+############## END - STRUCTURE SELECION LIST ##############
+portal.structure.selectionlist.publicadministrationprocedure.field=field
+portal.structure.selectionlist.publicadministrationprocedure.organizations=organizations
+
+############## END - STRUCTURE SELECION LIST ##############
+
+portlet.publicadministrationprocedure.search= Tìm kiếm
+portlet.publicadministrationprocedure.field= Lĩnh vực
+portlet.publicadministrationprocedure.numpage=Hiển thị
+portlet.publicadministrationprocedure.agencie.and.sectors=Cơ quan ban ngành
+portlet.publicadministrationprocedure.table.header.title=Tên thủ tục hành chính
+portlet.publicadministrationprocedure.table.header.fields=Lĩnh vực
+portlet.publicadministrationprocedure.title=Thủ tục hành chính công
+portlet.publicadministrationprocedure.content.search=Nội dung
+
+portlet.publicadministrationprocedure.name.procedure=Tên thủ tục hành chính	
+portlet.publicadministrationprocedure.order=Trình tự thực hiện
+portlet.publicadministrationprocedure.perform=Cách thứ thực hiện
+portlet.publicadministrationprocedure.profile=Thành phần hồ sơ
+portlet.publicadministrationprocedure.resolution=Thời gian giải quyết
+portlet.publicadministrationprocedure.object.procedure=Đối tượng thục hiện thủ tục
+portlet.publicadministrationprocedure.object.ororganizations=Cơ quan thục hiện thủ tục
+portlet.publicadministrationprocedure.result=Kết quả thực hiện thủ tục
+portlet.publicadministrationprocedure.fees=Lệ phí
+portlet.publicadministrationprocedure.application=Tên mẫu đơn, mẫu tờ khai
+portlet.publicadministrationprocedure.requirement=Yêu cầu, điều kiện
+portlet.publicadministrationprocedure.legal.basis=Căn cứ pháp lý thủ tục
+portlet.publicadministrationprocedure.contact=Thông tin liên hệ
+portlet.publicadministrationprocedure.attach.document=Văn bản đính kèm
+portlet.publicadministrationprocedure.title.click.detail=Chi tiết thủ tục hành chính
+portlet.common.paging.itemsPerPageText=Tổng số bản ghi

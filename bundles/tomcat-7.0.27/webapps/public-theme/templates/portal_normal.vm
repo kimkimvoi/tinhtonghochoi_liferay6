@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+#parse ($init)
+
+<html class="#language("lang.dir") html_css" dir="#language("lang.dir")" lang="$w3c_language_id">
+
+<head>
+	<title>$the_title </title>
+	 ##$company_name
+
+	$theme.include($top_head_include)
+	#js ("$javascript_folder/jquery-1.9.1.js")	
+	#js ("$javascript_folder/jquery-ui.js")	
+	#js ("$javascript_folder/flowplayer-3.2.12.min.js")
+	#js ("$javascript_folder/customs.js")
+	#js ("$javascript_folder/jquery.slides.min.js")
+	#js ("$javascript_folder/mustache.js")
+	#js ("$javascript_folder/underscore.js")
+	#js ("$javascript_folder/jcarousellite_1.0.1.min.js")
+</head>
+
+<body class="$css_class">
+
+$theme.include($body_top_include)
+
+#if ($is_signed_in)
+	#dockbar()
+#end
+
+<div id="wrapper"  class="clearfix">
+	<div id="header">
+     	<div class="logo"><a href="#"></a></div> 
+        <div class="boxright_top">
+        	<div class="box_list">
+            	<div class="box_tk">
+                	$theme.search()
+                </div>
+                #if (!$is_signed_in)
+					<a href="$sign_in_url" id="sign-in" rel="nofollow">$sign_in_text</a>
+				#end
+            </div>
+        </div> 
+    </div>
+	<div id="navi">
+		#if ($has_navigation || $is_signed_in)
+			#parse ("$full_templates_path/navigation.vm")
+		#end
+	</div>
+	<div id="content">
+		
+		#if ($selectable)
+			$theme.include($content_include)
+		#else
+			$portletDisplay.recycle()
+
+			$portletDisplay.setTitle($the_title)
+
+			$theme.wrapPortlet("portlet.vm", $content_include)
+		#end
+	</div>
+	
+	     <!--++footer-->
+    <div id="footer" class="clearfix" role="contentinfo">
+        <div class="footer">
+        	$footer-content
+        </div>
+          <a class="icon_top" style="display: none" href="#"></a>
+    </div>
+     <!--// end footer -->
+	
+</div>
+
+$theme.include($body_bottom_include)
+
+</body>
+
+$theme.include($bottom_include)
+
+</html>

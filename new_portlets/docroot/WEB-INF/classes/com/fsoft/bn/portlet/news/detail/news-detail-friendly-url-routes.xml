@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE routes PUBLIC "-//Liferay//DTD Friendly URL Routes 6.1.0//EN" "http://www.liferay.com/dtd/liferay-friendly-url-routes_6_1_0.dtd">
+
+<routes>
+	<route>
+		<pattern>/{structId}/{categoryId}/{articleId}/{version}</pattern>
+		<ignored-parameter name="p_p_cacheability" />
+		<ignored-parameter name="news-detail-categoryId"/>
+		<ignored-parameter name="news-detail-structId"/>
+		<ignored-parameter name="news-detail-articleId"/>
+		<ignored-parameter name="news-detail-version"/>
+	</route>
+	
+	<route>
+		<pattern>/{articleId}/{version}</pattern>
+		<ignored-parameter name="p_p_cacheability" />
+		<ignored-parameter name="news-detail-articleId"/>
+		<ignored-parameter name="news-detail-version"/>
+	</route>
+	
+	<route>
+		<pattern>/{structId}/{articleId}/{version}</pattern>
+		<ignored-parameter name="p-p-cacheability" />
+		<ignored-parameter name="news-detail-structId"/>
+		<ignored-parameter name="news-detail-articleId"/>
+		<ignored-parameter name="news-detail-version"/>
+	</route>
+</routes>

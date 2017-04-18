@@ -1,0 +1,48 @@
+## comment in .VM file
+<div class="$nav_css_class box_menu" id="navigation">
+	<ul class="menutop clearfix">
+		#foreach ($nav_item in $nav_items)
+			#if ($nav_item.isSelected())
+				<li class="active">
+			#else
+				<li>
+			#end
+				<a href="$nav_item.getURL()" $nav_item.getTarget()><span>$nav_item.icon() #language($nav_item.getName())</span></a>
+				
+				#if ($nav_item.hasChildren())
+					<span class="icon_row"></span>
+					## Create class 'column' for div submenu
+					#if($nav_item.getChildren().size() >= 4)
+						<div class="submenu column4">
+					#else
+						<div class="submenu column$nav_item.getChildren().size()">
+					#end
+					
+					#foreach ($nav_child in $nav_item.getChildren())
+						<ul class="child-menu submenu">
+							<li class="title">
+								#language($nav_child.getName())
+							</li>
+							#if ($nav_child.hasChildren())
+								#foreach ($nav_sub_child in $nav_child.getChildren())
+									#if ($nav_child.isSelected())
+										<li class="active">
+									#else
+										<li>
+									#end
+										<a href="$nav_sub_child.getURL()" $nav_sub_child.getTarget()>#language($nav_sub_child.getName())</a>
+									</li>
+								#end
+							#end
+							
+						</ul>
+					#end
+					</div>
+				#end
+			</li>
+		#end
+		<li class="box_search">
+            $theme.search()
+        </li>
+	</ul>
+</div>

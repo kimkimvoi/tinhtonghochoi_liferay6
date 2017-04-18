@@ -1,0 +1,99 @@
+.analytic-portlet {
+  /*style new*/ }
+  .analytic-portlet .portlet-content, .analytic-portlet .portlet-minimized .portlet-content-container {
+    padding: 0; }
+  .analytic-portlet .portlet-topper {
+    border-width: 0; }
+  .analytic-portlet .portlet-title {
+    display: none; }
+  .analytic-portlet .portlet-body {
+    background: none !important;
+    /* display: inline-block; */ }
+  .analytic-portlet h2.title_tab {
+    width: 100%;
+    float: left;
+    background-color: #fda164;
+    height: 29px;
+    line-height: 29px;
+    font-size: 13px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase; }
+  .analytic-portlet h2.title_tab span {
+    display: block;
+    border-left: 7px solid #ffd126; }
+  .analytic-portlet h2.title_tab a {
+    color: #fff; }
+  .analytic-portlet .box-commons {
+    width: 100%;
+    float: left;
+    margin-bottom: 10px; }
+  .analytic-portlet .box_cdtu {
+    /* background: url("../../../images/bg_content_right.png") no-repeat left bottom; */
+    border: 1px solid #CCCCCC;
+    border-radius: 0 0 5px 5px;
+    background-color: #FFF;
+    float: left;
+    width: 250px;
+    padding-bottom: 12px;
+    margin-bottom: 10px; }
+  .analytic-portlet .box_cdtu .content_small {
+    width: 100%;
+    float: left;
+    color: #6f310a;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 12px; }
+  .analytic-portlet .box_cdtu .content_small .time {
+    display: inline-block;
+    font-size: 11px;
+    text-align: center;
+    color: #6f310a;
+    font-weight: normal;
+    font-style: italic; }
+  .analytic-portlet .box_analytic_config {
+    width: 780px;
+    height: auto;
+    float: left; }
+  .analytic-portlet #box_adm_config_analytic {
+    /* width: 300px; */
+    height: auto; }
+  .analytic-portlet .analytic_config_title {
+    width: 100%;
+    height: 30px; }
+  .analytic-portlet div.analytic_option {
+    margin: 10px 0 10px 0; }
+  .analytic-portlet a.analytic_data p {
+    color: #FF0000;
+    font-size: 40px;
+    margin: 25px 0; }
+  .analytic-portlet .box_multi_option {
+    text-align: left; }
+  .analytic-portlet .box_multi_option ul {
+    display: inline-block;
+    list-style: none outside none;
+    margin: 6px; }
+  .analytic-portlet .box_multi_option ul li {
+    color: #333333;
+    float: left;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 18px;
+    width: 100%; }
+  .analytic-portlet .box_multi_option ul li p {
+    margin: 0;
+    padding: 1px;
+    clear: none;
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px; }
+  .analytic-portlet .box_analytic_config_multi p {
+    clear: none;
+    font-size: 12px;
+    display: inline;
+    line-height: 25px; }
+  .analytic-portlet .portlet {
+    display: inline-block; }
+

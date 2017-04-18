@@ -1,0 +1,184 @@
+.hot-news-portlet {
+  /* 	#slide_news_hot div.photo {
+  	    margin-right: 13px;
+  	    position: relative;
+  	    width: 163px;
+  	}
+  	 */ }
+  .hot-news-portlet .box_new_more {
+    float: left;
+    min-height: 410px;
+    overflow: hidden;
+    width: 684px; }
+  .hot-news-portlet .portlet-body {
+    background-color: rgba(0, 0, 0, 0); }
+  .hot-news-portlet .box_new_more .news {
+    float: left;
+    width: 100%; }
+  .hot-news-portlet .box_new_more .news .img {
+    float: left;
+    height: 230px;
+    width: 340px;
+    margin: 4px;
+    border: 1px solid #ccc;
+    padding: 1px; }
+  .hot-news-portlet .box_new_more .news .boxtext {
+    margin-left: 360px; }
+  .hot-news-portlet .box_new_more .news .boxtext .title {
+    color: #6F310A;
+    float: left;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 18px;
+    margin: 0 0 15px;
+    width: 100%; }
+  .hot-news-portlet .box_new_more .news {
+    padding-bottom: 0 !important; }
+  .hot-news-portlet .box_new_more .news .boxtext .title a {
+    color: #6F310A;
+    outline: medium none;
+    text-decoration: none; }
+  .hot-news-portlet .box_new_more .news .boxtext .text {
+    color: #333333;
+    float: left;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: left;
+    width: 100%; }
+  .hot-news-portlet .portlet-topper {
+    border-width: 0; }
+  .hot-news-portlet .portlet-title {
+    display: none; }
+  .hot-news-portlet .portlet {
+    border: none;
+    background: none!important;
+    padding: 0; }
+  .hot-news-portlet .portlet-content, .hot-news-portlet .portlet-minimized .portlet-content-container {
+    padding: 0; }
+  .hot-news-portlet .portlet-topper-toolbar {
+    z-index: 1000; }
+  .hot-news-portlet #slide_news_hot {
+    float: left;
+    min-height: 135px;
+    margin: auto;
+    position: relative;
+    width: 692px;
+    margin-left: 5px; }
+  .hot-news-portlet #slide_news_hot img {
+    border: medium none;
+    height: 113px;
+    width: 182px;
+    margin-bottom: 2px;
+    margin-top: 2px; }
+  .hot-news-portlet #slide_news_hot .photo h3 {
+    color: #034EA2;
+    display: block;
+    font-size: 11px;
+    margin-left: 1px;
+    text-align: left;
+    width: 174px; }
+  .hot-news-portlet #slide_news_hot .photo h3 a {
+    color: #034EA2;
+    outline: medium none;
+    text-decoration: none;
+    font-weight: normal; }
+  .hot-news-portlet #slide_news_hot .navPrev, .hot-news-portlet #slide_news_hot .navNext, .hot-news-portlet #slide_news_hot .navPlay, .hot-news-portlet #slide_news_hot .navPause {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    background: url(../images/button_next_pre.png);
+    display: inline-block;
+    z-index: 5;
+    cursor: pointer; }
+  .hot-news-portlet #slide_news_hot .navPrev {
+    background-position: 0 0px;
+    top: 39px;
+    left: 0px; }
+  .hot-news-portlet #slide_news_hot .navPrev:hover {
+    background-position: 0 -83px; }
+  .hot-news-portlet #slide_news_hot .navPrevDisabled, .hot-news-portlet #slide_news_hot .navPrevDisabled:hover {
+    background-position: 0 0;
+    cursor: default; }
+  .hot-news-portlet #slide_news_hot .navNext {
+    background-position: 0px -43px;
+    top: 39px;
+    right: 60px; }
+  .hot-news-portlet #slide_news_hot .navNext:hover {
+    background-position: 0px -126px; }
+  .hot-news-portlet #slide_news_hot .navNextDisabled, .hot-news-portlet #slide_news_hot.navNextDisabled:hover {
+    background-position: -16px 0;
+    cursor: default; }
+  .hot-news-portlet #slide_news_hot .navPause, .hot-news-portlet #slide_news_hot .navPlay {
+    left: 360px;
+    top: 130px; }
+  .hot-news-portlet #slide_news_hot .navPause {
+    background-position: 0 -66px;
+    display: none; }
+  .hot-news-portlet #slide_news_hot .navPause:hover {
+    background-position: 0 -88px; }
+  .hot-news-portlet #slide_news_hot .navPlay {
+    background-position: -16px -66px; }
+  .hot-news-portlet #slide_news_hot .navPlay:hover {
+    background-position: -16px -88px; }
+  .hot-news-portlet .navPrev, .hot-news-portlet .navPlay, .hot-news-portlet .navPause, .hot-news-portlet .navNext {
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none; }
+  .hot-news-portlet #slide_news_hot .navBullets {
+    display: none; }
+  .hot-news-portlet .portlet {
+    display: inline-block; }
+  .hot-news-portlet .quantityItemForSlide, .hot-news-portlet .topviews, .hot-news-portlet .latestNews, .hot-news-portlet .startTime, .hot-news-portlet .endTime, .hot-news-portlet .isHotNews {
+    position: relative;
+    float: left;
+    width: 100%; }
+  .hot-news-portlet .topviews, .hot-news-portlet .latestNews, .hot-news-portlet .isHotNews {
+    padding: 0 5px; }
+  .hot-news-portlet .quantityItemForSlide, .hot-news-portlet .startTime, .hot-news-portlet .endTime {
+    padding: 10px 5px; }
+  .hot-news-portlet .latestNew {
+    padding-top: 0; }
+  .hot-news-portlet .quantityItemForSlide span, .hot-news-portlet .topviews span, .hot-news-portlet .latestNews span, .hot-news-portlet .startTime span, .hot-news-portlet .endTime span, .hot-news-portlet .isHotNews span {
+    float: left; }
+  .hot-news-portlet .quantityItemForSlide .taglib-icon-help, .hot-news-portlet .topviews .taglib-icon-help, .hot-news-portlet .latestNews .taglib-icon-help, .hot-news-portlet .isHotNews .taglib-icon-help {
+    padding-top: 6px;
+    padding-left: 10px; }
+  .hot-news-portlet .textAlignRight {
+    float: left;
+    padding-right: 10px; }
+  .hot-news-portlet .aui-field-label, .hot-news-portlet .aui-field-label-inline-label {
+    display: none; }
+
+/* Tooltip -Styles */
+.tooltip {
+  padding: 5px;
+  font-size: 11px;
+  opacity: 0.85;
+  filter: alpha(opacity=85);
+  background-repeat: no-repeat;
+  background-image: url(../images/tooltip.gif); }
+
+.tooltip-inner {
+  padding: 5px 10px;
+  max-width: 200px;
+  pointer-events: none;
+  color: white;
+  text-align: center;
+  background-color: black;
+  border-radius: 3px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.25); }
+
+.tooltip-bottom {
+  background-position: top center; }
+
+.tooltip-top {
+  background-position: bottom center; }
+
+.tooltip-left {
+  background-position: right center; }
+
+.tooltip-right {
+  background-position: left center; }
+

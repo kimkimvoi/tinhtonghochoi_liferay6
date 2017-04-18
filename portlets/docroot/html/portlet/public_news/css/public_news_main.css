@@ -1,0 +1,223 @@
+
+	.public_news .box_congbao {
+		width: 96%;
+		float: left;
+		padding: 2%;
+	}
+	
+	.public_news .box_congbao ul.list_tracuu { /* width:53%; */
+		float: left;
+		margin-right: 30px;
+		width: 60%;
+	}
+	
+	.public_news .box_congbao ul.list_tracuu li {
+		width: 100%;
+		float: left;
+		margin-bottom: 10px;
+		list-style: none;
+	}
+	
+	.public_news .box_congbao ul.list_tracuu li label {
+		float: left;
+		width: 150px;
+		line-height: 25px;
+		text-align:right;
+		color: #333;
+		font-size: 12px;
+		font-weight: bold;
+		
+	}
+	
+	.public_news .box_congbao ul.list_tracuu li .input {
+		width: 250px;
+		float: right;
+		border: 1px solid #ccc;
+		text-align: left;
+		color: #555;
+		font-size: 12px;
+		height: 23px;
+		line-height: 23px;
+		padding: 0;
+	}
+	
+	.public_news .box_congbao ul.list_tracuu li .select {
+		width: 252px;
+		float: right;
+		border: 1px solid #ccc;
+		text-align: left;
+		color: #555;
+		font-size: 12px;
+		line-height: 23px;
+		padding: 5px;
+	}
+	
+	.public_news .box_congbao ul.list_tracuu li .buttons {
+	    background: url("../../../images/button/buttons.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+	    border: 0 none;
+	    color: #FFFFFF;
+	    cursor: pointer;
+	    display: inline-block;
+	    font-size: 14px;
+	    height: 26px;
+	    line-height: 26px;
+	    text-align: center;
+	    width: 91px;
+	}
+	
+	.public_news .box_congbao .boxlist_tracuu {
+		width: 100%;
+		float: left;
+		margin-bottom: 10px;
+		margin-top: 20px;
+	}
+	
+	.public_news h2.title_tab label {
+		border-left: 7px solid #FFD126;
+		display: block;
+		padding-left: 7px;
+		text-align: left;
+	}
+	
+	.public_news h2.title_tab {
+		background-color: #FDA164;
+		color: #FFFFFF;
+		float: left;
+		font-size: 13px;
+		font-weight: bold;
+		height: 29px;
+		line-height: 29px;
+		text-align: center;
+		text-transform: uppercase;
+		width: 100%;
+		margin: 0;
+	}
+	
+	.public_news .box_bg {
+		background: none repeat scroll 0 0 #FFFFFF;
+		border: 1px solid #CCCCCC;
+		border-radius: 0 0 5px 5px;
+		float: left;
+		margin-bottom: 5px;
+		min-height: 150px;
+		overflow: hidden;
+		width: 728px;
+	}
+	
+	.public_news .list_result, .public_new_details{
+		margin-bottom: 20px;
+	    margin-left: 20px;
+	    margin-right: 20px;
+	}
+	
+	.public_news .list_result table {
+		width: 100%;
+		border: 1px solid #cdcdcd;
+		border-collapse: collapse;
+	}
+	
+	.public_news .list_result table td,.list_result table th
+		{
+		border: 1px solid #cdcdcd;
+		font-size: 12px;
+		color: #333;
+		padding: 3px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+	
+	.public_news .list_result table td {
+		line-height: 20px;
+	}
+	
+	.public_news .list_result table th {
+		font-weight: bold;
+		background-color: #efefef;
+		color: #111;
+	}
+	
+	.public_news .list_result table tr:hover {
+		background-color: #fcf5d6;
+		cursor: pointer;
+	}
+	
+	.public_news .list_result table td a {
+		color: #6F310A;
+	}
+	
+	.public_news .list_result table td a:hover {
+		text-decoration: underline;
+	}
+	
+	
+	.public_new_details table {
+		width:100%;
+		border:1px solid #cdcdcd;
+		border-collapse:collapse;
+		margin-bottom:20px;
+		}
+	.public_new_details table td, .public_new_details table th {
+		border:1px solid #cdcdcd;
+		font-size:12px;
+		color:#333;
+		padding:3px;
+		padding-top:5px;
+		padding-bottom:5px;
+		}
+	.public_new_details table td { line-height:20px;}	
+	.public_new_details table th {
+		font-weight:bold;
+		background-color:#efefef;
+		color:#111;
+		}
+	.public_new_details table tr:hover {
+		background-color:#fcf5d6;
+		}
+	.public_new_details table td a {color:#6F310A;}	
+	.public_new_details table td a:hover { text-decoration:underline;}
+	
+	.list_result h2.title_tab label, .public_new_details h2.title_tab label {
+	    border-left: 0px solid #FFD126;
+	    display: block;
+	    padding-left: 5px;
+	    text-align: left;
+	    float: left;
+	}
+	
+	.list_result h2.title_tab, .public_new_details h2.title_tab {
+	    background-color: #FFFFFF;
+	    color: #000000;
+	}
+	
+	.public_new_details #details_title{
+		margin-left: 30px;
+		font-weight: normal;
+	}
+	
+	.pagingNumber {
+	    background: none repeat scroll 0 0 #FFFFFF;
+	    border: 1px solid #CCCCCC;
+	    border-radius: 23px;
+	    color: #333333;
+	    font-size: 12px;
+	    font-weight: bold;
+	    height: 23px;
+	    line-height: 23px;
+	    margin-left: 6px;
+	    padding: 5px 9px;
+	    text-align: center;
+	    width: 23px;
+	}
+	
+	#details_file_attach{
+		line-height: 0;
+	}
+	#details_file_attach .file_attach_icon{
+		background-image: url("../../../images/icons/icon_attachment.png");
+		height: 25px;
+	    margin: 0 5px;
+	    width: 25px;
+		float: left;
+	}	
+	
+

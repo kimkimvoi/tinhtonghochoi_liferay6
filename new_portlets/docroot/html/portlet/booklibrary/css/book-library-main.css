@@ -1,0 +1,45 @@
+.book-library-portlet {
+h3.title_group {
+	background-color: #f9f9f9;
+	border-top: 1px solid #fcd466;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 10px;
+	text-transform: uppercas;
+	width: 98%;
+}
+
+.bookSelectDiv {
+	margin-top: 10px;
+	margin-left: 13px;
+}
+.container {
+	margin-top: 10px;
+	display: table;
+}
+.book {
+	float: left;
+	overflow: hidden;
+	text-align: center;
+	height: 240px;
+	width: 144px;
+	margin: 0 6px 10px;
+	padding: 0 7px 4px;
+}
+a:link, a:visited, a:active {
+	color: #2e3333;
+	text-decoration: none;
+}
+a:hover {
+	color: #c00;
+}
+.picture {
+	width: 144px;
+	height: 180px;
+}
+.picture img {
+	box-shadow: 2px 2px 2px 2px #e7e7e7;
+	height: 170px;
+	max-width: 130px;
+}	
+}

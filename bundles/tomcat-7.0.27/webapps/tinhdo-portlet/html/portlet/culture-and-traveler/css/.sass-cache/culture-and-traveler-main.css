@@ -1,0 +1,267 @@
+.cultureandtraveler-portlet .portlet-topper {
+  border-width: 0; }
+.cultureandtraveler-portlet .portlet-title {
+  display: none; }
+.cultureandtraveler-portlet .portlet {
+  border: none;
+  background: none!important;
+  padding: 0;
+  display: inline-block;
+  margin-bottom: 0; }
+.cultureandtraveler-portlet .portlet-content, .cultureandtraveler-portlet .portlet-minimized .portlet-content-container {
+  padding: 0; }
+.cultureandtraveler-portlet .portlet-topper-toolbar {
+  z-index: 1000; }
+.cultureandtraveler-portlet .portlet-borderless-container {
+  display: inline-block; }
+.cultureandtraveler-portlet .portlet-boundary, .cultureandtraveler-portlet .portlet-body {
+  width: 100%;
+  background-color: transparent;
+  margin-bottom: 5px; }
+.cultureandtraveler-portlet .box_new_more {
+  background: url("../images/bg_hotnew.png") repeat-x scroll left bottom white;
+  border: 1px solid #CCCCCC;
+  border-radius: 0 0 5px 5px;
+  float: left;
+  min-height: 410px;
+  overflow: hidden;
+  width: 726px; }
+.cultureandtraveler-portlet .box_new_more .news {
+  float: left;
+  margin-bottom: 22px;
+  width: 100%; }
+.cultureandtraveler-portlet .box_new_more .news .content_news {
+  display: inline-block;
+  padding: 15px 15px 0; }
+.cultureandtraveler-portlet .box_new_more .news .img {
+  float: left;
+  height: 230px;
+  width: 340px; }
+.cultureandtraveler-portlet .box_new_more .news .boxtext {
+  margin-left: 360px; }
+.cultureandtraveler-portlet .box_new_more .news .boxtext .title {
+  color: #6F310A;
+  float: left;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 18px;
+  margin: 0 0 15px;
+  width: 100%; }
+.cultureandtraveler-portlet .box_new_more .news .boxtext .title a {
+  color: #6F310A;
+  outline: medium none;
+  text-decoration: none; }
+.cultureandtraveler-portlet .box_new_more .news .boxtext .text {
+  color: #333333;
+  float: left;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: left;
+  width: 100%; }
+.cultureandtraveler-portlet #slide_culture_hot {
+  float: left;
+  min-height: 165px;
+  position: relative;
+  width: 692px;
+  margin: 0 15px; }
+.cultureandtraveler-portlet #slide_culture_hot div.photo {
+  margin-right: 13px;
+  position: relative;
+  width: 163px; }
+.cultureandtraveler-portlet #slide_culture_hot img {
+  border: medium none;
+  height: 110px;
+  width: 163px; }
+.cultureandtraveler-portlet #slide_culture_hot .photo h3 {
+  color: #444444;
+  display: block;
+  font-size: 11px;
+  font-weight: bold;
+  margin-top: 8px;
+  text-align: left;
+  width: 163px;
+  margin-right: 10px; }
+.cultureandtraveler-portlet #slide_culture_hot .photo h3 a {
+  color: #444444;
+  outline: medium none;
+  text-decoration: none; }
+.cultureandtraveler-portlet #slide_culture_hot .navPrev, .cultureandtraveler-portlet #slide_culture_hot .navNext, .cultureandtraveler-portlet #slide_culture_hot .navPlay, .cultureandtraveler-portlet #slide_culture_hot .navPause {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  background: url(../images/button_next_pre.png);
+  display: inline-block;
+  z-index: 5;
+  cursor: pointer; }
+.cultureandtraveler-portlet #slide_culture_hot .navPrev {
+  background-position: 0 0px;
+  top: 39px;
+  left: 0px; }
+.cultureandtraveler-portlet #slide_culture_hot .navPrev:hover {
+  background-position: 0 -83px; }
+.cultureandtraveler-portlet #slide_culture_hot .navPrevDisabled, .cultureandtraveler-portlet #slide_culture_hot .navPrevDisabled:hover {
+  background-position: 0 0;
+  cursor: default; }
+.cultureandtraveler-portlet #slide_culture_hot .navNext {
+  background-position: 0px -43px;
+  top: 39px;
+  right: 10px; }
+.cultureandtraveler-portlet #slide_culture_hot .navNext:hover {
+  background-position: 0px -126px; }
+.cultureandtraveler-portlet #slide_culture_hot .navNextDisabled, .cultureandtraveler-portlet #slide_culture_hot.navNextDisabled:hover {
+  background-position: -16px 0;
+  cursor: default; }
+.cultureandtraveler-portlet #slide_culture_hot .navPause, .cultureandtraveler-portlet #slide_culture_hot .navPlay {
+  left: 360px;
+  top: 130px; }
+.cultureandtraveler-portlet #slide_culture_hot .navPause {
+  background-position: 0 -66px;
+  display: none; }
+.cultureandtraveler-portlet #slide_culture_hot .navPause:hover {
+  background-position: 0 -88px; }
+.cultureandtraveler-portlet #slide_culture_hot .navPlay {
+  background-position: -16px -66px; }
+.cultureandtraveler-portlet #slide_culture_hot .navPlay:hover {
+  background-position: -16px -88px; }
+.cultureandtraveler-portlet .navPrev, .cultureandtraveler-portlet .navPlay, .cultureandtraveler-portlet .navPause, .cultureandtraveler-portlet .navNext {
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  user-select: none; }
+.cultureandtraveler-portlet #slide_culture_hot .navBullets {
+  display: none; }
+.cultureandtraveler-portlet h2 {
+  margin: 0; }
+.cultureandtraveler-portlet h2.title_tab {
+  background-color: #FDA164;
+  color: #FFFFFF;
+  float: left;
+  font-size: 13px;
+  font-weight: bold;
+  height: 29px;
+  line-height: 29px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%; }
+.cultureandtraveler-portlet h2.title_tab label {
+  border-left: 7px solid #FFD126;
+  display: block;
+  padding-left: 7px;
+  text-align: left; }
+.cultureandtraveler-portlet h2.title_tab a {
+  color: #FFFFFF; }
+.cultureandtraveler-portlet .box-content_dukhach {
+  float: left;
+  background-color: #FFFFFF;
+  border: 1px solid #CCCCCC; }
+.cultureandtraveler-portlet .box-content_dukhach.fixwidth {
+  width: 696px; }
+.cultureandtraveler-portlet .box_dk {
+  float: left;
+  font-size: 12px;
+  list-style: none outside none;
+  text-align: left;
+  width: 100%;
+  padding: 5px 0;
+  border-bottom: 1px dotted #CCCCCC; }
+.cultureandtraveler-portlet .box_dk .img {
+  background-color: #FFFFFF;
+  float: left;
+  margin-left: 6px;
+  margin-right: 8px;
+  padding: 2px;
+  width: 120px;
+  max-height: 90px; }
+.cultureandtraveler-portlet .box_dk .title {
+  color: #6F310A;
+  float: left;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 18px;
+  margin: 12px 0 10px;
+  width: 100%; }
+.cultureandtraveler-portlet .box_dk .title a {
+  color: #6F310A; }
+.cultureandtraveler-portlet .box_dk .text {
+  float: left;
+  width: 78%; }
+.cultureandtraveler-portlet .text .title_v {
+  float: left;
+  font-size: 13px;
+  font-weight: bold;
+  padding-bottom: 6px;
+  width: 100%;
+  color: #6F310A; }
+.cultureandtraveler-portlet .text .title_v a {
+  color: #6F310A; }
+.cultureandtraveler-portlet .text .content_text {
+  color: #333333;
+  line-height: 18px; }
+.cultureandtraveler-portlet .box_dk.fixwidth {
+  padding: 0 2% 2%;
+  width: 96%; }
+.cultureandtraveler-portlet .box_dk .img_small {
+  float: left;
+  height: 180px;
+  margin-top: 12px;
+  width: 100%; }
+.cultureandtraveler-portlet ul.list_new {
+  float: left;
+  width: 100%; }
+.cultureandtraveler-portlet a {
+  color: #333333;
+  outline: medium none;
+  text-decoration: none; }
+.cultureandtraveler-portlet .portletTypeSelect, .cultureandtraveler-portlet .isHotNews, .cultureandtraveler-portlet .quantityforslider {
+  position: relative;
+  float: left;
+  width: 100%; }
+.cultureandtraveler-portlet .portletTypeSelect span, .cultureandtraveler-portlet .isHotNews span, .cultureandtraveler-portlet .quantityforslider span {
+  float: left; }
+.cultureandtraveler-portlet .portletTypeSelect .taglib-icon-help {
+  padding-top: 28px;
+  padding-left: 5px; }
+.cultureandtraveler-portlet .isHotNews .taglib-icon-help {
+  padding-top: 10px;
+  padding-left: 5px; }
+.cultureandtraveler-portlet .quantityforslider .taglib-icon-help {
+  padding-top: 32px;
+  padding-left: 5px; }
+.cultureandtraveler-portlet .updateTime {
+  color: #999999;
+  font-style: italic;
+  font-weight: bold;
+  margin-bottom: 6px; }
+
+/* Tooltip -Styles */
+.tooltip {
+  padding: 5px;
+  font-size: 11px;
+  opacity: 0.85;
+  filter: alpha(opacity=85);
+  background-repeat: no-repeat;
+  background-image: url(../images/tooltip.gif); }
+
+.tooltip-inner {
+  padding: 5px 10px;
+  max-width: 200px;
+  pointer-events: none;
+  color: white;
+  text-align: center;
+  background-color: black;
+  border-radius: 3px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.25); }
+
+.tooltip-bottom {
+  background-position: top center; }
+
+.tooltip-top {
+  background-position: bottom center; }
+
+.tooltip-left {
+  background-position: right center; }
+
+.tooltip-right {
+  background-position: left center; }
+

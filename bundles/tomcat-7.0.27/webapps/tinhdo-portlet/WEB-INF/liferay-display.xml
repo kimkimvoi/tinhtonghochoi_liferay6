@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<!DOCTYPE display PUBLIC "-//Liferay//DTD Display 6.1.0//EN" "http://www.liferay.com/dtd/liferay-display_6_1_0.dtd">
+
+<display>
+	<!--  All Bac ninh portlet should go here    -->
+	<category name="portlet.display.maincategory">
+		<category name="portlet.display.news-category">
+			<portlet id="hot-news"></portlet>
+			<portlet id="news-detail"></portlet>
+			<portlet id="newsbycategory"></portlet>
+			<portlet id="newsbycategoriestab"></portlet>
+			<portlet id="newsbycategorytable"></portlet>
+			<portlet id="publicnews"></portlet>
+		</category>
+		<category name="portlet.display.multimedia">
+			<portlet id="picturelibrary"></portlet>
+			<portlet id="picturegallery"></portlet>
+			<portlet id="videoplayer"></portlet>
+			<portlet id="videogallery"></portlet>
+		</category>
+		<category name="portlet.display.admin">
+			<portlet id="investmentadmin"></portlet>
+			<portlet id="adminschedule"></portlet>
+			<portlet id="adminqamanagement"></portlet>
+			<portlet id="administrativeorganization"></portlet>
+		</category>
+		<category name="portlet.display.utilites">
+			<portlet id="answered_questions"></portlet>
+			<portlet id="Schedule"></portlet>
+			<portlet id="maps"></portlet>
+			<portlet id="one-store-online"></portlet>
+			<portlet id="weather"></portlet>
+			<portlet id="usefulphone"></portlet>
+			<portlet id="foreignexchange"></portlet>
+			<portlet id="usefulinformation"></portlet>
+			<portlet id="marketinfomation"></portlet>
+			<portlet id="contact-manage"></portlet>
+			<portlet id="link-page"></portlet>
+			<portlet id="questionsubmit"></portlet>
+			<portlet id="searchstaffinfo"></portlet>
+			<portlet id="analytic"></portlet>
+			<portlet id="visitor"></portlet>
+			<portlet id="rightcategories"></portlet>
+			<portlet id="legaldocuments"></portlet>
+			<portlet id="publicadministrationprocedure"></portlet>
+			<portlet id="cultureandtraveler"></portlet>
+			<portlet id="advertisement"></portlet>
+			<portlet id="investmentanddevelopment"></portlet>
+			<portlet id="legaldocumentbydomain"></portlet>
+		</category>
+	</category>
+	<category name="category.sample">
+		<portlet id="operatorsteering"></portlet>
+	</category>
+</display>

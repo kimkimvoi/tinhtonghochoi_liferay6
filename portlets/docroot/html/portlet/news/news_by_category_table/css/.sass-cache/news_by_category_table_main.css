@@ -1,0 +1,80 @@
+.newsbycategorytable-portlet .portlet-content {
+  background-color: #fff; }
+.newsbycategorytable-portlet .portlet-body {
+  margin: 00px;
+  margin-top: 0px;
+  background-color: #fff;
+  display: inline-block;
+  width: 100%; }
+.newsbycategorytable-portlet .box_question {
+  margin: 00px;
+  margin-top: 0px;
+  background-color: #fff;
+  display: inline-block;
+  width: 98%;
+  padding: 1%; }
+.newsbycategorytable-portlet .box_question table {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-collapse: collapse; }
+.newsbycategorytable-portlet .box_question #_answered_questions_WAR_tinhdoportlet_questionTypes {
+  padding: 4px;
+  width: 250px;
+  float: left;
+  color: #555;
+  font-size: 12px;
+  text-align: left;
+  margin-bottom: 10px; }
+.newsbycategorytable-portlet .box_question .rowa {
+  width: 45%;
+  float: left; }
+.newsbycategorytable-portlet .box_question .rowb {
+  width: 45%;
+  float: right; }
+.newsbycategorytable-portlet .box_question .input_text {
+  width: 186px;
+  border: 1px solid #ccc;
+  line-height: 22px;
+  padding-left: 2%;
+  float: left;
+  padding-right: 2%;
+  font-size: 12px;
+  text-align: left;
+  color: #555;
+  margin-right: 4px; }
+.newsbycategorytable-portlet .box_question table td {
+  border: 1px solid #ccc;
+  font-size: 12px;
+  color: #333;
+  padding: 5px; }
+.newsbycategorytable-portlet .box_question table td.textcenter {
+  text-align: center; }
+.newsbycategorytable-portlet .box_question table tr th {
+  font-weight: bold;
+  text-align: center;
+  background-color: #fcf3cb; }
+.newsbycategorytable-portlet .box_question table tr.dataRow:hover {
+  color: #6F310A;
+  background-color: #fcf5d6; }
+.newsbycategorytable-portlet .box_question table th {
+  padding: 5px; }
+.newsbycategorytable-portlet .box_question table
+.padding-top5 {
+  padding-top: 5px; }
+.newsbycategorytable-portlet ul.list_question .erro .inputtext, .newsbycategorytable-portlet ul.list_question .erro .inputmaxacnhan, .newsbycategorytable-portlet ul.list_question .erro .textarea {
+  border: 1px solid #F00;
+  color: #F00; }
+.newsbycategorytable-portlet .lfr-search-container {
+  width: 600px; }
+.newsbycategorytable-portlet .lfr-search-container .results-header th {
+  background: none;
+  background-color: #fcf3cb;
+  color: #000;
+  font-weight: bold;
+  text-align: center; }
+.newsbycategorytable-portlet tr.dataRow {
+  cursor: pointer; }
+.newsbycategorytable-portlet .rowDetail td:first-child {
+  width: 30%;
+  vertical-align: top; }
+

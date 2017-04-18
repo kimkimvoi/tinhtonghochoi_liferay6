@@ -1,0 +1,109 @@
+.investment_and_development {
+  margin: 30px;
+  margin-top: 0px; }
+
+.investment_and_development table {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-collapse: collapse; }
+
+.investment_and_development #_answered_questions_WAR_tinhdoportlet_questionTypes {
+  padding: 4px;
+  width: 250px;
+  float: left;
+  color: #555;
+  font-size: 12px;
+  text-align: left;
+  margin-bottom: 10px; }
+
+.investment_and_development .rowa {
+  width: 45%;
+  float: left; }
+
+.investment_and_development .rowb {
+  width: 45%;
+  float: right; }
+
+.investment_and_development .input_text {
+  width: 260px;
+  border: 1px solid #ccc;
+  line-height: 22px;
+  padding-left: 2%;
+  float: left;
+  padding-right: 2%;
+  font-size: 12px;
+  text-align: left;
+  color: #555;
+  margin-right: 4px; }
+
+.investment_and_development table td {
+  border: 1px solid #ccc;
+  font-size: 12px;
+  color: #333;
+  padding: 5px; }
+
+.investment_and_development table td a {
+  color: #6F310A; }
+
+.investment_and_development table td a:hover {
+  text-decoration: underline; }
+
+.investment_and_development table td.textcenter {
+  text-align: center; }
+
+.investment_and_development table tr.title {
+  background-color: #fcf3cb; }
+
+.investment_and_development table tr.title th {
+  font-weight: bold;
+  text-align: center; }
+
+.investment_and_development table tr:hover {
+  background-color: #fcf5d6; }
+
+.investment_and_development table th {
+  padding: 5px; }
+
+.padding-top5 {
+  padding-top: 5px; }
+
+ul.list_question .erro .inputtext, ul.list_question .erro .inputmaxacnhan, ul.list_question .erro .textarea {
+  border: 1px solid #F00;
+  color: #F00; }
+
+.lfr-search-container {
+  width: 600px; }
+
+.lfr-search-container .results-header th {
+  background: none;
+  background-color: #fcf3cb;
+  color: #000;
+  font-weight: bold;
+  text-align: center; }
+
+select {
+  margin-top: 5px;
+  width: 200px!important; }
+
+li {
+  list-style: none; }
+
+.investment_and_development_search {
+  width: 100%;
+  display: inline-block; }
+
+.investment_and_development_combobox_search {
+  width: 45%%;
+  float: left; }
+
+.investment_and_development_key_project_search {
+  width: 25%;
+  float: right;
+  margin-top: 20px; }
+
+.investment_and_development_text_search {
+  margin-top: 15px; }
+
+.investment_and_development_list {
+  margin-top: 15px; }
+

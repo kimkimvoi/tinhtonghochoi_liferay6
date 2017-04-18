@@ -1,0 +1,92 @@
+.schedule-portlet {
+	.portlet{
+		display: inline-block;
+		width:100%;
+	}
+	.label_left {
+		display: inline;
+		float: none;
+		text-align: left;
+		margin: 0;
+		width: auto;
+	}
+	
+	.schedule_form_content {
+		border-bottom: 1px solid #CCCCCC;
+	    height: 120px;
+	    margin: 0 10px;
+	}
+	.schedule_week_form_content {
+		border-bottom: 1px solid #CCCCCC;
+	    height: 80px;
+	    margin: 0 10px;
+	}
+	.portlet_wrapper {
+		border: 1px solid #CCCCCC;
+		width: 730px;
+	}
+	.schedule_config {
+		margin: 15px;
+	}
+	.schedule_config div {
+		margin: 10px 0;
+	}
+	.schedule_config div label {
+		margin: 0 10px;
+	}
+	.schedule_config_title {
+		font-size: 14px;
+	    font-weight: bold;
+	}
+	.scheSearchPn {
+		float: left;
+		margin: 25px 20px 10px 0;
+		line-height: 30px;
+		display: inline-flex;
+	}
+	.weekly_schedule {
+		margin-top: 10px;
+	}
+	.weekly_schedule .weekly_schedule_title{
+		font-size: 12px;
+	    font-style: italic;
+	    font-weight: bold;
+	    margin-left: 10px;
+	}
+	.schedule_cbx {
+		margin-left: 10px;
+	}
+	.schedule_cbx select {
+	    color: #555555;
+	    float: left;
+	    font-size: 12px;
+	    margin-bottom: 10px;
+	    padding: 4px;
+	    text-align: left;
+	    width: 150px;
+	}
+	.box_calender_work {
+		width:98%;
+		margin-bottom:25px;
+		padding:1%;
+	}
+	.box_calender_work tr td:first-child{
+		font-weight: bold;
+	}
+	.box_calender_work li { list-style:none; width:100%; float:left; margin-bottom:5px; line-height:18px;}
+	.box_calender_work table tr.title th{ width:17%;}
+	.box_calender_work table { border-collapse:collapse; width:100%; border:1px solid #ccc;}
+	.box_calender_work table td, .box_calender_work table th {
+		border:1px solid #ccc;
+		padding:3px;
+		font-size:12px;
+		color:#333;
+		padding-top:6px;
+		padding-bottom:8px;
+		}
+	.box_calender_work table th { text-align:center; padding-top:12px;
+	padding-bottom:12px; background-color:#eee;}	
+	.box_calender_work table td a { color:#333;}
+	.box_calender_work table td p { margin-bottom:5px; line-height:18px;}
+	.box_calender_work table td:hover {background-color:#F8ECD1}
+}

@@ -1,0 +1,422 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<hint-collection name="TXT_NAME">
+		<hint name="max-length">255</hint>
+	</hint-collection>
+	<hint-collection name="TXT_CONTENT">
+		<hint name="max-length">4000</hint>
+	</hint-collection>
+	<model name="com.fsoft.bn.model.Answer">
+		<field name="answer_id" type="String" />
+		<field name="answer_content" type="String">
+			<hint-collection name="TXT_CONTENT" />
+		</field>
+		<field name="user_id" type="String" />
+		<field name="created_date" type="Date" />
+		<field name="modified_date" type="Date" />
+		<field name="deleted" type="boolean" />
+	</model>
+	<model name="com.fsoft.bn.model.AnswerAttachedFile">
+		<field name="answer_attached_id" type="String" />
+		<field name="answer_id" type="String" />
+		<field name="attached_file_id" type="String" />
+		<field name="created_date" type="Date" />
+		<field name="modified_date" type="Date" />
+		<field name="deleted" type="boolean" />
+	</model>
+	<model name="com.fsoft.bn.model.BNContact">
+		<field name="contactId" type="long" />
+		<field name="departmentKey" type="String" />
+		<field name="name" type="String" />
+		<field name="regency" type="String" />
+		<field name="phoneNumber" type="String" />
+		<field name="email" type="String" />
+		<field name="createdDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="deleted" type="boolean" />
+	</model>
+	<model name="com.fsoft.bn.model.BNNews">
+		<field name="newsId" type="long" />
+		<field name="newsTitle" type="String">
+			<hint-collection name="TXT_NAME" />
+		</field>
+		<field name="newsContent" type="String">
+			<hint-collection name="TXT_CONTENT" />
+		</field>
+		<field name="createdDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="deleted" type="boolean" />
+	</model>
+	<model name="com.fsoft.bn.model.Enrolment">
+		<field name="enrolment_id" type="String" />
+		<field name="hs_ten" type="String" />
+		<field name="hs_ho" type="String" />
+		<field name="hs_quoc_tich" type="String" />
+		<field name="hs_ngay_sinh" type="Date" />
+		<field name="hs_so_dien_thoai" type="String" />
+		<field name="hs_nguoi_lien_he" type="String" />
+		<field name="hs_quan_he_voi_hoc_sinh" type="String">
+			<hint-collection name="TXT_NAME" />
+		</field>
+		<field name="hk_dia_chi" type="String">
+			<hint-collection name="TXT_NAME" />
+		</field>
+		<field name="hk_thanh_pho" type="String" />
+		<field name="hk_tinh" type="String" />
+		<field name="hk_quoc_gia" type="String" />
+		<field name="cm_ten" type="String" />
+		<field name="cm_ho" type="String" />
+		<field name="cm_quan_he_voi_hoc_sinh" type="String">
+			<hint-collection name="TXT_NAME" />
+		</field>
+		<field name="cm_dia_chi_email" type="String" />
+		<field name="cm_so_dien_thoai_di_dong" type="String" />
+		<field name="cm_dien_thoai_noi_lam_viec" type="String" />
+		<field name="cm_ten_cong_ty" type="String">
+			<hint-collection name="TXT_NAME" />
+		</field>
+		<field name="cm_chuc_danh" type="String" />
+		<field name="k_lop" type="String" />
+		<field name="k_nam_hoc" type="String" />
+		<field name="k_truong_hien_dang_hoc" type="String">
+			<hint-collection name="TXT_NAME" />
+		</field>
+		<field name="k_sao_ma_biet_den" type="String">
+			<hint-collection name="TXT_CONTENT" />
+		</field>
+		<field name="k_nguoi_gioi_thieu" type="String">
+			<hint-collection name="TXT_CONTENT" />
+		</field>
+		<field name="k_thac_mac" type="String">
+			<hint-collection name="TXT_CONTENT" />
+		</field>
+		<field name="trang_thai" type="String" />
+		<field name="created_date" type="Date" />
+		<field name="modified_date" type="Date" />
+		<field name="deleted" type="boolean" />
+	</model>
+	<model name="com.fsoft.bn.model.EnrolmentAttachedFile">
+		<field name="enrolment_attached_id" type="String" />
+		<field name="enrolment_id" type="String" />
+		<field name="attached_file_id" type="String" />
+		<field name="created_date" type="Date" />
+		<field name="modified_date" type="Date" />
+		<field name="deleted" type="boolean" />
+	</model>
+	<model name="com.fsoft.bn.model.InvestmentProjects">
+		<field name="project_id" type="String" />
+		<field name="project_name" type="String">
+			<hint-collection name="TXT_NAME" />
+		</field>
+		<field name="total_investment_min" type="String" />
+		<field name="total_investment_max" type="String" />
+		<field name="implementation_location" type="String">
+			<hint-collection name="TXT_NAME" />
+		</field>
+		<field name="start_time" type="Date" />
+		<field name="end_time" type="Date" />
+		<field name="project_purpose" type="String">
+			<hint-collection name="TXT_CONTENT" />
+		</field>
+		<field name="charter_capital" type="String" />
+		<field name="project_category_id" type="String" />
+		<field name="project_status_id" type="String" />
+		<field name="investment_form_id" type="String" />
+		<field name="competent_organization_id" type="String" />
+		<field name="key_project" type="boolean" />
+		<field name="technical_specifications" type="String">
+			<hint-collection name="TXT_CONTENT" />
+		</field>
+		<field name="currency_type_id" type="String" />
+		<field name="created_date" type="Date" />
+		<field name="modified_date" type="Date" />
+		<field name="deleted" type="boolean" />
+	</model>
+	<model name="com.fsoft.bn.model.Organizations">
+		<field name="organizations_id" type="long" />
+		<field name="organizations_name" type="String">
+			<hint-collection name="TXT_NAME" />
+		</field>
+		<field name="organizations_description" type="String">
+			<hint-collection name="TXT_CONTENT" />
+		</field>
+		<field name="organizations_address" type="String">
+			<hint-collection name="TXT_NAME" />
+		</field>
+		<field name="deleted" type="boolean" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+	</model>
+	<model name="com.fsoft.bn.model.PreschoolAttachedFile">
+		<field name="preschool_attached_id" type="String" />
+		<field name="student_id" type="String" />
+		<field name="attached_file_id" type="String" />
+		<field name="created_date" type="Date" />
+		<field name="modified_date" type="Date" />
+		<field name="deleted" type="boolean" />
+	</model>
+	<model name="com.fsoft.bn.model.PreschoolParent">
+		<field name="preschoolParent_id" type="String" />
+		<field name="student_id" type="String" />
+		<field name="name" type="String" />
+		<field name="dob" type="String" />
+		<field name="placeOfBirth" type="String" />
+		<field name="nationality" type="String" />
+		<field name="idCardNumber" type="String" />
+		<field name="job" type="String" />
+		<field name="phoneNumber" type="String" />
+		<field name="Email" type="String" />
+		<field name="isMother" type="boolean" />
+		<field name="created_date" type="Date" />
+		<field name="modified_date" type="Date" />
+		<field name="deleted" type="boolean" />
+	</model>
+	<model name="com.fsoft.bn.model.PreschoolStudent">
+		<field name="student_id" type="String" />
+		<field name="student_name" type="String" />
+		<field name="student_sex" type="String" />
+		<field name="student_dob" type="String" />
+		<field name="student_placeOfBirth" type="String" />
+		<field name="student_nationality" type="String" />
+		<field name="student_phoneNumber" type="String" />
+		<field name="student_address" type="String" />
+		<field name="student_heatlhStatus" type="String" />
+		<field name="student_height" type="String" />
+		<field name="student_weight" type="String" />
+		<field name="student_contactName" type="String" />
+		<field name="student_contactRelationship" type="String" />
+		<field name="student_contactPhoneNumber" type="String" />
+		<field name="student_contactEmail" type="String" />
+		<field name="student_howToKnowBM" type="String" />
+		<field name="student_whoIntroduce" type="String" />
+		<field name="student_anyConfuse" type="String" />
+		<field name="status" type="String" />
+		<field name="created_date" type="Date" />
+		<field name="modified_date" type="Date" />
+		<field name="deleted" type="boolean" />
+	</model>
+	<model name="com.fsoft.bn.model.PrimarySchoolAttachedFile">
+		<field name="primarySchool_attached_id" type="String" />
+		<field name="primaryStudent_id" type="String" />
+		<field name="attached_file_id" type="String" />
+		<field name="created_date" type="Date" />
+		<field name="modified_date" type="Date" />
+		<field name="deleted" type="boolean" />
+	</model>
+	<model name="com.fsoft.bn.model.PrimarySchoolParent">
+		<field name="primarySchoolParent_id" type="String" />
+		<field name="primaryStudent_id" type="String" />
+		<field name="name" type="String" />
+		<field name="nationality" type="String" />
+		<field name="idCardNumber" type="String" />
+		<field name="phoneNumber" type="String" />
+		<field name="Email" type="String" />
+		<field name="job" type="String" />
+		<field name="job_position" type="String" />
+		<field name="workplace" type="String" />
+		<field name="isMother" type="boolean" />
+		<field name="created_date" type="Date" />
+		<field name="modified_date" type="Date" />
+		<field name="deleted" type="boolean" />
+	</model>
+	<model name="com.fsoft.bn.model.PrimarySchoolStudent">
+		<field name="primaryStudent_id" type="String" />
+		<field name="student_name" type="String" />
+		<field name="student_sex" type="String" />
+		<field name="student_dob" type="String" />
+		<field name="student_placeOfBirth" type="String" />
+		<field name="student_nationality" type="String" />
+		<field name="student_address" type="String" />
+		<field name="student_contactName" type="String" />
+		<field name="student_contactRelationship" type="String" />
+		<field name="student_contactPhoneNumber" type="String" />
+		<field name="student_contactEmail" type="String" />
+		<field name="student_schoolName" type="String" />
+		<field name="student_schoolYear" type="String" />
+		<field name="student_academicLevel" type="String" />
+		<field name="student_studiedLanguage" type="String" />
+		<field name="student_languageCenter" type="String" />
+		<field name="student_prizes" type="String" />
+		<field name="student_skippedGrade" type="String" />
+		<field name="student_penalty" type="String" />
+		<field name="student_interests" type="String" />
+		<field name="student_note" type="String" />
+		<field name="student_registrationClass" type="String" />
+		<field name="student_expectedEnrollTime" type="String" />
+		<field name="student_userCar" type="String" />
+		<field name="student_theLightClub" type="String" />
+		<field name="student_oversea" type="String" />
+		<field name="student_howToKnowBM" type="String" />
+		<field name="student_whoIntroduce" type="String" />
+		<field name="student_anyConfuse" type="String" />
+		<field name="status" type="String" />
+		<field name="created_date" type="Date" />
+		<field name="modified_date" type="Date" />
+		<field name="deleted" type="boolean" />
+	</model>
+	<model name="com.fsoft.bn.model.Question">
+		<field name="question_id" type="String" />
+		<field name="question_title" type="String">
+			<hint-collection name="TXT_NAME" />
+		</field>
+		<field name="question_type_id" type="String" />
+		<field name="question_content" type="String">
+			<hint-collection name="TXT_CONTENT" />
+		</field>
+		<field name="citizen_name" type="String">
+			<hint-collection name="TXT_NAME" />
+		</field>
+		<field name="citizen_mail" type="String">
+			<hint-collection name="TXT_NAME" />
+		</field>
+		<field name="citizen_phone" type="String" />
+		<field name="citizen_address" type="String">
+			<hint-collection name="TXT_NAME" />
+		</field>
+		<field name="question_status_id" type="String" />
+		<field name="answer_id" type="String" />
+		<field name="created_date" type="Date" />
+		<field name="modified_date" type="Date" />
+		<field name="deleted" type="boolean" />
+	</model>
+	<model name="com.fsoft.bn.model.QuestionAttachedFile">
+		<field name="question_attached_id" type="String" />
+		<field name="question_id" type="String" />
+		<field name="attached_file_id" type="String" />
+		<field name="created_date" type="Date" />
+		<field name="modified_date" type="Date" />
+		<field name="deleted" type="boolean" />
+	</model>
+	<model name="com.fsoft.bn.model.Recruitment">
+		<field name="recruitment_id" type="String" />
+		<field name="candidate_name" type="String" />
+		<field name="candidate_sex" type="String" />
+		<field name="candidate_dob" type="String" />
+		<field name="candidate_placeOfBirth" type="String" />
+		<field name="candidate_nationality" type="String" />
+		<field name="candidate_race" type="String" />
+		<field name="candidate_religion" type="String" />
+		<field name="candidate_IdCardNumber" type="String" />
+		<field name="candidate_placeOfIssue" type="String" />
+		<field name="candidate_permanentPlace" type="String" />
+		<field name="candidate_temporaryPlace" type="String" />
+		<field name="candidate_phoneNumber" type="String" />
+		<field name="candidate_email" type="String" />
+		<field name="candidate_position" type="String" />
+		<field name="candidate_canStartDate" type="String" />
+		<field name="candidate_currentSalary" type="String" />
+		<field name="candidate_expectedSalary" type="String" />
+		<field name="candidate_howToKnowBM" type="String" />
+		<field name="candidate_whoIntroduce" type="String" />
+		<field name="candidate_anyConfuse" type="String" />
+		<field name="status" type="String" />
+		<field name="created_date" type="Date" />
+		<field name="modified_date" type="Date" />
+		<field name="deleted" type="boolean" />
+	</model>
+	<model name="com.fsoft.bn.model.RecruitmentAttachedFile">
+		<field name="recruitment_attached_id" type="String" />
+		<field name="recruitment_id" type="String" />
+		<field name="attached_file_id" type="String" />
+		<field name="created_date" type="Date" />
+		<field name="modified_date" type="Date" />
+		<field name="deleted" type="boolean" />
+	</model>
+	<model name="com.fsoft.bn.model.RecruitmentEducationalHistory">
+		<field name="recruitment_educational_history_id" type="String" />
+		<field name="recruitment_id" type="String" />
+		<field name="school" type="String" />
+		<field name="typeOfTraining" type="String" />
+		<field name="speciality" type="String" />
+		<field name="typeOfDegree" type="String" />
+		<field name="graduatedYear" type="String" />
+		<field name="created_date" type="Date" />
+		<field name="modified_date" type="Date" />
+		<field name="deleted" type="boolean" />
+	</model>
+	<model name="com.fsoft.bn.model.RecruitmentLanguages">
+		<field name="recruitment_languages_id" type="String" />
+		<field name="recruitment_id" type="String" />
+		<field name="language" type="String" />
+		<field name="level" type="String" />
+		<field name="certificate" type="String" />
+		<field name="created_date" type="Date" />
+		<field name="modified_date" type="Date" />
+		<field name="deleted" type="boolean" />
+	</model>
+	<model name="com.fsoft.bn.model.RecruitmentProgrammings">
+		<field name="recruitment_programmings_id" type="String" />
+		<field name="recruitment_id" type="String" />
+		<field name="course" type="String" />
+		<field name="level" type="String" />
+		<field name="certificate" type="String" />
+		<field name="created_date" type="Date" />
+		<field name="modified_date" type="Date" />
+		<field name="deleted" type="boolean" />
+	</model>
+	<model name="com.fsoft.bn.model.RecruitmentTrainingCourses">
+		<field name="recruitment_training_courses_id" type="String" />
+		<field name="recruitment_id" type="String" />
+		<field name="conductedBy" type="String" />
+		<field name="courseName" type="String" />
+		<field name="courseDesc" type="String" />
+		<field name="courseDate" type="String" />
+		<field name="certificate" type="String" />
+		<field name="created_date" type="Date" />
+		<field name="modified_date" type="Date" />
+		<field name="deleted" type="boolean" />
+	</model>
+	<model name="com.fsoft.bn.model.Schedule">
+		<field name="schedule_id" type="String" />
+		<field name="schedule_date" type="Date" />
+		<field name="content" type="String">
+			<hint-collection name="TXT_CONTENT" />
+		</field>
+		<field name="user_id" type="String" />
+		<field name="created_date" type="Date" />
+		<field name="modified_date" type="Date" />
+		<field name="deleted" type="boolean" />
+	</model>
+	<model name="com.fsoft.bn.model.StaffInfo">
+		<field name="staff_id" type="long" />
+		<field name="staff_firstname" type="String">
+			<hint-collection name="TXT_NAME" />
+		</field>
+		<field name="staff_middlename" type="String">
+			<hint-collection name="TXT_NAME" />
+		</field>
+		<field name="staff_lastname" type="String">
+			<hint-collection name="TXT_NAME" />
+		</field>
+		<field name="staff_birthday" type="Date" />
+		<field name="staff_phone" type="String" />
+		<field name="staff_email" type="String">
+			<hint-collection name="TXT_NAME" />
+		</field>
+		<field name="staff_sex" type="String" />
+		<field name="staff_role" type="String" />
+		<field name="deleted" type="boolean" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="organizations_id" type="long" />
+	</model>
+	<model name="com.fsoft.bn.model.UserfulContactPhone">
+		<field name="userful_contact_phone_id" type="String" />
+		<field name="userful_contact_name" type="String" />
+		<field name="userful_contact_phone" type="String" />
+		<field name="userful_contact_email" type="String" />
+		<field name="userful_contact_position" type="String" />
+		<field name="userful_contact_address" type="String" />
+		<field name="created_date" type="Date" />
+		<field name="modified_date" type="Date" />
+		<field name="deleted" type="boolean" />
+	</model>
+	<model name="com.fsoft.bn.model.UserSchedule">
+		<field name="user_schedule_id" type="String" />
+		<field name="user_id" type="String" />
+		<field name="created_date" type="Date" />
+		<field name="modified_date" type="Date" />
+		<field name="deleted" type="boolean" />
+	</model>
+</model-hints>

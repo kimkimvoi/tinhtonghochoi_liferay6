@@ -1,0 +1,92 @@
+.news-detail-portlet {
+  /*++++++++++++++++++++++ HieuDM style for portlet show news detail ++++++++++++++++++++++++++++++++ */
+  /*---------------------- HieuDM style for portlet show news detail ---------------------------------*/ }
+  .news-detail-portlet .portlet-content-container {
+    border-bottom: 1px dotted; }
+  .news-detail-portlet .portlet-content {
+    margin: 0;
+    padding: 0; }
+  .news-detail-portlet section.portlet {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-radius: 0 0 5px 5px;
+    float: left;
+    margin-left: 6px;
+    padding: 0;
+    width: 730px; }
+  .news-detail-portlet header.portlet-topper {
+    display: none; }
+  .news-detail-portlet .content .margin10 {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 0 none;
+    margin: 0; }
+  .news-detail-portlet .portlet h2.title-h2 {
+    background-color: #FDA164;
+    border: 0 none;
+    color: #FFFFFF;
+    float: left;
+    font-size: 13px;
+    font-weight: bold;
+    height: 29px;
+    line-height: 29px;
+    margin: 0;
+    text-transform: uppercase;
+    width: 100%; }
+  .news-detail-portlet .portlet h2.title-h2 span {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border-left: 7px solid #FFD126;
+    color: #FFFFFF;
+    display: block;
+    float: left;
+    font-size: 13px;
+    font-weight: bold;
+    height: 29px;
+    line-height: 29px;
+    padding-left: 7px;
+    text-align: left;
+    text-transform: uppercase; }
+  .news-detail-portlet .clear {
+    clear: both; }
+  .news-detail-portlet .content_detail_news {
+    margin: 25px;
+    padding: 0; }
+  .news-detail-portlet .content_detail_news h1.title {
+    color: #333333;
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 15px;
+    text-align: left; }
+  .news-detail-portlet .content_detail_news .date_time {
+    color: #888888;
+    float: left;
+    font-size: 12px;
+    margin-bottom: 15px;
+    text-align: right;
+    width: 100%; }
+  .news-detail-portlet .content_detail_news .date_time span {
+    float: left;
+    text-align: left; }
+  .news-detail-portlet .content_detail_news .supdetail {
+    color: #555555;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 18px;
+    margin-bottom: 20px;
+    text-align: left; }
+  .news-detail-portlet .content_detail_news .textdetail {
+    color: #333333;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: left; }
+  .news-detail-portlet ul.list_detail {
+    border: 0 none;
+    float: left;
+    margin: 25px 0;
+    padding: 0;
+    width: 96%; }
+  .news-detail-portlet ul.list_detail li a {
+    color: #333333;
+    float: left;
+    padding-left: 15px;
+    text-decoration: none; }
+

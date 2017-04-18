@@ -1,0 +1,738 @@
+<?xml version="1.0"?>
+
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm http://java.sun.com/xml/ns/persistence/orm_1_0.xsd">
+	<persistence-unit-metadata>
+		<xml-mapping-metadata-complete/>
+		<persistence-unit-defaults>
+			<access>PROPERTY</access>
+		</persistence-unit-defaults>
+	</persistence-unit-metadata>
+	<mapped-superclass class="com.fsoft.bn.model.impl.AnswerModelImpl">
+		<attributes>
+			<id name="answer_id" />
+			<basic name="answer_content" />
+			<basic name="user_id" />
+			<basic name="created_date">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="modified_date">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="deleted" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="com.fsoft.bn.model.impl.AnswerAttachedFileModelImpl">
+		<attributes>
+			<id name="answer_attached_id" />
+			<basic name="answer_id" />
+			<basic name="attached_file_id" />
+			<basic name="created_date">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="modified_date">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="deleted" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="com.fsoft.bn.model.impl.BNContactModelImpl">
+		<attributes>
+			<id name="contactId" />
+			<basic name="departmentKey" />
+			<basic name="name" />
+			<basic name="regency" />
+			<basic name="phoneNumber" />
+			<basic name="email" />
+			<basic name="createdDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="modifiedDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="deleted" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="com.fsoft.bn.model.impl.BNNewsModelImpl">
+		<attributes>
+			<id name="newsId" />
+			<basic name="newsTitle" />
+			<basic name="newsContent" />
+			<basic name="createdDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="modifiedDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="deleted" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="com.fsoft.bn.model.impl.EnrolmentModelImpl">
+		<attributes>
+			<id name="enrolment_id" />
+			<basic name="hs_ten" />
+			<basic name="hs_ho" />
+			<basic name="hs_quoc_tich" />
+			<basic name="hs_ngay_sinh">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="hs_so_dien_thoai" />
+			<basic name="hs_nguoi_lien_he" />
+			<basic name="hs_quan_he_voi_hoc_sinh" />
+			<basic name="hk_dia_chi" />
+			<basic name="hk_thanh_pho" />
+			<basic name="hk_tinh" />
+			<basic name="hk_quoc_gia" />
+			<basic name="cm_ten" />
+			<basic name="cm_ho" />
+			<basic name="cm_quan_he_voi_hoc_sinh" />
+			<basic name="cm_dia_chi_email" />
+			<basic name="cm_so_dien_thoai_di_dong" />
+			<basic name="cm_dien_thoai_noi_lam_viec" />
+			<basic name="cm_ten_cong_ty" />
+			<basic name="cm_chuc_danh" />
+			<basic name="k_lop" />
+			<basic name="k_nam_hoc" />
+			<basic name="k_truong_hien_dang_hoc" />
+			<basic name="k_sao_ma_biet_den" />
+			<basic name="k_nguoi_gioi_thieu" />
+			<basic name="k_thac_mac" />
+			<basic name="trang_thai" />
+			<basic name="created_date">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="modified_date">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="deleted" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="com.fsoft.bn.model.impl.EnrolmentAttachedFileModelImpl">
+		<attributes>
+			<id name="enrolment_attached_id" />
+			<basic name="enrolment_id" />
+			<basic name="attached_file_id" />
+			<basic name="created_date">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="modified_date">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="deleted" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="com.fsoft.bn.model.impl.InvestmentProjectsModelImpl">
+		<attributes>
+			<id name="project_id" />
+			<basic name="project_name" />
+			<basic name="total_investment_min" />
+			<basic name="total_investment_max" />
+			<basic name="implementation_location" />
+			<basic name="start_time">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="end_time">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="project_purpose" />
+			<basic name="charter_capital" />
+			<basic name="project_category_id" />
+			<basic name="project_status_id" />
+			<basic name="investment_form_id" />
+			<basic name="competent_organization_id" />
+			<basic name="key_project" />
+			<basic name="technical_specifications" />
+			<basic name="currency_type_id" />
+			<basic name="created_date">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="modified_date">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="deleted" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="com.fsoft.bn.model.impl.OrganizationsModelImpl">
+		<attributes>
+			<id name="organizations_id" />
+			<basic name="organizations_name" />
+			<basic name="organizations_description" />
+			<basic name="organizations_address" />
+			<basic name="deleted" />
+			<basic name="createDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="modifiedDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="com.fsoft.bn.model.impl.PreschoolAttachedFileModelImpl">
+		<attributes>
+			<id name="preschool_attached_id" />
+			<basic name="student_id" />
+			<basic name="attached_file_id" />
+			<basic name="created_date">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="modified_date">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="deleted" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="com.fsoft.bn.model.impl.PreschoolParentModelImpl">
+		<attributes>
+			<id name="preschoolParent_id" />
+			<basic name="student_id" />
+			<basic name="name" />
+			<basic name="dob" />
+			<basic name="placeOfBirth" />
+			<basic name="nationality" />
+			<basic name="idCardNumber" />
+			<basic name="job" />
+			<basic name="phoneNumber" />
+			<basic name="Email" />
+			<basic name="isMother" />
+			<basic name="created_date">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="modified_date">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="deleted" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="com.fsoft.bn.model.impl.PreschoolStudentModelImpl">
+		<attributes>
+			<id name="student_id" />
+			<basic name="student_name" />
+			<basic name="student_sex" />
+			<basic name="student_dob" />
+			<basic name="student_placeOfBirth" />
+			<basic name="student_nationality" />
+			<basic name="student_phoneNumber" />
+			<basic name="student_address" />
+			<basic name="student_heatlhStatus" />
+			<basic name="student_height" />
+			<basic name="student_weight" />
+			<basic name="student_contactName" />
+			<basic name="student_contactRelationship" />
+			<basic name="student_contactPhoneNumber" />
+			<basic name="student_contactEmail" />
+			<basic name="student_howToKnowBM" />
+			<basic name="student_whoIntroduce" />
+			<basic name="student_anyConfuse" />
+			<basic name="status" />
+			<basic name="created_date">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="modified_date">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="deleted" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="com.fsoft.bn.model.impl.PrimarySchoolAttachedFileModelImpl">
+		<attributes>
+			<id name="primarySchool_attached_id" />
+			<basic name="primaryStudent_id" />
+			<basic name="attached_file_id" />
+			<basic name="created_date">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="modified_date">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="deleted" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="com.fsoft.bn.model.impl.PrimarySchoolParentModelImpl">
+		<attributes>
+			<id name="primarySchoolParent_id" />
+			<basic name="primaryStudent_id" />
+			<basic name="name" />
+			<basic name="nationality" />
+			<basic name="idCardNumber" />
+			<basic name="phoneNumber" />
+			<basic name="Email" />
+			<basic name="job" />
+			<basic name="job_position" />
+			<basic name="workplace" />
+			<basic name="isMother" />
+			<basic name="created_date">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="modified_date">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="deleted" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="com.fsoft.bn.model.impl.PrimarySchoolStudentModelImpl">
+		<attributes>
+			<id name="primaryStudent_id" />
+			<basic name="student_name" />
+			<basic name="student_sex" />
+			<basic name="student_dob" />
+			<basic name="student_placeOfBirth" />
+			<basic name="student_nationality" />
+			<basic name="student_address" />
+			<basic name="student_contactName" />
+			<basic name="student_contactRelationship" />
+			<basic name="student_contactPhoneNumber" />
+			<basic name="student_contactEmail" />
+			<basic name="student_schoolName" />
+			<basic name="student_schoolYear" />
+			<basic name="student_academicLevel" />
+			<basic name="student_studiedLanguage" />
+			<basic name="student_languageCenter" />
+			<basic name="student_prizes" />
+			<basic name="student_skippedGrade" />
+			<basic name="student_penalty" />
+			<basic name="student_interests" />
+			<basic name="student_note" />
+			<basic name="student_registrationClass" />
+			<basic name="student_expectedEnrollTime" />
+			<basic name="student_userCar" />
+			<basic name="student_theLightClub" />
+			<basic name="student_oversea" />
+			<basic name="student_howToKnowBM" />
+			<basic name="student_whoIntroduce" />
+			<basic name="student_anyConfuse" />
+			<basic name="status" />
+			<basic name="created_date">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="modified_date">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="deleted" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="com.fsoft.bn.model.impl.QuestionModelImpl">
+		<attributes>
+			<id name="question_id" />
+			<basic name="question_title" />
+			<basic name="question_type_id" />
+			<basic name="question_content" />
+			<basic name="citizen_name" />
+			<basic name="citizen_mail" />
+			<basic name="citizen_phone" />
+			<basic name="citizen_address" />
+			<basic name="question_status_id" />
+			<basic name="answer_id" />
+			<basic name="created_date">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="modified_date">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="deleted" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="com.fsoft.bn.model.impl.QuestionAttachedFileModelImpl">
+		<attributes>
+			<id name="question_attached_id" />
+			<basic name="question_id" />
+			<basic name="attached_file_id" />
+			<basic name="created_date">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="modified_date">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="deleted" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="com.fsoft.bn.model.impl.RecruitmentModelImpl">
+		<attributes>
+			<id name="recruitment_id" />
+			<basic name="candidate_name" />
+			<basic name="candidate_sex" />
+			<basic name="candidate_dob" />
+			<basic name="candidate_placeOfBirth" />
+			<basic name="candidate_nationality" />
+			<basic name="candidate_race" />
+			<basic name="candidate_religion" />
+			<basic name="candidate_IdCardNumber" />
+			<basic name="candidate_placeOfIssue" />
+			<basic name="candidate_permanentPlace" />
+			<basic name="candidate_temporaryPlace" />
+			<basic name="candidate_phoneNumber" />
+			<basic name="candidate_email" />
+			<basic name="candidate_position" />
+			<basic name="candidate_canStartDate" />
+			<basic name="candidate_currentSalary" />
+			<basic name="candidate_expectedSalary" />
+			<basic name="candidate_howToKnowBM" />
+			<basic name="candidate_whoIntroduce" />
+			<basic name="candidate_anyConfuse" />
+			<basic name="status" />
+			<basic name="created_date">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="modified_date">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="deleted" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="com.fsoft.bn.model.impl.RecruitmentAttachedFileModelImpl">
+		<attributes>
+			<id name="recruitment_attached_id" />
+			<basic name="recruitment_id" />
+			<basic name="attached_file_id" />
+			<basic name="created_date">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="modified_date">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="deleted" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="com.fsoft.bn.model.impl.RecruitmentEducationalHistoryModelImpl">
+		<attributes>
+			<id name="recruitment_educational_history_id" />
+			<basic name="recruitment_id" />
+			<basic name="school" />
+			<basic name="typeOfTraining" />
+			<basic name="speciality" />
+			<basic name="typeOfDegree" />
+			<basic name="graduatedYear" />
+			<basic name="created_date">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="modified_date">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="deleted" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="com.fsoft.bn.model.impl.RecruitmentLanguagesModelImpl">
+		<attributes>
+			<id name="recruitment_languages_id" />
+			<basic name="recruitment_id" />
+			<basic name="language" />
+			<basic name="level" />
+			<basic name="certificate" />
+			<basic name="created_date">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="modified_date">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="deleted" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="com.fsoft.bn.model.impl.RecruitmentProgrammingsModelImpl">
+		<attributes>
+			<id name="recruitment_programmings_id" />
+			<basic name="recruitment_id" />
+			<basic name="course" />
+			<basic name="level" />
+			<basic name="certificate" />
+			<basic name="created_date">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="modified_date">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="deleted" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="com.fsoft.bn.model.impl.RecruitmentTrainingCoursesModelImpl">
+		<attributes>
+			<id name="recruitment_training_courses_id" />
+			<basic name="recruitment_id" />
+			<basic name="conductedBy" />
+			<basic name="courseName" />
+			<basic name="courseDesc" />
+			<basic name="courseDate" />
+			<basic name="certificate" />
+			<basic name="created_date">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="modified_date">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="deleted" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="com.fsoft.bn.model.impl.ScheduleModelImpl">
+		<attributes>
+			<id name="schedule_id" />
+			<basic name="schedule_date">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="content" />
+			<basic name="user_id" />
+			<basic name="created_date">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="modified_date">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="deleted" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="com.fsoft.bn.model.impl.StaffInfoModelImpl">
+		<attributes>
+			<id name="staff_id" />
+			<basic name="staff_firstname" />
+			<basic name="staff_middlename" />
+			<basic name="staff_lastname" />
+			<basic name="staff_birthday">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="staff_phone" />
+			<basic name="staff_email" />
+			<basic name="staff_sex" />
+			<basic name="staff_role" />
+			<basic name="deleted" />
+			<basic name="createDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="modifiedDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="organizations_id" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="com.fsoft.bn.model.impl.UserfulContactPhoneModelImpl">
+		<attributes>
+			<id name="userful_contact_phone_id" />
+			<basic name="userful_contact_name" />
+			<basic name="userful_contact_phone" />
+			<basic name="userful_contact_email" />
+			<basic name="userful_contact_position" />
+			<basic name="userful_contact_address" />
+			<basic name="created_date">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="modified_date">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="deleted" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="com.fsoft.bn.model.impl.UserScheduleModelImpl">
+		<attributes>
+			<id name="user_schedule_id" />
+			<basic name="user_id" />
+			<basic name="created_date">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="modified_date">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="deleted" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<entity class="com.fsoft.bn.model.impl.AnswerImpl" name="Answer">
+		<table name="BN_Answer" />
+		<attributes>
+			<transient name="formatedCreatedDate" />
+			<transient name="organizationName" />
+		</attributes>
+	</entity>
+	<entity class="com.fsoft.bn.model.impl.AnswerAttachedFileImpl" name="AnswerAttachedFile">
+		<table name="BN_AnswerAttachedFile" />
+		<attributes />
+	</entity>
+	<entity class="com.fsoft.bn.model.impl.BNContactImpl" name="BNContact">
+		<table name="BN_BNContact" />
+		<attributes />
+	</entity>
+	<entity class="com.fsoft.bn.model.impl.BNNewsImpl" name="BNNews">
+		<table name="BN_BNNews" />
+		<attributes>
+			<transient name="dateToString" />
+		</attributes>
+	</entity>
+	<entity class="com.fsoft.bn.model.impl.EnrolmentImpl" name="Enrolment">
+		<table name="BN_Enrolment" />
+		<attributes />
+	</entity>
+	<entity class="com.fsoft.bn.model.impl.EnrolmentAttachedFileImpl" name="EnrolmentAttachedFile">
+		<table name="BN_EnrolmentAttachedFile" />
+		<attributes />
+	</entity>
+	<entity class="com.fsoft.bn.model.impl.InvestmentProjectsImpl" name="InvestmentProjects">
+		<table name="BN_InvestmentProjects" />
+		<attributes>
+			<transient name="categoryDisplay" />
+			<transient name="charterCapitalDisplay" />
+			<transient name="editAction" />
+			<transient name="endDay" />
+			<transient name="endMonth" />
+			<transient name="endYear" />
+			<transient name="investAmountMaxDisplay" />
+			<transient name="investAmountMinDisplay" />
+			<transient name="startDay" />
+			<transient name="startMonth" />
+			<transient name="startYear" />
+			<transient name="timeEndDisplay" />
+			<transient name="timeStartDisplay" />
+		</attributes>
+	</entity>
+	<entity class="com.fsoft.bn.model.impl.OrganizationsImpl" name="Organizations">
+		<table name="BN_Organizations" />
+		<attributes />
+	</entity>
+	<entity class="com.fsoft.bn.model.impl.PreschoolAttachedFileImpl" name="PreschoolAttachedFile">
+		<table name="BN_PreschoolAttachedFile" />
+		<attributes />
+	</entity>
+	<entity class="com.fsoft.bn.model.impl.PreschoolParentImpl" name="PreschoolParent">
+		<table name="BN_PreschoolParent" />
+		<attributes />
+	</entity>
+	<entity class="com.fsoft.bn.model.impl.PreschoolStudentImpl" name="PreschoolStudent">
+		<table name="BN_PreschoolStudent" />
+		<attributes />
+	</entity>
+	<entity class="com.fsoft.bn.model.impl.PrimarySchoolAttachedFileImpl" name="PrimarySchoolAttachedFile">
+		<table name="BN_PrimarySchoolAttachedFile" />
+		<attributes />
+	</entity>
+	<entity class="com.fsoft.bn.model.impl.PrimarySchoolParentImpl" name="PrimarySchoolParent">
+		<table name="BN_PrimarySchoolParent" />
+		<attributes />
+	</entity>
+	<entity class="com.fsoft.bn.model.impl.PrimarySchoolStudentImpl" name="PrimarySchoolStudent">
+		<table name="BN_PrimarySchoolStudent" />
+		<attributes />
+	</entity>
+	<entity class="com.fsoft.bn.model.impl.QuestionImpl" name="Question">
+		<table name="BN_Question" />
+		<attributes>
+			<transient name="dateDisplay" />
+			<transient name="statusDisplay" />
+		</attributes>
+	</entity>
+	<entity class="com.fsoft.bn.model.impl.QuestionAttachedFileImpl" name="QuestionAttachedFile">
+		<table name="BN_QuestionAttachedFile" />
+		<attributes />
+	</entity>
+	<entity class="com.fsoft.bn.model.impl.RecruitmentImpl" name="Recruitment">
+		<table name="BN_Recruitment" />
+		<attributes />
+	</entity>
+	<entity class="com.fsoft.bn.model.impl.RecruitmentAttachedFileImpl" name="RecruitmentAttachedFile">
+		<table name="BN_RecruitmentAttachedFile" />
+		<attributes />
+	</entity>
+	<entity class="com.fsoft.bn.model.impl.RecruitmentEducationalHistoryImpl" name="RecruitmentEducationalHistory">
+		<table name="BN_RecruitmentEducationalHistory" />
+		<attributes />
+	</entity>
+	<entity class="com.fsoft.bn.model.impl.RecruitmentLanguagesImpl" name="RecruitmentLanguages">
+		<table name="BN_RecruitmentLanguages" />
+		<attributes />
+	</entity>
+	<entity class="com.fsoft.bn.model.impl.RecruitmentProgrammingsImpl" name="RecruitmentProgrammings">
+		<table name="BN_RecruitmentProgrammings" />
+		<attributes />
+	</entity>
+	<entity class="com.fsoft.bn.model.impl.RecruitmentTrainingCoursesImpl" name="RecruitmentTrainingCourses">
+		<table name="BN_RecruitmentTrainingCourses" />
+		<attributes />
+	</entity>
+	<entity class="com.fsoft.bn.model.impl.ScheduleImpl" name="Schedule">
+		<table name="BN_Schedule" />
+		<attributes />
+	</entity>
+	<entity class="com.fsoft.bn.model.impl.StaffInfoImpl" name="StaffInfo">
+		<table name="BN_StaffInfo" />
+		<attributes>
+			<transient name="organizations_name" />
+		</attributes>
+	</entity>
+	<entity class="com.fsoft.bn.model.impl.UserfulContactPhoneImpl" name="UserfulContactPhone">
+		<table name="BN_UserfulContactPhone" />
+		<attributes />
+	</entity>
+	<entity class="com.fsoft.bn.model.impl.UserScheduleImpl" name="UserSchedule">
+		<table name="BN_UserSchedule" />
+		<attributes />
+	</entity>
+</entity-mappings>

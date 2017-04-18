@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+#parse ($init)
+
+<html class="#language("lang.dir") html_css" dir="#language("lang.dir")" lang="$w3c_language_id">
+
+<head>
+	<title>$the_title </title>
+	 ##$company_name
+
+	$taglibLiferay.include("/html/common/themes/bottom-ext.jsp") 
+	$theme.include($top_head_include)
+	#js ("$javascript_folder/jquery-1.9.1.js")	
+	#js ("$javascript_folder/jquery-ui.js")	
+	#js ("$javascript_folder/flowplayer-3.2.12.min.js")
+	#js ("$javascript_folder/customs.js")
+	#js ("$javascript_folder/jquery.slides.min.js")
+	#js ("$javascript_folder/mustache.js")
+	#js ("$javascript_folder/underscore.js")
+	#js ("$javascript_folder/jcarousellite_1.0.1.min.js")
+	#js ("$javascript_folder/jquery.jcarousel.pack.js")
+	#js ("$javascript_folder/jquery.tn3lite.min.js")
+	#js ("$javascript_folder/mobile-menu.js")
+	<script src="https://apis.google.com/js/platform.js"></script>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+   	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0"/>
+	<!-- Declare page as iDevice WebApp friendly -->
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+</head>
+
+<body class="$css_class">
+
+$theme.include($body_top_include)
+
+#if ($is_signed_in)
+	#dockbar()
+#end
+
+<div id="wrapper"  class="clearfix">
+<div id="header_container">
+	<div id="header">
+     	<div class="logo"><a href="http://tinhtonghochoi.vn">#language("site_name")</a></div>
+        <div class="boxright_top">
+        	<div class="box_list">
+        		<div class="fb_container">
+	        		<iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Ftinhtonghochoivietnam&amp;width&amp;layout=button&amp;action=like&amp;show_faces=true&amp;share=true&amp;height=35" scrolling="no" frameborder="0" style="border:none; overflow:hidden;height:35px;width:115px;margin-top:6px;" allowTransparency="true"></iframe>
+        			<a target="_blank" href="https://www.facebook.com/tinhtonghochoivietnam" style="
+					    display: inline-block;
+					    margin: 0;
+					    padding: 0;
+					    margin-left: -16px;
+					"><span style="
+					    color: #fff;
+					    background-image: linear-gradient(#4c69ba, #3b55a0);
+					    font-weight: bold;
+					    border-radius: 2px;
+					    float: left;
+					    margin-right: 5px;
+					    margin-top: 6px;
+					    padding: 0 2px;
+					">Facebook</span></a>
+        		</div>
+                #if (!$is_signed_in)
+					<a href="$sign_in_url" id="sign-in" rel="nofollow">$sign_in_text</a>
+				#end
+				<div class="box_tk">
+                	$theme.search()
+                </div>
+				<div class="youtube"><div class="g-ytsubscribe" data-channel="chuatanvien" data-layout="default" data-count="default"></div></div>
+            </div>
+        </div> 
+    </div>
+	<div id="navi_container">
+		#if ($has_navigation || $is_signed_in)
+			#parse ("$full_templates_path/navigation.vm")
+		#end
+	</div>
+    </div>
+	<div id="content">
+		
+		#if ($selectable)
+			$theme.include($content_include)
+		#else
+			$portletDisplay.recycle()
+
+			$portletDisplay.setTitle($the_title)
+
+			$theme.wrapPortlet("portlet.vm", $content_include)
+		#end
+	</div>
+	
+	     <!--++footer-->
+     <!--// end footer -->
+	
+</div>
+<div id="footer" class="clearfix" role="contentinfo">
+        <div class="footer">
+        	$footer-content
+        </div>
+        <a class="icon_top" style="display: none" href="#" title="lÃªn Ä‘áº§u trang"></a>
+    </div>
+$theme.include($body_bottom_include)
+
+</body>
+
+$theme.include($bottom_include)
+
+</html>

@@ -1,0 +1,288 @@
+#wrapper {
+	background: none;
+	margin: 0 auto;
+	width: 100%;
+	position: relative;
+}
+/*--header----*/
+#header {
+	width: 1000px;
+	height: 132px;
+	position: relative;
+	margin: auto;
+}
+
+#banner {
+	height: 132px;
+	margin-top: 0px;
+	position: relative;
+	background: url(@theme_image_path@/banner/banner.png) no-repeat left top;
+	margin: auto;
+	width: 1000px;
+	z-index: 1;
+}
+
+#header .banner.bannerdoanhnghiep {
+	background: url(@theme_image_path@/custom-image/bn_doanhnghiep.jpg) no-repeat left top;
+}
+
+#header .boxright_top {
+	width: 215px;
+	height: 34px;
+	display: inline-block;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	background: url(@theme_image_path@/common/bg_top_header.png) no-repeat left top;
+	z-index: 2;
+}
+
+.icon_vn,.icon_el {
+	padding-left: 33px !important;
+	height: 20px;
+	display: inline-block;
+}
+
+.icon_vn {
+	background: url(@theme_image_path@/icons/icon_vn.png) no-repeat 0px 0px;
+}
+
+.icon_el {
+	background: url(@theme_image_path@/icons/icon_EL.png) no-repeat 0px 0px;
+}
+
+#header .boxright_top .box_list {
+	padding-left: 20px;
+	padding-top: 2px;
+	display: inline-block;
+	font-size: 12px;
+	color: #444444;
+	line-height: 20px;
+}
+
+.box_search {
+	width: 190px;
+	height: 24px !important;
+	float: right !important;
+	background: url(@theme_image_path@/banner/bg_timkiem.png) no-repeat left top !important;
+	padding: 0px;
+	margin: 0px;
+	line-height: normal;
+	margin-top: 2px;
+}
+
+.box_search .input_text {
+	width: 145px;
+	height: 24px;
+	line-height: 24px;
+	font-size: 11px;
+	text-align: left;
+	color: #666;
+	padding-left: 7px;
+	border: 0px;
+	background-color: transparent;
+	float: left;
+}
+
+.box_search .buttons {
+	width: 35px;
+	height: 24px;
+	line-height: 24px;
+	border: 0px;
+	background-color: transparent;
+	float: left;
+	cursor: pointer;
+}
+
+#header .boxright_top .box_list a {
+	font-size: 12px;
+	color: #444444;
+	padding-left: 4px;
+	padding-right: 4px;
+	margin-left: 4px;
+}
+
+/*--end header----*/
+
+/* ---------- Main navigation ---------- */
+
+#navi {
+	width:100%;
+	float:left;
+	background: url(@theme_image_path@/navigation/bg_navitop.png) repeat-x center top;
+	position:relative;
+	z-index:10;
+	padding-top:5px;
+	height: 50px;
+}
+	
+#navi .box_menu {
+    margin: auto;
+    width: 1000px;
+}
+#navi ul.menutop {
+    float: left;
+    height: 29px;
+    line-height: 29px;
+    margin: auto;
+    padding-bottom: 5px;
+    width: 1000px;
+}
+#navi ul.menutop li {	
+	position:relative;
+	list-style: none outside none;
+	font-size:12px;
+	font-weight:bold;
+	color:#666;
+	line-height:29px;
+	float:left;
+	margin-left:2px;
+	margin-right:3px;
+	height:34px;
+}
+#navi ul.menutop li a {
+    color: #222222;
+    float: left;
+    padding-right: 18px;
+}
+#navi ul.menutop li a span{
+	color:#222;
+	float:left;	
+	padding-left:18px;
+	}		
+#navi ul.menutop li a:hover, #navi ul.menutop li.active a {	
+	background:url(@theme_image_path@/navigation/bg_hover_menu_r.png) no-repeat right top;
+	}
+#navi ul.menutop li a:hover .submenu li a:hover { background:none !important;}	
+
+#navi ul.menutop li a:hover span , #navi ul.menutop li.active a span{	
+	background:url(@theme_image_path@/navigation/bg_hover_menu_l.png) no-repeat left top;
+	color:#fff;
+	}	
+#navi ul.menutop li div.submenu {
+	visibility:hidden;
+	}	
+#navi ul.menutop li:hover div.submenu  {
+	visibility:inherit;
+	transition:width 2s, height 2s;
+	-moz-transition:width 2s, height 2s, -moz-transform 2s; /* Firefox 4 */
+	-webkit-transition:width 2s, height 2s, -webkit-transform 2s; /* Safari and Chrome */
+	-o-transition:width 2s, height 2s, -o-transform 2s; /* Opera */
+	
+	}
+#navi ul.menutop li div.submenu {
+	background:#FFFFFF;
+	position:absolute;
+	top:34px;
+	left:0px;
+	padding:5px;
+	padding-top:10px;	
+	border:2px solid #fed797;
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	z-index:9999;
+	
+	}
+#navi ul.menutop li div.submenu.thongtintinh {
+	left: -93px;
+    width: 950px;
+	padding-left:30px;
+	}
+#navi ul.menutop li div.submenu.cohoidautu {
+	width:470px;
+	left:-200px;
+	padding-left:50px;
+	}	
+#navi ul.menutop li div.submenu.dukhach {
+	width:470px;
+	left:-220px;
+	padding-left:50px;
+	}	
+#navi ul.menutop li .icon_row {visibility:hidden;}	
+#navi ul.menutop li:hover .icon_row {
+	width:28px;
+	height:22px;
+	visibility:inherit;
+	display:inline-block;
+	background:url(@theme_image_path@/icons/row_menuto.png) no-repeat 0px 0px; 
+	position:absolute;
+	top:28px;
+	left:35px;
+	}	
+	
+#navi ul.menutop li:hover a { 
+	color:#fff;
+	background:url(@theme_image_path@/navigation/bg_hover_menu_r.png) no-repeat right top;
+}
+#navi ul.menutop li:hover a span{ 
+	color:#fff;
+	background:url(@theme_image_path@/navigation/bg_hover_menu_l.png) no-repeat left top;
+}
+#navi ul.menutop li a:hover{ color:#fff;}	
+#navi ul.menutop li ul.submenu {
+	width:200px;
+	padding:5px;
+	float:left;	
+	}
+#navi ul.menutop li ul.submenu.width300 {
+	width:320px;
+	}
+#navi ul.menutop li ul.submenu.width250 {
+	width:250px;
+	padding-right:20px;
+	padding-left:20px;
+	}
+#navi ul.menutop li ul.submenu.padding-left {
+	padding-left:20px;
+	}				
+#navi ul.menutop li ul.submenu li {
+	width:100%;
+	float:left;
+	font-size:12px;
+	font-weight:normal;
+	text-transform:none;
+	text-align:left;
+	color:#333;
+	line-height:normal;
+	padding-top:5px;
+	padding-bottom:5px;
+	padding-left:0px;
+	padding-right:0px;
+	background:url(@theme_image_path@/icons/icon_row_back.png) no-repeat 4px 10px;
+	height:auto;
+	}
+#navi ul.menutop li ul.submenu li.none_row { background:none;}
+#navi ul.menutop li ul.submenu li.title { background:none; font-weight:bold;}
+#navi ul.menutop li ul.submenu.line { border-left:2px dotted #333;}		
+#navi ul.menutop li ul.submenu li.title {
+	font-weight:bold;
+	background:none;
+	}	
+#navi ul.menutop li ul.submenu li.title a { margin-left:0px;}	
+#navi ul.menutop li ul.submenu li a {color:#222; float:left; background:none;}	
+#navi ul.menutop li ul.submenu li a { margin-left:15px;}				
+#navi ul.menutop li.noline { background:none;}	
+
+#navi ul.menutop li.active a, #navi ul.menutop li  a:hover, #navi ul.menutop li ul.submenu li a:hover, #navi ul.menutop li div.submenu {
+	color:#ff6600;
+	}
+#navi ul.menutop li.active ul li a { color:#222;}
+
+#navi ul.menutop li div.column4 {
+    width: 840px;
+}
+
+#navi ul.menutop li div.column3 {
+    width: 630px;
+}
+
+#navi ul.menutop li div.column2 {
+    width: 420px;
+}
+
+#navi ul.menutop li div.column1 {
+    width: 210px;
+}
+  
+/* --end menu top----*/	

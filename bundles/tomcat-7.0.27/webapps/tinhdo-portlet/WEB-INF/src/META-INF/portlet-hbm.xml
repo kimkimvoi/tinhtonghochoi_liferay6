@@ -1,0 +1,184 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping default-lazy="false" auto-import="false">
+	<import class="com.fsoft.bn.model.Answer" />
+	<import class="com.fsoft.bn.model.AnswerAttachedFile" />
+	<import class="com.fsoft.bn.model.BNContact" />
+	<import class="com.fsoft.bn.model.BNJournalArticle" />
+	<import class="com.fsoft.bn.model.BNNews" />
+	<import class="com.fsoft.bn.model.InvestmentProjects" />
+	<import class="com.fsoft.bn.model.Organizations" />
+	<import class="com.fsoft.bn.model.Question" />
+	<import class="com.fsoft.bn.model.QuestionAttachedFile" />
+	<import class="com.fsoft.bn.model.Schedule" />
+	<import class="com.fsoft.bn.model.StaffInfo" />
+	<import class="com.fsoft.bn.model.UserfulContactPhone" />
+	<import class="com.fsoft.bn.model.UserSchedule" />
+	<class name="com.fsoft.bn.model.impl.AnswerImpl" table="BN_Answer">
+		<cache usage="read-write" />
+		<id name="answer_id" type="java.lang.String">
+			<generator class="uuid" />
+		</id>
+		<property name="answer_content" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="user_id" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="created_date" type="org.hibernate.type.TimestampType" />
+		<property name="modified_date" type="org.hibernate.type.TimestampType" />
+		<property name="deleted" type="com.liferay.portal.dao.orm.hibernate.BooleanType" />
+	</class>
+	<class name="com.fsoft.bn.model.impl.AnswerAttachedFileImpl" table="BN_AnswerAttachedFile">
+		<cache usage="read-write" />
+		<id name="answer_attached_id" type="java.lang.String">
+			<generator class="uuid" />
+		</id>
+		<property name="answer_id" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="attached_file_id" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="created_date" type="org.hibernate.type.TimestampType" />
+		<property name="modified_date" type="org.hibernate.type.TimestampType" />
+		<property name="deleted" type="com.liferay.portal.dao.orm.hibernate.BooleanType" />
+	</class>
+	<class name="com.fsoft.bn.model.impl.BNContactImpl" table="BN_BNContact">
+		<cache usage="read-write" />
+		<id name="contactId" type="long">
+			<generator class="uuid" />
+		</id>
+		<property name="departmentKey" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="name" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="regency" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="phoneNumber" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="email" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="createdDate" type="org.hibernate.type.TimestampType" />
+		<property name="modifiedDate" type="org.hibernate.type.TimestampType" />
+		<property name="deleted" type="com.liferay.portal.dao.orm.hibernate.BooleanType" />
+	</class>
+	<class name="com.fsoft.bn.model.impl.BNNewsImpl" table="BN_BNNews">
+		<cache usage="read-write" />
+		<id name="newsId" type="long">
+			<generator class="uuid" />
+		</id>
+		<property name="newsTitle" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="newsContent" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="createdDate" type="org.hibernate.type.TimestampType" />
+		<property name="modifiedDate" type="org.hibernate.type.TimestampType" />
+		<property name="deleted" type="com.liferay.portal.dao.orm.hibernate.BooleanType" />
+	</class>
+	<class name="com.fsoft.bn.model.impl.InvestmentProjectsImpl" table="BN_InvestmentProjects">
+		<cache usage="read-write" />
+		<id name="project_id" type="java.lang.String">
+			<generator class="uuid" />
+		</id>
+		<property name="project_name" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="total_investment_min" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="total_investment_max" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="implementation_location" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="start_time" type="org.hibernate.type.TimestampType" />
+		<property name="end_time" type="org.hibernate.type.TimestampType" />
+		<property name="project_purpose" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="charter_capital" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="project_category_id" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="project_status_id" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="investment_form_id" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="competent_organization_id" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="key_project" type="com.liferay.portal.dao.orm.hibernate.BooleanType" />
+		<property name="technical_specifications" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="currency_type_id" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="created_date" type="org.hibernate.type.TimestampType" />
+		<property name="modified_date" type="org.hibernate.type.TimestampType" />
+		<property name="deleted" type="com.liferay.portal.dao.orm.hibernate.BooleanType" />
+	</class>
+	<class name="com.fsoft.bn.model.impl.OrganizationsImpl" table="BN_Organizations">
+		<cache usage="read-write" />
+		<id name="organizations_id" type="long">
+			<generator class="uuid" />
+		</id>
+		<property name="organizations_name" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="organizations_description" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="organizations_address" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="deleted" type="com.liferay.portal.dao.orm.hibernate.BooleanType" />
+		<property name="createDate" type="org.hibernate.type.TimestampType" />
+		<property name="modifiedDate" type="org.hibernate.type.TimestampType" />
+	</class>
+	<class name="com.fsoft.bn.model.impl.QuestionImpl" table="BN_Question">
+		<cache usage="read-write" />
+		<id name="question_id" type="java.lang.String">
+			<generator class="uuid" />
+		</id>
+		<property name="question_title" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="question_type_id" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="question_content" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="citizen_name" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="citizen_mail" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="citizen_phone" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="citizen_address" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="question_status_id" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="answer_id" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="created_date" type="org.hibernate.type.TimestampType" />
+		<property name="modified_date" type="org.hibernate.type.TimestampType" />
+		<property name="deleted" type="com.liferay.portal.dao.orm.hibernate.BooleanType" />
+	</class>
+	<class name="com.fsoft.bn.model.impl.QuestionAttachedFileImpl" table="BN_QuestionAttachedFile">
+		<cache usage="read-write" />
+		<id name="question_attached_id" type="java.lang.String">
+			<generator class="uuid" />
+		</id>
+		<property name="question_id" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="attached_file_id" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="created_date" type="org.hibernate.type.TimestampType" />
+		<property name="modified_date" type="org.hibernate.type.TimestampType" />
+		<property name="deleted" type="com.liferay.portal.dao.orm.hibernate.BooleanType" />
+	</class>
+	<class name="com.fsoft.bn.model.impl.ScheduleImpl" table="BN_Schedule">
+		<cache usage="read-write" />
+		<id name="schedule_id" type="java.lang.String">
+			<generator class="uuid" />
+		</id>
+		<property name="schedule_date" type="org.hibernate.type.TimestampType" />
+		<property name="content" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="user_id" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="created_date" type="org.hibernate.type.TimestampType" />
+		<property name="modified_date" type="org.hibernate.type.TimestampType" />
+		<property name="deleted" type="com.liferay.portal.dao.orm.hibernate.BooleanType" />
+	</class>
+	<class name="com.fsoft.bn.model.impl.StaffInfoImpl" table="BN_StaffInfo">
+		<cache usage="read-write" />
+		<id name="staff_id" type="long">
+			<generator class="uuid" />
+		</id>
+		<property name="staff_firstname" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="staff_middlename" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="staff_lastname" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="staff_birthday" type="org.hibernate.type.TimestampType" />
+		<property name="staff_phone" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="staff_email" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="staff_sex" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="staff_role" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="deleted" type="com.liferay.portal.dao.orm.hibernate.BooleanType" />
+		<property name="createDate" type="org.hibernate.type.TimestampType" />
+		<property name="modifiedDate" type="org.hibernate.type.TimestampType" />
+		<property name="organizations_id" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+	</class>
+	<class name="com.fsoft.bn.model.impl.UserfulContactPhoneImpl" table="BN_UserfulContactPhone">
+		<cache usage="read-write" />
+		<id name="userful_contact_phone_id" type="java.lang.String">
+			<generator class="uuid" />
+		</id>
+		<property name="userful_contact_name" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="userful_contact_phone" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="userful_contact_email" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="userful_contact_position" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="userful_contact_address" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="created_date" type="org.hibernate.type.TimestampType" />
+		<property name="modified_date" type="org.hibernate.type.TimestampType" />
+		<property name="deleted" type="com.liferay.portal.dao.orm.hibernate.BooleanType" />
+	</class>
+	<class name="com.fsoft.bn.model.impl.UserScheduleImpl" table="BN_UserSchedule">
+		<cache usage="read-write" />
+		<id name="user_schedule_id" type="java.lang.String">
+			<generator class="uuid" />
+		</id>
+		<property name="user_id" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="created_date" type="org.hibernate.type.TimestampType" />
+		<property name="modified_date" type="org.hibernate.type.TimestampType" />
+		<property name="deleted" type="com.liferay.portal.dao.orm.hibernate.BooleanType" />
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,13 @@
+#*
+This file allows you to override and define new Velocity variables.
+*#
+
+## Get Last vertion by URLTITLE
+#set ($webContentTitle = "#language('footer_title')")
+#set ($webContentURLTitle = $stringUtil.replace($stringUtil.lowerCase("$webContentTitle"),' ','-'))
+#set ($journalArticleLocalService = $serviceLocator.findService("com.liferay.portlet.journal.service.JournalArticleLocalService"))
+#set ($journalArticle = $journalArticleLocalService.getLatestArticleByUrlTitle($themeDisplay.getScopeGroupId(),$webContentURLTitle, 0))
+
+#if ($journalArticle)
+	#set($footer-content=$journalContentUtil.getContent($group_id, $journalArticle.getArticleId(),null,"$locale",$theme_display))
+#end

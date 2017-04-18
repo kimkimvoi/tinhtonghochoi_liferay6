@@ -1,0 +1,86 @@
+.custom_downloadIcon {
+  float: right;
+  padding: 5px 0px; }
+
+.underline_link {
+  text-decoration: underline; }
+
+.span_separator {
+  padding-left: 3px;
+  padding-right: 3px; }
+
+div#documentViewer_label_introduction {
+  font-size: 20px;
+  padding-left: 5px; }
+
+div#documentsContainer {
+  overflow: auto; }
+
+#documentsContainer ul.im_tabs, ul.im_year_tabs_ul {
+  height: 21px;
+  list-style: none outside none;
+  margin: 0 !important;
+  padding: 0; }
+
+#documentsContainer .im_tabs li a.im_tab {
+  background: url("../../../images/bg_im_tabs.gif") repeat-x scroll 0 0 rgba(0, 0, 0, 0);
+  border-bottom: 1px solid #D7D7D7;
+  color: #464646;
+  display: block;
+  font-size: 11px;
+  font-weight: bold;
+  height: 20px;
+  line-height: 20px;
+  margin: 0;
+  outline: medium none;
+  padding: 0 7px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  top: 1px; }
+
+ul.im_tabs a.current, ul.im_tabs a:hover, ul.im_tabs li.current a {
+  background: none repeat scroll 0 0 #FFFFFF !important;
+  color: #B72750 !important;
+  cursor: default !important; }
+
+ul.im_year_tabs_ul a.current, ul.im_year_tabs_ul a:hover, ul.im_year_tabs_ul li.current a {
+  background: none repeat scroll 0 0 #FFFFFF !important;
+  color: #B72750 !important;
+  cursor: default !important; }
+
+#documentsContainer .im_left_panel {
+  border: 1px solid #c0c2c5;
+  float: left;
+  height: 300px;
+  border-top: none;
+  border-left: none;
+  border-bottom: none; }
+
+#documentsContainer .aui-column-content, .aui-column-content-center {
+  padding: 0; }
+
+#magazine_Container {
+  float: left; }
+
+#magazine_Container .im_year_tabs_ul li {
+  float: left; }
+
+#documentsContainer .im_year_tabs_ul li a.im_year_tab {
+  background: url("../../../images/bg_im_tabs.gif") repeat-x scroll 0 0 rgba(0, 0, 0, 0);
+  border-right: 1px solid #D7D7D7;
+  color: #464646;
+  display: block;
+  font-size: 11px;
+  font-weight: bold;
+  height: 20px;
+  line-height: 20px;
+  margin: 0;
+  margin-top: -1px;
+  outline: medium none;
+  padding: 0 7px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  top: 1px; }
+

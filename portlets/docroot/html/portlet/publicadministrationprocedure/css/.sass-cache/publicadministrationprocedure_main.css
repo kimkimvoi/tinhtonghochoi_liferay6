@@ -1,0 +1,14 @@
+.publicadministrationprocedure-portlet .portlet-content, .publicadministrationprocedure-portlet .portlet-minimized .portlet-content-container {
+  padding: 0; }
+.publicadministrationprocedure-portlet .portlet-topper {
+  border-width: 0; }
+.publicadministrationprocedure-portlet .portlet-title {
+  display: none; }
+.publicadministrationprocedure-portlet .portlet {
+  background: none !important;
+  padding: 0;
+  margin: 0;
+  border: none; }
+.publicadministrationprocedure-portlet p {
+  margin-bottom: 0.3em; }
+

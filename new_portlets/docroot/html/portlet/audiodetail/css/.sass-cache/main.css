@@ -1,0 +1,105 @@
+.audiodetail-portlet .portlet-content {
+  margin: 0;
+  padding: 0; }
+.audiodetail-portlet .content_detail_news {
+  margin: 10px; }
+.audiodetail-portlet .content_detail_news h1.title {
+  color: #17658c;
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left; }
+.audiodetail-portlet .content_detail_news .date_time {
+  color: #888888;
+  float: left;
+  font-size: 12px;
+  margin-bottom: 15px;
+  text-align: right;
+  width: 100%; }
+.audiodetail-portlet .content_detail_news .date_time span {
+  float: left;
+  text-align: left; }
+.audiodetail-portlet .content_detail_news .supdetail {
+  color: #555555;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 18px;
+  margin-bottom: 20px;
+  text-align: left; }
+.audiodetail-portlet .content_detail_news .textdetail {
+  color: #333333;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: left; }
+.audiodetail-portlet .content_detail_news .textdetail a {
+  color: blue;
+  text-decoration: underline!important; }
+.audiodetail-portlet ul.list_detail {
+  border-top: 1px dotted #CCCCCC;
+  float: left;
+  margin-bottom: 20px;
+  margin-top: 15px;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 20px;
+  width: 96%; }
+.audiodetail-portlet ul.list_detail li {
+  background: url(@theme_image_path@/icons/icon_row_back.png) no-repeat scroll 5px 10px rgba(0, 0, 0, 0);
+  color: #333333;
+  float: left;
+  font-size: 12px;
+  list-style: none outside none;
+  padding-bottom: 4px;
+  padding-top: 4px;
+  text-align: left;
+  width: 100%; }
+.audiodetail-portlet ul.list_detail li a {
+  color: #333;
+  padding-left: 15px;
+  float: left; }
+.audiodetail-portlet ul.list_detail li.title {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  background: none; }
+.audiodetail-portlet ul.list_detail li a:hover {
+  color: #ff6600; }
+.audiodetail-portlet ul.list_detail li.icon_news {
+  float: left; }
+.audiodetail-portlet .portlet {
+  display: inline-block; }
+.audiodetail-portlet .box_news_detail {
+  background-color: #FFFFFF;
+  float: left;
+  margin-bottom: 10px;
+  border-radius: 0 0 5px 5px;
+  width: 100%; }
+.audiodetail-portlet .author, .audiodetail-portlet .source {
+  text-align: right;
+  font-weight: bold;
+  padding: 0 10px; }
+.audiodetail-portlet .site_path {
+  color: #888888;
+  font-style: italic;
+  margin-bottom: 10px; }
+.audiodetail-portlet .site_path a {
+  font-size: 14px;
+  font-style: italic; }
+.audiodetail-portlet .song_info {
+  color: #555;
+  font-size: 11px;
+  font-style: Tahoma; }
+.audiodetail-portlet .list_detail_audio .title {
+  padding-left: 0px!important;
+  font-weight: bold;
+  background: none; }
+.audiodetail-portlet .list_detail_audio {
+  border-top: 1px dotted #ccc;
+  list-style: none;
+  padding-left: 18px;
+  color: #555; }
+.audiodetail-portlet .list_detail_audio li {
+  padding-left: 19px;
+  color: #555;
+  background: url("play_icon.png") no-repeat scroll 0 2px rgba(0, 0, 0, 0); }
+

@@ -1,0 +1,55 @@
+@CHARSET "ISO-8859-1";
+/** Mobile UI */
+@media all and (max-width: 768px) , only screen and
+		(-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px) , only
+		screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px) ,
+		only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width:
+		1024px) , only screen and (min-device-pixel-ratio: 2) and (max-width:
+		1024px) , only screen and (min-resolution: 192dpi) and (max-width:
+		1024px) , only screen and (min-resolution: 2dppx) and (max-width:
+	1024px) {
+	div.portlet-column {
+	    display: inline-block ;
+	    width: 100%;
+	}
+	div#wrapper {
+		width: 100%;
+	}
+	div#header {
+		width: 85%;
+    	position: absolute;
+    	z-index: 9999;
+    	background: transparent;
+	}
+	div#header .boxright_top {
+		display: none;
+	}
+	div#header .logo a {
+		padding-top: 5px;
+	}
+	div#header .logo {
+		background:url(@theme_image_path@/custom-image/logo.png)no-repeat scroll 11px 4px / 36px 36px rgba(0, 0, 0, 0);
+	    float: left;
+	    padding-left: 50px;
+	    position: relative;
+	    z-index: 1;
+	}
+	div#content {
+		width: 98%;
+		padding: 3px;
+	    padding-top: 1px;
+	    overflow: hidden;
+	}
+	div#column-1 {
+	    display: none;
+	}
+	div.portlet-layout {
+		display: block;
+	}
+	a.online-counter {
+		display: none;
+	}
+	div#header .logo a {
+		font-size: 14px;
+	}
+}

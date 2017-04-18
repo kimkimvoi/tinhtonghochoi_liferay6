@@ -1,0 +1,67 @@
+.rightcategories-portlet { 
+	.portlet-body {
+		background: none !important;
+		overflow: hidden;
+	}
+	
+	/* .portlet {
+		display: inline-block;
+	} */
+	
+	#right-categories {
+		width:250px;
+		margin: 0 auto;
+	}
+	#right-categories .box-commons {
+		width:100%;
+		/* float:left; */
+	}
+	#right-categories .box-commons .box-content {
+		border:1px solid #ccc;
+		border-top:0px;
+		margin-bottom: 10px;
+		background:#fff;
+		/* float:left; */
+		width:248px;
+		border-radius: 0 0 5px 5px;
+	}
+	#right-categories ul.list_danhmuc li a {
+	    color: #000000;
+	    /* float: left; */
+	    padding-left: 35px;
+	    text-decoration: none;
+	}
+	#right-categories ul.list_danhmuc {
+		width:220px;
+		padding-left:14px;
+		/* float:left; */
+		padding-bottom:20px;
+		padding-top:20px;
+	}
+	#right-categories ul.list_danhmuc li {
+		width:100%;
+		/* float:left; */
+		line-height:25px;
+		padding-bottom:10px;
+		font-size:13px;
+		text-align:left;
+		font-weight:bold;
+		color:#000;
+		list-style:none;
+	}
+	#right-categories ul.list_danhmuc li a{ color:#000;/*  float:left; */ padding-left:35px;}
+	
+	.icon_lich_lv {
+		background:url(/tinhdo-portlet/html/images/icons/Lichlv.png) no-repeat 0px 0px;
+	}
+	.icon_congbaotinh, .icon_vanbanphatquy, .icon_dichvucong {
+		background:url(/tinhdo-portlet/html/images/icons/CongBao.gif) no-repeat 0px 0px;
+	}
+	
+	.icon_danhbadientu {
+		background:url(/tinhdo-portlet/html/images/icons/DanhBaDienTu.gif) no-repeat 0px 0px;
+	}
+	.icon_thutuchanhchinh{
+		background:url(/tinhdo-portlet/html/images/icons/icon_hanhchinh.png) no-repeat 0px 0px;
+	}
+}

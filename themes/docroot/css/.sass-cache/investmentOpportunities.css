@@ -1,0 +1,56 @@
+.portlet-asset-publisher .portlet-content .asset-abstract {
+  border-bottom: 1px dotted #DEDEDE;
+  padding-bottom: 10px; }
+
+.portlet-asset-publisher .portlet-content .asset-abstract_0 .asset-content .asset-small-image {
+  width: 315px; }
+
+.portlet-asset-publisher .portlet-content .asset-abstract_0 .asset-content img.asset-small-image {
+  width: 300px; }
+
+.portlet-asset-publisher .portlet-content .asset-abstract:HOVER {
+  border-bottom: 1px dotted #FF6600; }
+
+.portlet-asset-publisher .portlet-content .asset-abstract .asset-title {
+  border: 0 none;
+  margin-top: 10px;
+  padding: 0; }
+
+.portlet-asset-publisher .portlet-content .asset-abstract .asset-title a {
+  color: #333333;
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 13px;
+  font-weight: bold; }
+
+.portlet-asset-publisher .portlet-content .asset-content {
+  margin: 0;
+  padding: 0; }
+
+.portlet-asset-publisher .portlet-content .asset-content .asset-summary {
+  color: #0D0D0D;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: justify; }
+
+.portlet-asset-publisher .portlet-content .asset-content .asset-small-image {
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 165px; }
+
+.portlet-asset-publisher .portlet-content .asset-abstract:HOVER .asset-content .asset-small-image img {
+  border: 1px solid #FF6600; }
+
+.portlet-asset-publisher .portlet-content .asset-content img.asset-small-image {
+  border: 1px solid #CCCCCC;
+  padding: 2px;
+  width: 150px; }
+
+.portlet-asset-publisher .portlet-content .asset-content .asset-more {
+  clear: none;
+  margin-top: 15px; }
+
+.portlet-asset-publisher .portlet-content .asset-content .asset-more a {
+  color: #A35502;
+  font-size: 12px; }
+

@@ -1,0 +1,1 @@
+Liferay.Service.register("Liferay.Service.BN", "com.fsoft.bn.service", "bacninh-portlet");

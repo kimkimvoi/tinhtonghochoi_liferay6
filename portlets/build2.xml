@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<!DOCTYPE project>
+<project name="tinhdo-portlet" basedir="." default="deploy">
+	<import file="../ant/build-common-portlet.xml" />
+	<target name="compile_analysis" depends="compile,findbugs" />
+
+	<property name="javac.srcdir" value="docroot/WEB-INF/src" />
+	<property name="javac.destdir" value="docroot/WEB-INF/classes" />
+	<property name="findbugs.home" value="../ant" />
+	<property name="javac.deprecation" value="on" />
+	<property name="javac.nowarn" value="off" />
+
+	<path id="portlet.classpath">
+		<fileset dir="docroot/WEB-INF/lib" includes="*.jar" />
+		<fileset dir="${app.server.lib.global.dir}" includes="*.jar" />
+		<fileset dir="${app.server.lib.portal.dir}" includes="annotations.jar,commons-logging.jar,log4j.jar,util-bridges.jar,util-java.jar,util-taglib.jar" />
+		<fileset dir="${project.dir}/lib" includes="activation.jar,jsp-api.jar,mail.jar,servlet-api.jar" />
+	</path>
+
+	<path id="pmd.classpath">
+		<fileset dir="../ant/lib_pmd" includes="*.jar" />
+	</path>
+
+	<taskdef name="findbugs" classpath="../ant/lib/findbugs-ant.jar" classname="edu.umd.cs.findbugs.anttask.FindBugsTask" />
+	<target name="findbugs">
+		<findbugs home="${findbugs.home}" output="xml:withMessages" outputFile="findbugs.xml">
+			<class location="docroot/WEB-INF/classes" />
+			<auxClasspath refid="portlet.classpath" />
+			<sourcePath path="${javac.srcdir}" />
+		</findbugs>
+	</target>
+
+	<target name="pmd">
+		<taskdef name="pmd" classname="net.sourceforge.pmd.ant.PMDTask" classpathref="pmd.classpath" />
+		<pmd shortFilenames="true">
+			<sourceLanguage name="java" version="1.6" />
+			<ruleset>java-basic</ruleset>
+			<formatter type="xml" toFile="pmd.xml" toConsole="true" />
+			<fileset dir="${javac.srcdir}">
+				<include name="**/*.java" />
+			</fileset>
+		</pmd>
+	</target>
+
+	<target name="warning">
+		<javac deprecation="true" destdir="${javac.destdir}">
+			<compilerarg value="-Xlint" />
+		</javac>
+	</target>
+</project>

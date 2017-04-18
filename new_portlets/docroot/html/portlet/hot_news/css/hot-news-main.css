@@ -1,0 +1,213 @@
+.hot-news-portlet {
+	.box_new_more {
+		display: inline-block;
+   		width: 100%;
+	}
+	
+	.portlet-body { 
+		background-color: rgba(0, 0, 0, 0);
+		display: inline-block;
+	}
+	.hot-news-container .pin-news-container .pin-news {
+		display: inline-block; 
+		float: left; 
+		height: 284px; 
+		width: 368px;
+	}
+	.hot-news-container .pin-news-container .tab-news-container {
+		display: inline-block;
+	    float: left;
+	    height: 320px;
+	    max-height: 320px;
+	    overflow: hidden;
+	    width: 304px;
+	}
+	.hot-news-container .pin-news-container .sub-pin-news {
+		display: inline-block;
+		width: 100%; 
+		float: left;
+	}
+	.hot-news-container .pin-news-container .sub-pin-news li {
+	    display: inline-block;
+	    float: left;
+	    height: 180px;
+	    width: 168px;
+	}
+	.news-item img {
+	    border: 1px solid #ccc;
+	    height: 210px;
+	    margin: 5px 5px 0;
+	    padding: 1px;
+	    width: 355px;
+	}
+	.news-item img.news-icon {
+	    border: none;
+	    height: auto;
+	    width: auto;
+	    margin: 0 auto;
+   		padding: 0;
+	}
+	.created-date {
+		color: #999;
+		font-weight:normal;
+	    display: inline-block;
+	    font-size: 10px;
+	    padding-left: 3px;
+	}
+	.hot-news-container .pin-news-container .pin-news .news-item .boxtext {
+		display: inline-block;
+	    margin-left: 6px;
+	    max-height: 95px;
+	    overflow: hidden;
+	}
+	ul.latest-news {
+		list-style: none;
+	}
+	ul.latest-news li {
+	    color: #8e908f;
+	    display: inline-block;
+	    float: left;
+	    text-transform: uppercase;
+	    width: 50%;
+	   	border-bottom: 3px solid;
+	}
+	#tabs {
+		margin-top: 2px;
+	}
+	.ui-tabs-anchor {
+    	color: #8e908f;
+	    display: inline-block;
+	    width: 100%;
+	    text-align: center;
+	    font-size: 12px;
+	}
+	.ui-tabs-active.ui-state-active {
+		border-bottom: 3px solid #fbc14d;
+	}
+	.ui-tabs-active.ui-state-active .ui-tabs-anchor{ 
+	    color: #000;
+	    font-weight: bold;
+	}
+	.ui-state-default {
+		border-bottom: 3px solid;
+	}
+	#tabs-1 , #tabs-2 {
+		display: inline-block;
+	}
+	#tabs-1 li , #tabs-2 li {
+	    border-bottom: 1px dotted #ccc;
+	    padding-bottom: 3px;
+	    padding-top: 3px;
+	    background: url("/public-theme/images/sprite-2.gif") no-repeat;
+	    padding-left: 9px;
+	    background-position: 0 -286px;
+	    height: 38px;
+	    margin-left: 3px;
+	}
+	p {
+		display: inline-block;
+		line-height: 16px;
+	}
+	p {
+   text-transform: lowercase;
+    
+	}
+	p::first-letter {
+	   text-transform: uppercase;
+	}
+	h2.h2 {
+		line-height: 14px;
+	}
+	.img-sub-list {
+		border: 1px solid rgb(204, 204, 204);
+	    height: 105px;
+	    margin: 5px;
+	    padding: 1px;
+	    width: 160px;
+	}
+	.sub-pin-news p {
+		margin-left: 6px;
+	    margin-top: -10px;
+	    vertical-align: top;
+	}
+	.news-item {
+		padding-right: 5px;
+	}
+	@media all and (max-width: 768px) , only screen and
+		(-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px) , only
+		screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px) ,
+		only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width:
+		1024px) , only screen and (min-device-pixel-ratio: 2) and (max-width:
+		1024px) , only screen and (min-resolution: 192dpi) and (max-width:
+		1024px) , only screen and (min-resolution: 2dppx) and (max-width:
+	1024px) {
+		div.news-item img {
+		    border: 1px solid #ccc;
+		    height: 210px;
+		    margin: 5px 5px 0;
+		    padding: 1px;
+		    width: 95%;
+		}
+		div.hot-news-container .pin-news-container .pin-news {
+			display: inline-block; 
+			float: left; 
+			height: auto; 
+			width: 100%;
+		}
+		div.hot-news-container .pin-news-container .tab-news-container {
+			display: inline-block;
+		    float: left;
+		    height:auto;
+		    width: 100%;
+		}
+		.sub-pin-news .img-sub-list {
+		    width: 80px;
+		    height: 60px;
+		}
+		.hot-news-container .pin-news-container .sub-pin-news ul li {
+		    display: inline-block;
+		    float: none;
+		    min-height:60px;
+		    height:auto;
+		    width: 100%;
+		}
+		.pin-news-container .sub-pin-news p {
+		    margin-left: 0;
+		    margin-top: 3px;
+		    vertical-align: top;
+		    width: 170px;
+		}
+		
+	}
+}
+	/* Tooltip -Styles */
+	.tooltip {
+		padding: 5px;
+		font-size: 11px;
+		opacity: 0.85;
+		filter: alpha(opacity=8s5);
+		background-repeat: no-repeat;
+		background-image: url(../images/tooltip.gif);
+	}
+	.tooltip-inner {
+		padding: 5px 10px;
+		max-width: 200px;
+		pointer-events: none;
+		color: white;
+		text-align: center;
+		background-color: black;
+		border-radius: 3px;
+		box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+	}
+	.tooltip-bottom {
+		background-position: top center;
+	}
+	.tooltip-top {
+		background-position: bottom center;
+	}
+	.tooltip-left {
+		background-position: right center;
+	}
+	.tooltip-right {
+		background-position: left center;
+	}

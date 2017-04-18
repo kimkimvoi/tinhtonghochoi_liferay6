@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE display PUBLIC "-//Liferay//DTD Display 6.1.0//EN" "http://www.liferay.com/dtd/liferay-display_6_1_0.dtd">
+
+<display>
+	<!--  All Bac ninh portlet should go here    -->
+	<category name="portlet.display.maincategory">
+		<category name="portlet.display.news-category">
+			<portlet id="hot-news"></portlet>
+			<portlet id="news-detail"></portlet>
+			<portlet id="newsbycategory"></portlet>
+		</category>
+		<category name="portlet.display.multimedia">
+			<portlet id="videogallery"></portlet>
+			<portlet id="photogallery"></portlet>
+			<portlet id="videogallerycollection"></portlet>
+			<portlet id="audioplayer"></portlet>
+			<portlet id="book-library"></portlet>
+			<portlet id="audiodetail"></portlet>
+			<portlet id="audio-library"></portlet>
+		</category>
+		<category name="portlet.display.utilites">
+			<portlet id="advertisement"></portlet>
+			<portlet id="flag-counter"></portlet>
+			<portlet id="documentviewer"></portlet>
+			<portlet id="google-map"></portlet>
+		</category>
+	</category>
+	<category name="category.sample">
+		<portlet id="live-video"></portlet>
+	</category>
+</display>

@@ -1,0 +1,157 @@
+.admin-schedule-portlet {
+	.portlet{
+		display: inline-block;
+		width:100%;
+	}
+	select {
+		-moz-border-bottom-colors: none;
+	    -moz-border-left-colors: none;
+	    -moz-border-right-colors: none;
+	    -moz-border-top-colors: none;
+	    background-image: url("/public-theme/images/forms/input_shadow.png");
+	    background-repeat: no-repeat;
+	    border-color: #BFBFBF #DEDEDE #DEDEDE #BFBFBF;
+	    border-image: none;
+	    border-style: solid;
+	    border-width: 1px;
+	}
+	.label_left {
+		display: inline;
+		float: none;
+		text-align: left;
+		margin: 0;
+		width: auto;
+	}
+	
+	.schedule_form_content {
+		border-bottom: 1px solid #CCCCCC;
+	    height: 120px;
+	    margin: 0 10px;
+	}
+	.portlet_wrapper {
+		border: 1px solid #CCCCCC;
+		width: 730px;
+	}
+	.schedule_config {
+		margin: 15px;
+	}
+	.schedule_config div {
+		margin: 10px 0;
+	}
+	.schedule_config div label {
+		margin: 0 10px;
+	}
+	.schedule_config_title {
+		font-size: 14px;
+	    font-weight: bold;
+	}
+	.scheSearchPn {
+		float: left;
+		margin: 25px 20px 10px 0;
+		line-height: 30px;
+		display: inline-flex;
+	}
+	.weekly_schedule {
+		margin-top: 10px;
+	}
+	.weekly_schedule .weekly_schedule_title{
+		font-size: 12px;
+	    font-style: italic;
+	    font-weight: bold;
+	    margin-left: 10px;
+	}
+	.schedule_cbx {
+		margin-left: 10px;
+		height: 25px;
+		line-height: 25px;
+	}
+	.schedule_cbx_user select {
+	    color: #555555;
+	    float: left;
+	    font-size: 12px;
+	    margin-bottom: 10px;
+	    padding: 4px;
+	    text-align: left;
+	    width: 150px;
+	}
+	.schedule_cbx_month select {
+		color: #555555;
+	    float: left;
+	    font-size: 12px;
+	    margin-bottom: 10px;
+	    padding: 4px;
+	    text-align: left;
+	    width: 100px;
+	}
+	.schedule_cbx_year select {
+		color: #555555;
+	    float: left;
+	    font-size: 12px;
+	    margin-bottom: 10px;
+	    padding: 4px;
+	    text-align: left;
+	    width: 100px;
+	}
+	.schedule_cbx .schedule_cbx_year select {
+		width: 100px;
+	}
+	.box_calender_work {
+		width:98%;
+		margin-bottom:25px;
+		padding:1%;
+	}
+	.box_calender_work tr td:first-child{
+		font-weight: bold;
+	}
+	.week_schedule_pn {
+	    margin-bottom: 10px;
+	    margin-top: 10px;
+	}
+	.user_schedule_title {
+		 margin: 10px 0;
+	}
+	.buttons_panel {
+		text-align: right;
+	}
+	.schedule_week_search_pn{
+		height: 85px;
+	    width: 100%;
+	}
+	.user_month_title {
+		margin: 10px 0;
+	}
+	.search_user_panel input[type='text'] {
+		width: 300px;
+	}
+	.box_calender_work .left {
+		width: 450px
+	}
+	.box_calender_work li { list-style:none; width:100%; float:left; margin-bottom:5px; line-height:18px;}
+	.box_calender_work .user_schedule_table tr.title .th1{ width:5%;}
+	.box_calender_work .user_schedule_table tr.title .th2{ width:35%;}
+	.box_calender_work .user_schedule_table tr.title .th3{ width:40%;}
+	.box_calender_work .user_schedule_table tr.title .th4{ width:20%;}
+	
+	.box_calender_work .week_schedule_table tr.title .th1{ width:10%;}
+	.box_calender_work .week_schedule_table tr.title .th2{ width:18%;}
+	.box_calender_work .week_schedule_table tr.title .th3{ width:18%;}
+	.box_calender_work .week_schedule_table tr.title .th4{ width:18%;}
+	.box_calender_work .week_schedule_table tr.title .th5{ width:18%;}
+	.box_calender_work .week_schedule_table tr.title .th6{ width:18%;}
+	
+	.box_calender_work table { border-collapse:collapse; width:100%; border:1px solid #ccc;}
+	.box_calender_work table td, .box_calender_work table th {
+		border:1px solid #ccc;
+		padding:3px;
+		font-size:12px;
+		color:#333;
+		padding-top:6px;
+		padding-bottom:8px;
+		}
+	.box_calender_work table .td1, .box_calender_work table .td4 {text-align:center;} 
+	.box_calender_work table th { text-align:center; padding-top:12px;
+	padding-bottom:12px; background-color:#eee;font-weight: bold;}	
+	.box_calender_work table td a { color:#333;}
+	.box_calender_work table td p { margin-bottom:5px; line-height:18px;}
+	.box_calender_work table td:hover {background-color:#F8ECD1}
+}

@@ -1,0 +1,175 @@
+.portlet-content {
+  background-color: #fff; }
+
+.portlet-body {
+  margin: 00px;
+  margin-top: 0px;
+  background-color: #fff;
+  display: inline-block;
+  width: 100%; }
+
+.admin_qa_management {
+  margin: 30px;
+  margin-top: 0px; }
+
+.admin_qa_management table {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-collapse: collapse; }
+
+.admin_qa_management #_answered_questions_WAR_tinhdoportlet_questionTypes {
+  padding: 4px;
+  width: 250px;
+  float: left;
+  color: #555;
+  font-size: 12px;
+  text-align: left;
+  margin-bottom: 10px; }
+
+.admin_qa_management .rowa {
+  width: 45%;
+  float: left; }
+
+.admin_qa_management .rowb {
+  width: 45%;
+  float: right; }
+
+.admin_qa_management .input_text {
+  width: 186px;
+  border: 1px solid #ccc;
+  line-height: 22px;
+  padding-left: 2%;
+  float: left;
+  padding-right: 2%;
+  font-size: 12px;
+  text-align: left;
+  color: #555;
+  margin-right: 4px; }
+
+.admin_qa_management table td {
+  border: 1px solid #ccc;
+  font-size: 12px;
+  color: #333;
+  padding: 5px; }
+
+.admin_qa_management table td a {
+  color: #6F310A; }
+
+.admin_qa_management table td a:hover {
+  text-decoration: underline; }
+
+.admin_qa_management table td.textcenter {
+  text-align: center; }
+
+.admin_qa_management table tr.title {
+  background-color: #fcf3cb; }
+
+.admin_qa_management table tr.title th {
+  font-weight: bold;
+  text-align: center; }
+
+.question_list table tr:hover {
+  background-color: #fcf5d6; }
+
+.admin_qa_management table th {
+  padding: 5px; }
+
+.padding-top5 {
+  padding-top: 5px; }
+
+ul.list_question .erro .inputtext, ul.list_question .erro .inputmaxacnhan, ul.list_question .erro .textarea {
+  border: 1px solid #F00;
+  color: #F00; }
+
+.lfr-search-container {
+  width: 600px; }
+
+.lfr-search-container .results-header th {
+  background: none;
+  background-color: #fcf3cb;
+  color: #000;
+  font-weight: bold;
+  text-align: center; }
+
+#answeredQuestionTable_pagingDiv {
+  text-align: center; }
+
+.ques_content .answ_content {
+  width: 660px;
+  height: 95px; }
+
+.button_area {
+  text-align: center;
+  margin-top: 10px; }
+
+#answeredQuestionTable {
+  margin-top: 10px; }
+
+.selected {
+  background-color: #FFCC00; }
+
+.questionTypeSelecetion {
+  float: right;
+  width: 45%; }
+
+#textQuestionSearch {
+  width: 350px; }
+
+#questionSearchButton {
+  margin-left: 15px; }
+
+select {
+  margin-top: 5px;
+  width: 200px!important; }
+
+.questionTextSearch {
+  margin-top: 15px; }
+
+li {
+  list-style: none; }
+
+textarea {
+  width: 100%;
+  margin-top: 5px; }
+
+#cke_bottom__adminqamanagement_WAR_tinhdoportlet_answerContent {
+  display: none; }
+
+#cke_bottom__adminqamanagement_WAR_tinhdoportlet_questionContent {
+  display: none; }
+
+.portlet-msg-success {
+  display: none; }
+
+.admin_qa_management .portlet-msg-alert {
+  background-position: 6px 6px; }
+
+.admin_qa_management #result .warningResult li {
+  list-style: circle;
+  margin-left: 15px; }
+
+.label {
+  font-weight: bold;
+  font-size: 12px; }
+
+#questionContent {
+  margin-left: 10px; }
+
+.ques_detail table {
+  border: 0px; }
+
+.ques_detail table td {
+  border: 0px;
+  padding: 0px 0px 0px 0px; }
+
+.questionDetailLabel {
+  width: 16%; }
+
+.answer_detail span.cke_skin_kama {
+  border: 0px; }
+
+.details {
+  border: 1px solid #CCCCCC;
+  color: #333333;
+  padding: 5px; }
+

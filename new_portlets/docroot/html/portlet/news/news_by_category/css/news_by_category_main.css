@@ -1,0 +1,418 @@
+.newsbycategory-portlet {
+	
+	.portlet {
+		background:none!important;
+		padding:0;
+		margin-bottom: 0;
+ 	}
+ 	.image_events img {
+	    height: 60px;
+	    width: 100px;
+	}
+	.portlet-borderless-container {
+		display: inline-block;
+		width: 100%;
+	}
+	.portlet-boundary , .portlet-body {
+		width: 100%;
+		background-color: transparent;
+	}
+	.list_new ul li {
+	    display: block;
+	    float: left;
+	    margin: 5px 5px;
+	    width: 300px;
+	}
+	.photo {
+		border:1px solid #ccc;
+		padding:1px;
+		float: left;
+	    height: 122px;
+	    margin-right: 5px;
+	    width: 140px;
+	}
+	.list_new ul li .tex_list .title_v{
+		color: #6F310A;
+	    font-size: 12px;
+	    font-weight: bold;
+	    line-height: 18px;
+	    width: 100%;
+	}
+	
+	.list_new ul li .tex_list .title_v a {
+		color: #6F310A;
+	}
+	
+	.list_new ul li .tex_list .content_small a {
+		color: #6F310A;
+		display: none;
+	}
+	.list_new ul li .tex_list .content_small a {
+		color: #6F310A;
+		display: none;
+	}
+	.first_record {
+		padding: 5px;
+		border-bottom: 1px dotted #CCCCCC;
+	}
+	.first_record img {
+		border: 1px solid #CCCCCC;
+	    border-radius: 4px;
+	    height: 120px;
+	    padding: 2px;
+	    width: 180px;
+	}
+	.list_new {
+		display: inline-block;
+		width: 100%;
+	}
+	.event_calendar {
+		background: url("/public-theme/images/calendar-icon.png") no-repeat scroll 0 10px / 100px 108px rgba(0, 0, 0, 0);
+	    height: 123px;
+	    left: 200px;
+	    position: absolute;
+	    top: 37px;
+	    width: 100px;
+	}
+.event_calendar .months {
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    height: 13px;
+    margin-top: 31px;
+    text-align: center;
+}
+	.event_calendar .date {
+    color: #000;
+    font-size: 50px;
+    font-weight: bold;
+    height: 15px;
+    margin-top: 23px;
+    text-align: center;
+}
+	.list_visitor li{
+	 	background: url("icon_row1.png") no-repeat scroll 5px 7px rgba(0, 0, 0, 0);
+    	padding-left: 15px;
+	}
+	.event_date_container {
+		background: none repeat scroll 0 0 #193062;
+	    color: #FFFFFF;
+	    display: inline-block;
+	    float: left;
+	    left: 0;
+	    padding: 3px;
+	    width: 35px;
+	}
+	span.event_date {
+		display: inline-block;
+	    float: left;
+	    text-align: center;
+	    width: 35px;
+	    height: 17px;
+	}
+	span.event_year {
+		border-top: 1px solid #FFFFFF;
+	    display: inline-block;
+	    float: left;
+	    text-align: center;
+	    width: 35px;
+	    height: 17px;
+	}
+	.cs_text_event {
+		display: inline-block;
+	    padding-left: 5px;
+	    width: 250px;
+	}
+	.event_time {
+		color: #D77A14;
+	    display: inline-block;
+	    margin-left: 5px;
+	    width: 145px;
+	}
+	.list_audio {
+		display:inline-block;
+		width: 100%;
+	}
+	.list_audio li .text {
+		display: inline-block;
+	    padding-left: 22px;
+	}
+	.list_audio li {
+		width:99% !important;
+		background: url("play_icon.png") no-repeat scroll 0 2px rgba(0, 0, 0, 0);
+    	border-bottom: 1px solid #ebebeb;
+	}
+	.list_audio .song_info a {
+		font-size: 11px!important;
+	}
+	.list_audio .song_info {
+		font-size: 11px;
+		color: #555;
+	}
+	.list_audio .title_img {
+		font-weight: bold;
+	}
+	.jcarousel-container {
+	    position: relative;
+	}
+	
+	.jcarousel-clip {
+	    z-index: 2;
+	    padding: 0;
+	    margin: 0;
+	    overflow: hidden;
+	    position: relative;
+	}
+	
+	.jcarousel-list {
+	    z-index: 1;
+	    overflow: hidden;
+	    position: relative;
+	    top: 0;
+	    left: 0;
+	    margin: 0;
+	    padding: 0;
+	}
+	
+	.jcarousel-list li,
+	.jcarousel-item {
+	    float: left;
+	    list-style: none;
+	    /* We set the width/height explicitly. No width/height causes infinite loops. */
+	    width: 75px;
+	    height: 75px;
+	}
+	
+	/**
+	 * The buttons are added dynamically by jCarousel before
+	 * the <ul> list (inside the <div> described above) and
+	 * have the classnames "jcarousel-next" and "jcarousel-prev".
+	 */
+	.jcarousel-next {
+	    z-index: 3;
+	    display: none;
+	}
+	
+	.jcarousel-prev {
+	    z-index: 3;
+	    display: none;
+	}
+		.jcarousel-skin-tango .jcarousel-container-vertical {
+	    width: 200px;
+	    height: 291px;
+	    padding: 0;
+	}
+	
+	
+	.jcarousel-skin-tango .jcarousel-clip-vertical {
+	    width:  206px;
+	    height: 291px;
+	}
+	
+	.jcarousel-skin-tango .jcarousel-item {
+	    width: 200px;
+	    height: 95px;
+	}
+	
+	.jcarousel-skin-tango .jcarousel-item-vertical {
+	    margin-bottom: 0px;
+	}
+	
+	.jcarousel-skin-tango .jcarousel-item-placeholder {
+	    background: #fff;
+	    color: #000;
+	}
+	
+	
+	
+	/**
+	 *  Vertical Buttons
+	 */
+	.jcarousel-skin-tango .jcarousel-next-vertical {
+	    position: absolute;
+	    bottom: 9px;
+	    left: 90px;
+	    width: 33px;
+	    height: 33px;
+	    cursor: pointer;
+	    background: transparent url(../images/next-vertical.png) no-repeat 0 0;
+	}
+	
+	
+	.jcarousel-skin-tango .jcarousel-next-vertical:hover {
+	    background-position: 0 -32px;
+	}
+	
+	.jcarousel-skin-tango .jcarousel-next-vertical:active {
+	    background-position: 0 -64px;
+	}
+	
+	.jcarousel-skin-tango .jcarousel-next-disabled-vertical,
+	.jcarousel-skin-tango .jcarousel-next-disabled-vertical:hover,
+	.jcarousel-skin-tango .jcarousel-next-disabled-vertical:active {
+	    cursor: default;
+	    background-position: 0 -96px;
+	}
+	
+	.jcarousel-skin-tango .jcarousel-prev-vertical {
+	    position: absolute;
+	    top: 7px;
+	    left: 90px;
+	    width: 33px;
+	    height: 33px;
+	    cursor: pointer;
+	    background: transparent url(../images/prev-vertical.png) no-repeat 0 0;
+	}
+	
+	.jcarousel-skin-tango .jcarousel-prev-vertical:hover {
+	    background-position: 0 -32px;
+	}
+	
+	.jcarousel-skin-tango .jcarousel-prev-vertical:active {
+	    background-position: 0 -64px;
+	}
+	
+	.jcarousel-skin-tango .jcarousel-prev-disabled-vertical,
+	.jcarousel-skin-tango .jcarousel-prev-disabled-vertical:hover,
+	.jcarousel-skin-tango .jcarousel-prev-disabled-vertical:active {
+	    cursor: default;
+	    background-position: 0 -96px;
+	}
+	img {
+		border:0;
+	}
+	.video_img {
+		width: 100%;
+	}
+	#slideshow-main {
+	    float: left;
+	    margin-left: 5px;
+	    margin-right: 3px;
+	    padding-bottom: 5px;
+	    width: 470px;
+	}
+	
+	#slideshow-main ul {
+		margin:0; 
+		padding:0; 
+		width:100%;
+	}
+	
+	#slideshow-main li {
+		width:100%; 
+		height:290px; 
+		display:none;
+		position:relative;
+	}
+	
+	#slideshow-main li.active {
+		display:block !important;
+	}
+	
+	#slideshow-main li span.opacity {
+		position:absolute;
+		bottom:0; left:0;
+		display:block; 
+		width:100%;
+		height:60px;
+		background:#000;
+		filter:alpha(opacity=50); 
+		-moz-opacity:0.5; 
+		-khtml-opacity: 0.5; 
+		opacity: 0.5;
+		z-index:500;
+	}
+	
+	#slideshow-main li span.content_video {
+		position:absolute;
+		bottom:0; left:0;
+		display:block; 
+		width:100%;
+		height:60px;
+		z-index:1000;
+	}
+	
+	#slideshow-main li span.content_video h1 {
+		font-size:14px;
+		margin:5px 0;
+		padding:0 10px;;
+		color:#42e2e8;
+	}
+	
+	#slideshow-main li span.content_video p {
+		font-size:11px;
+		margin:5px 0;
+		padding:0 10px;;
+		color:#42e2e8;
+	}
+	
+	#slideshow-carousel {
+		float:left; 
+		width:200px;
+		position:relative
+	}
+	
+	#slideshow-carousel ul {
+		margin:0; 
+		padding:0;
+		list-style:none;
+	}
+	
+	#slideshow-carousel li {
+		background:#fff; 
+		height:97px; 
+		position:relative
+	}
+	
+	#slideshow-carousel li .arrow {
+		left:5px; 
+		top:28px; 
+		position:absolute; 
+		width:20px; 
+		height:40px; 
+		background:url(../images/arrow_white.png) no-repeat 0 0; 
+		display:block;
+	}
+	
+	#slideshow-carousel li a {
+		background:#000; 
+		display:block; 
+		width:200px; 
+		height:95px;
+	}
+	
+	
+	#slideshow-carousel .active {
+		filter:alpha(opacity=100); 
+		-moz-opacity:1.0; 
+		-khtml-opacity: 1.0; 
+		opacity: 1.0;
+	}
+	
+	#slideshow-carousel .faded {
+		filter:alpha(opacity=50); 
+		-moz-opacity:0.5; 
+		-khtml-opacity: 0.5; 
+		opacity: 0.5;
+	}
+	#welcomeHero {
+		margin-top: 5px;
+	}
+	#carousel img {
+		height: 95px;
+	    margin-left: 5px;
+	    width: 190px;
+	}
+	@media all and (max-width: 768px) , only screen and
+		(-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px) , only
+		screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px) ,
+		only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width:
+		1024px) , only screen and (min-device-pixel-ratio: 2) and (max-width:
+		1024px) , only screen and (min-resolution: 192dpi) and (max-width:
+		1024px) , only screen and (min-resolution: 2dppx) and (max-width:
+	1024px) {
+		div.list_new ul li {
+			width: 90%;
+		}
+	}
+}

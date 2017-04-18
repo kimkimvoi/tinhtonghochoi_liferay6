@@ -1,0 +1,83 @@
+.newsbycategorytable-portlet {
+	.portlet-content {
+		background-color: #fff;
+	}
+	.portlet-body {
+		margin:00px;
+		margin-top:0px;
+		background-color: #fff;
+		display: inline-block;
+		width:100%;
+	}
+	.box_question {
+		margin:00px;
+		margin-top:0px;
+		background-color: #fff;
+		display: inline-block;
+		width:98%;
+		padding: 1%;
+		}
+	.box_question table {
+		width:100%;
+		border:1px solid #ccc;
+		border-collapse:collapse;
+		}
+	.box_question #_answered_questions_WAR_tinhdoportlet_questionTypes { padding:4px; width:250px; float:left; color:#555; font-size:12px; text-align:left; margin-bottom:10px;}
+	.box_question .rowa {
+		width:45%;
+		float:left;
+		}
+	.box_question .rowb {
+		width:45%;
+		float:right;
+		}
+	.box_question .input_text {
+		width:186px;
+		border:1px solid #ccc;
+		line-height:22px;
+		padding-left:2%;
+		float:left;
+		padding-right:2%;
+		font-size:12px; 
+		text-align:left;
+		color:#555;
+		margin-right:4px;
+		}				
+	.box_question table td {
+		border:1px solid #ccc;
+		font-size:12px;
+		color:#333;
+		padding:5px;
+		}
+	.box_question table td.textcenter { text-align:center}
+	.box_question table tr th { font-weight:bold; text-align:center; background-color:#fcf3cb;}
+	.box_question table tr.dataRow:hover {color: #6F310A; background-color:#fcf5d6}
+	.box_question table th { padding:5px;}			
+	.box_question table 	
+	.padding-top5 { padding-top:5px;}	
+	ul.list_question  .erro .inputtext, ul.list_question  .erro .inputmaxacnhan, ul.list_question  .erro .textarea{
+		border:1px solid #F00;
+		color:#F00;
+		}
+		
+	.lfr-search-container {
+		width: 600px;
+	}
+	
+	.lfr-search-container .results-header th {
+		background: none;
+		background-color:#fcf3cb;
+		color: #000;
+		font-weight: bold;
+	    text-align: center;
+	}
+	
+	 tr.dataRow {
+		cursor: pointer;
+	}
+	.rowDetail td:first-child {
+		width: 30%;
+		vertical-align: top;
+	}
+	
+}

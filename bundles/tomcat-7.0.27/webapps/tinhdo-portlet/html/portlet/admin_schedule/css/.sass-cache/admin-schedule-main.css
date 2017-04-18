@@ -1,0 +1,149 @@
+.admin-schedule-portlet .portlet {
+  display: inline-block;
+  width: 100%; }
+.admin-schedule-portlet select {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background-image: url("/public-theme/images/forms/input_shadow.png");
+  background-repeat: no-repeat;
+  border-color: #BFBFBF #DEDEDE #DEDEDE #BFBFBF;
+  border-image: none;
+  border-style: solid;
+  border-width: 1px; }
+.admin-schedule-portlet .label_left {
+  display: inline;
+  float: none;
+  text-align: left;
+  margin: 0;
+  width: auto; }
+.admin-schedule-portlet .schedule_form_content {
+  border-bottom: 1px solid #CCCCCC;
+  height: 120px;
+  margin: 0 10px; }
+.admin-schedule-portlet .portlet_wrapper {
+  border: 1px solid #CCCCCC;
+  width: 730px; }
+.admin-schedule-portlet .schedule_config {
+  margin: 15px; }
+.admin-schedule-portlet .schedule_config div {
+  margin: 10px 0; }
+.admin-schedule-portlet .schedule_config div label {
+  margin: 0 10px; }
+.admin-schedule-portlet .schedule_config_title {
+  font-size: 14px;
+  font-weight: bold; }
+.admin-schedule-portlet .scheSearchPn {
+  float: left;
+  margin: 25px 20px 10px 0;
+  line-height: 30px;
+  display: inline-flex; }
+.admin-schedule-portlet .weekly_schedule {
+  margin-top: 10px; }
+.admin-schedule-portlet .weekly_schedule .weekly_schedule_title {
+  font-size: 12px;
+  font-style: italic;
+  font-weight: bold;
+  margin-left: 10px; }
+.admin-schedule-portlet .schedule_cbx {
+  margin-left: 10px;
+  height: 25px;
+  line-height: 25px; }
+.admin-schedule-portlet .schedule_cbx_user select {
+  color: #555555;
+  float: left;
+  font-size: 12px;
+  margin-bottom: 10px;
+  padding: 4px;
+  text-align: left;
+  width: 150px; }
+.admin-schedule-portlet .schedule_cbx_month select {
+  color: #555555;
+  float: left;
+  font-size: 12px;
+  margin-bottom: 10px;
+  padding: 4px;
+  text-align: left;
+  width: 100px; }
+.admin-schedule-portlet .schedule_cbx_year select {
+  color: #555555;
+  float: left;
+  font-size: 12px;
+  margin-bottom: 10px;
+  padding: 4px;
+  text-align: left;
+  width: 100px; }
+.admin-schedule-portlet .schedule_cbx .schedule_cbx_year select {
+  width: 100px; }
+.admin-schedule-portlet .box_calender_work {
+  width: 98%;
+  margin-bottom: 25px;
+  padding: 1%; }
+.admin-schedule-portlet .box_calender_work tr td:first-child {
+  font-weight: bold; }
+.admin-schedule-portlet .week_schedule_pn {
+  margin-bottom: 10px;
+  margin-top: 10px; }
+.admin-schedule-portlet .user_schedule_title {
+  margin: 10px 0; }
+.admin-schedule-portlet .buttons_panel {
+  text-align: right; }
+.admin-schedule-portlet .schedule_week_search_pn {
+  height: 85px;
+  width: 100%; }
+.admin-schedule-portlet .user_month_title {
+  margin: 10px 0; }
+.admin-schedule-portlet .box_calender_work li {
+  list-style: none;
+  width: 100%;
+  float: left;
+  margin-bottom: 5px;
+  line-height: 18px; }
+.admin-schedule-portlet .box_calender_work .user_schedule_table tr.title .th1 {
+  width: 5%; }
+.admin-schedule-portlet .box_calender_work .user_schedule_table tr.title .th2 {
+  width: 35%; }
+.admin-schedule-portlet .box_calender_work .user_schedule_table tr.title .th3 {
+  width: 40%; }
+.admin-schedule-portlet .box_calender_work .user_schedule_table tr.title .th4 {
+  width: 20%; }
+.admin-schedule-portlet .box_calender_work .week_schedule_table tr.title .th1 {
+  width: 10%; }
+.admin-schedule-portlet .box_calender_work .week_schedule_table tr.title .th2 {
+  width: 18%; }
+.admin-schedule-portlet .box_calender_work .week_schedule_table tr.title .th3 {
+  width: 18%; }
+.admin-schedule-portlet .box_calender_work .week_schedule_table tr.title .th4 {
+  width: 18%; }
+.admin-schedule-portlet .box_calender_work .week_schedule_table tr.title .th5 {
+  width: 18%; }
+.admin-schedule-portlet .box_calender_work .week_schedule_table tr.title .th6 {
+  width: 18%; }
+.admin-schedule-portlet .box_calender_work table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ccc; }
+.admin-schedule-portlet .box_calender_work table td, .admin-schedule-portlet .box_calender_work table th {
+  border: 1px solid #ccc;
+  padding: 3px;
+  font-size: 12px;
+  color: #333;
+  padding-top: 6px;
+  padding-bottom: 8px; }
+.admin-schedule-portlet .box_calender_work table .td1, .admin-schedule-portlet .box_calender_work table .td4 {
+  text-align: center; }
+.admin-schedule-portlet .box_calender_work table th {
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #eee;
+  font-weight: bold; }
+.admin-schedule-portlet .box_calender_work table td a {
+  color: #333; }
+.admin-schedule-portlet .box_calender_work table td p {
+  margin-bottom: 5px;
+  line-height: 18px; }
+.admin-schedule-portlet .box_calender_work table td:hover {
+  background-color: #F8ECD1; }
+

@@ -1,0 +1,40 @@
+.maps-portlet {
+	.portlet-content, .portlet-minimized .portlet-content-container {
+	    padding:0;
+	}
+	.portlet-topper {
+		border-width: 0;
+	}
+	.portlet-title {
+		display:none;
+	}
+	.portlet {
+		background:none!important;
+		padding:0;
+		margin:0;
+		border: none;
+		display: inline-block;
+	}
+	
+	.box_map h2.title {
+    color: #FF6600;
+    float: left;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top:0;
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+	}
+	.box_map {
+	    background-color: #FFFFFF;
+	    border: 1px solid #CCCCCC;
+	    overflow: hidden;
+	    padding: 8px;
+	    margin-bottom: 10px;
+	}
+	.imaps{
+		width: 100%;
+	}
+}

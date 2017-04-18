@@ -1,0 +1,150 @@
+.searchstaffinfo-portlet {
+	.searchStaffInfo{
+		border: 1px solid #CCCCCC;
+    	border-radius: 0 0 5px 5px;
+    	margin-bottom: 10px;
+    	background: none repeat scroll 0 0 #FFFFFF;
+	}
+	
+	.searchStaffInfo-info, .searchStaffInfo-search{
+		padding-left: 10px;
+		padding-right: 10px;
+		margin-top: 15px;
+	}
+	
+	.searchStaffInfo-result{
+		margin-bottom: 20px;
+	}
+	
+	
+	.searchStaffInfo-title {
+		color: red;
+		font-weight: bold;
+		margin-bottom: 10px;
+		font-size: 13px;
+		margin-left: 5px;
+	}
+	
+	.searchStaffInfo-contentField {
+		width: 100%;
+		margin-bottom: 5px;
+		float: left;
+		font-size: 12px;
+		margin-left: 5px;
+	}
+	
+	.searchStaffInfo-contentRowA {
+		float: left;
+		width: 25%;
+		font-weight: bold;
+	}
+	
+	.searchStaffInfo-contentRow {
+		font-weight: bold;
+		margin-bottom: 5px;
+	}
+	
+	.button-search {
+		height: 25px;
+	}
+	
+	.textbox-search,.selectbox-search {
+		width: 50%;
+	}
+	
+	.searchStaffInfo .input {
+		width: 250px;
+		float: left;
+		border: 1px solid #ccc;
+		text-align: left;
+		color: #555;
+		font-size: 12px;
+		height: 23px;
+		line-height: 23px;
+	}
+	
+	.searchStaffInfo .select {
+		width: 252px;
+		float: left;
+		border: 1px solid #ccc;
+		text-align: left;
+		color: #555;
+		font-size: 12px;
+		line-height: 23px;
+		padding: 5px;
+	}
+	
+	.searchStaffInfo h2.title_tab label {
+		border-left: 7px solid #FFD126;
+		display: block;
+		padding-left: 7px;
+		text-align: left;
+	}
+
+	.searchStaffInfo h2.title_tab {
+		background-color: #FDA164;
+		color: #FFFFFF;
+		float: left;
+		font-size: 13px;
+		font-weight: bold;
+		height: 29px;
+		line-height: 29px;
+		text-align: center;
+		text-transform: uppercase;
+		width: 100%;
+		margin: 0;
+		margin-bottom: 15px;
+	}
+	
+	.searchStaffInfo .searchStaffInfo-search table {
+	width: 100%;
+	border: 1px solid #cdcdcd;
+	border-collapse: collapse;
+	}
+	
+	.searchStaffInfo .searchStaffInfo-search table td,.searchStaffInfo .searchStaffInfo-search table th
+		{
+		border: 1px solid #cdcdcd;
+		font-size: 12px;
+		color: #333;
+		padding: 3px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+	
+	.searchStaffInfo .searchStaffInfo-search table td {
+		line-height: 20px;
+	}
+	
+	.searchStaffInfo .searchStaffInfo-search table th {
+		font-weight: bold;
+		background-color: #efefef;
+		color: #111;
+	}
+	
+	.searchStaffInfo .searchStaffInfo-search table tr:hover {
+		background-color: #fcf5d6;
+		cursor: pointer;
+	}
+	
+	.searchStaffInfo .searchStaffInfo-search table td a {
+		color: #6F310A;
+	}
+	
+	.searchStaffInfo .searchStaffInfo-search table td a:hover {
+		text-decoration: underline;
+	}
+	
+	.searchStaffInfo .button {
+	   background: url("../../../images/button/buttons.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+	   border: 0 none;
+	   color: #FFFFFF;
+	   cursor: pointer;
+	   display: inline-block;
+	   font-size: 14px;
+	   height: 26px;
+	   line-height: 26px;
+	   text-align: center;
+	   width: 91px;
+	}
+}

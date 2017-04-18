@@ -1,0 +1,101 @@
+.newsbycategoriestab-portlet {
+
+	.list_new ul li img {
+		float: left;
+	    margin-left: 6px;
+	    margin-right: 8px;
+	    max-height: 90px;
+	    padding: 2px;
+	    width: 120px;
+	}
+	.list_new ul li .tex_list .title_v{
+		color: #6F310A;
+	    font-size: 12px;
+	    font-weight: bold;
+	    line-height: 18px;
+	    width: 100%;
+	}
+	
+	.list_new ul li .tex_list {
+		margin: 5px;
+	}
+	
+	.list_new ul li .tex_list .title_v a {
+		color: #6F310A;
+	}
+	
+	.list_new ul li .tex_list .content_small a {
+		color: #6F310A;
+		display: none;
+	}
+	
+	.list_new ul li {
+		float: left;
+	    font-size: 12px;
+	    list-style: none outside none;
+	    text-align: left;
+	    width: 100%;
+	    padding: 5px 0;
+	    border-bottom: 1px dotted #CCCCCC;
+	}
+	.box_bg {
+		background-color: #FFFFFF;
+    	border: 1px solid #CCCCCC;
+	}
+	
+	.tab_box_mn li {
+		padding-left: 10px;
+    	padding-right: 10px;
+	}
+	
+	.column_category {
+		padding: 5px 40px 5px 20px;
+	}
+	
+	.column_select {
+		padding: 5px 20px 5px 20px;
+	}
+	.category_config_content_setup {
+		margin-bottom: 10px;
+	}
+	.category_config_content_setup, .category_config_content_setup tr, .category_config_content_setup tr td {
+		border: 1px solid #CCCCCC;
+	}
+	
+	ul.list li a {
+	    color: #333333;
+	    float: left;
+	    padding-left: 15px;
+	}
+	ul.list li {
+	    background: url("/main-page-theme/images/icons/icon_row1.png") no-repeat scroll 0 12px rgba(0, 0, 0, 0);
+	    color: #333333;
+	    float: left;
+	    font-size: 12px;
+	    font-weight: bold;
+	    list-style: none outside none;
+	    text-align: left;
+	    width: 100%;
+	    line-height: normal;
+	    padding-bottom: 5px;
+	    padding-top: 5px;
+	}
+	ul.list {
+	    float: left;
+	    margin-top: 8px;
+	    padding-left: 2%;
+	    padding-right: 2%;
+	    width: 96%;
+	}
+	/* ++ QUANGTN3- fix bug FIBIXBP-296 - 20140319*/
+	.time {
+		color: #999999;
+	    font-size: 10px;
+	    font-weight: normal;
+	    margin-left: 3px;
+	    margin-right: 3px;
+	    white-space: nowrap;
+    }
+	/* -- QUANGTN3- fix bug FIBIXBP-296 - 20140319*/
+	
+}

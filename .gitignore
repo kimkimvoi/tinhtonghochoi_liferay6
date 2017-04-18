@@ -1,0 +1,4 @@
+bundles/deploy/*
+bundles/logs/*
+bundles/tomcat-7.0.27/temp/*
+bundles/tomcat-7.0.27/logs/*

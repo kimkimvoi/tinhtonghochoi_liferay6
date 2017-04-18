@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+
+<root>
+	<dynamic-element name="description" type="text_box" index-type="keyword" repeatable="false">
+		<meta-data>
+			<entry name="displayAsTooltip"><![CDATA[true]]></entry>
+			<entry name="required"><![CDATA[true]]></entry>
+			<entry name="instructions"><![CDATA[]]></entry>
+			<entry name="label"><![CDATA[Summary]]></entry>
+			<entry name="predefinedValue"><![CDATA[]]></entry>
+		</meta-data>
+	</dynamic-element>
+	<dynamic-element name="picture" type="image" index-type="" repeatable="false">
+		<meta-data>
+			<entry name="required"><![CDATA[true]]></entry>
+			<entry name="label"><![CDATA[Image small]]></entry>
+		</meta-data>
+	</dynamic-element>
+	<dynamic-element name="content" type="text_area" index-type="keyword" repeatable="false">
+		<meta-data>
+			<entry name="displayAsTooltip"><![CDATA[false]]></entry>
+			<entry name="required"><![CDATA[true]]></entry>
+			<entry name="instructions"><![CDATA[]]></entry>
+			<entry name="label"><![CDATA[Content]]></entry>
+			<entry name="predefinedValue"><![CDATA[]]></entry>
+		</meta-data>
+	</dynamic-element>
+	<dynamic-element name="type" type="list" index-type="" repeatable="false">
+		<meta-data>
+			<entry name="displayAsTooltip"><![CDATA[true]]></entry>
+			<entry name="instructions"><![CDATA[Select tpye article]]></entry>
+			<entry name="label"><![CDATA[Type]]></entry>
+			<entry name="predefinedValue"><![CDATA[]]></entry>
+		</meta-data>
+		<dynamic-element name="local-news" type="local-news" index-type="" repeatable="false"></dynamic-element>
+		<dynamic-element name="political" type="political" index-type="" repeatable="false">
+			<meta-data>
+				<entry name="label"><![CDATA[Political]]></entry>
+				<entry name="predefinedValue"><![CDATA[]]></entry>
+			</meta-data>
+		</dynamic-element>
+		<dynamic-element name="economy" type="economy" index-type="" repeatable="false">
+			<meta-data>
+				<entry name="label"><![CDATA[Economy]]></entry>
+				<entry name="predefinedValue"><![CDATA[]]></entry>
+			</meta-data>
+		</dynamic-element>
+		<dynamic-element name="culture" type="culture" index-type="" repeatable="false">
+			<meta-data>
+				<entry name="label"><![CDATA[Culture]]></entry>
+				<entry name="predefinedValue"><![CDATA[]]></entry>
+			</meta-data>
+		</dynamic-element>
+		<dynamic-element name="social" type="social" index-type="" repeatable="false">
+			<meta-data>
+				<entry name="label"><![CDATA[Social]]></entry>
+				<entry name="predefinedValue"><![CDATA[]]></entry>
+			</meta-data>
+		</dynamic-element>
+		<dynamic-element name="education" type="education" index-type="" repeatable="false">
+			<meta-data>
+				<entry name="label"><![CDATA[Education]]></entry>
+				<entry name="predefinedValue"><![CDATA[]]></entry>
+			</meta-data>
+		</dynamic-element>
+	</dynamic-element>
+	<dynamic-element name="media" type="document_library" index-type="" repeatable="true">
+		<meta-data>
+			<entry name="label"><![CDATA[Media]]></entry>
+			<entry name="predefinedValue"><![CDATA[]]></entry>
+		</meta-data>
+	</dynamic-element>
+</root>
+
+<!-- <style>  
+.center-align {  
+    align: center;  
+}  
+</style>  
+<table class="center-align">  
+ <tr>  
+  <td class="center-align"><img src="$picture.data"></td>  
+  <td class="center-align"><h1>$title.data</h1></td>  
+ </tr>  
+ <tr>
+    <td><td class="center-align"><h1>$description.data</h1></td>  </td>
+ </tr>
+ <tr>  
+  <td class="center-align" colspan="1">$content.data</td>  
+ </tr>  
+ <tr>  
+     <td class="center-align" colspan="1">  
+           <h3>$type.data</h3>  
+     </td>  
+ </tr>  
+</table> -->

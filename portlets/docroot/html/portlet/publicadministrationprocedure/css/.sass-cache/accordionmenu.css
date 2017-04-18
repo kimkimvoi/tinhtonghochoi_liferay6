@@ -1,0 +1,102 @@
+/* *********************************************************************************************
+
+How to Create CSS3 + jQuery Accordion Menu [Tutorial]
+"How to Create CSS3 + jQuery Accordion Menu" that was specially made for DesignModo by our friend Valeriu Timbuc. 
+
+Links:
+http://vtimbuc.net/
+https://twitter.com/vtimbuc
+http://designmodo.com/futurico
+http://vladimirkudinov.com
+http://rockablethemes.com
+
+********************************************************************************************* */
+/* Reset */
+.accordion,
+.accordion ul,
+.accordion li,
+.accordion a,
+.accordion span {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none; }
+
+.accordion li {
+  list-style: none; }
+
+/* Layout & Style */
+.accordion li > a {
+  display: block;
+  position: relative;
+  min-width: 110px;
+  padding: 0 10px 0 15px;
+  color: #000000;
+  font: normal 12px/30px Arial, sans-serif;
+  text-decoration: none; }
+
+.menu_item_huyen_xa li > a {
+  display: block;
+  position: relative;
+  min-width: 110px;
+  padding: 0 10px 0 15px;
+  color: #000000;
+  font: bold 12px/30px Arial, sans-serif;
+  text-decoration: none;
+  border-color: #CCCCCC;
+  border-image: none;
+  border-style: solid;
+  border-width: 1px; }
+
+.menu_item_huyen_xa li:HOVER > a {
+  color: #3e5706;
+  background: #a5cd4e; }
+
+.accordion li.tilte_menu > a {
+  display: block;
+  position: relative;
+  min-width: 110px;
+  padding: 0 10px 0 5px;
+  color: #000000;
+  font: bold 12px/30px Arial, sans-serif;
+  text-decoration: none; }
+
+.accordion > li:hover > a,
+.accordion > li:target > a,
+.accordion > li > a.active {
+  color: #3e5706;
+  background: #a5cd4e; }
+
+.accordion li.tilte_menu {
+  border-color: #CCCCCC;
+  border-image: none;
+  border-style: solid;
+  border-width: 1px; }
+
+/* Images */
+.accordion > li > a:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  width: 24px;
+  height: 24px;
+  margin: 4px 8px;
+  background-repeat: no-repeat;
+  /* background-image: url(../img/icons.png); */
+  background-position: 0px 0px; }
+
+/* Sub Menu */
+.sub-menu li a {
+  color: #797979; }
+
+.sub-menu li:hover a {
+  background: #efefef; }
+
+/* Functionality */
+.accordion li > .sub-menu {
+  display: none; }
+
+.accordion li:target > .sub-menu {
+  display: block; }
+

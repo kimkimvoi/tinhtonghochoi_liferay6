@@ -1,0 +1,124 @@
+.portlet-content {
+  background-color: #fff; }
+
+.box_investment_projects_admin {
+  margin: 30px;
+  margin-top: 0px;
+  background-color: #fff; }
+
+.box_investment_projects_admin table {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-collapse: collapse; }
+
+.box_investment_projects_admin #_answered_questions_WAR_tinhdoportlet_questionTypes {
+  padding: 4px;
+  width: 250px;
+  float: left;
+  color: #555;
+  font-size: 12px;
+  text-align: left;
+  margin-bottom: 10px; }
+
+.box_investment_projects_admin .rowa {
+  width: 45%;
+  float: left; }
+
+.box_investment_projects_admin .rowb {
+  width: 45%;
+  float: right; }
+
+.box_investment_projects_admin .input_text {
+  width: 174px;
+  border: 1px solid #ccc;
+  line-height: 22px;
+  float: left;
+  font-size: 12px;
+  text-align: left;
+  color: #555;
+  margin-right: 4px; }
+
+.box_investment_projects_admin table td {
+  border: 1px solid #ccc;
+  font-size: 12px;
+  color: #333;
+  padding: 5px; }
+
+.box_investment_projects_admin table td.textcenter {
+  text-align: center; }
+
+.box_investment_projects_admin table tr.title {
+  background-color: #fcf3cb; }
+
+.box_investment_projects_admin table tr.title th {
+  font-weight: bold;
+  text-align: center; }
+
+.box_investment_projects_admin table tr.dataRow:hover {
+  color: #6F310A;
+  background-color: #fcf5d6; }
+
+.box_investment_projects_admin table th {
+  padding: 5px; }
+
+.padding-top5 {
+  padding-top: 5px; }
+
+ul.list_question .erro .inputtext, ul.list_question .erro .inputmaxacnhan, ul.list_question .erro .textarea {
+  border: 1px solid #F00;
+  color: #F00; }
+
+.lfr-search-container {
+  width: 600px; }
+
+.lfr-search-container .results-header th {
+  background: none;
+  background-color: #fcf3cb;
+  color: #000;
+  font-weight: bold;
+  text-align: center; }
+
+#answeredQuestionTable tr.dataRow {
+  cursor: pointer; }
+
+.pagingNumber {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border: 1px solid #CCCCCC;
+  border-radius: 23px;
+  color: #333333;
+  font-size: 12px;
+  font-weight: bold;
+  height: 23px;
+  line-height: 23px;
+  margin-left: 6px;
+  text-align: center;
+  width: 23px;
+  padding: 5px 9px; }
+
+.pagingNumber.padding {
+  display: inline-block;
+  height: 23px;
+  padding: 0 10px;
+  width: 20px; }
+
+.pagingNumber:hover, .pagingNumber.activePage {
+  color: #FF6600; }
+
+#investmentProjectTable_th3 {
+  width: 20%; }
+
+.aui-field-content {
+  display: inline; }
+
+.aui-field-content:after, .aui-button-holder:after {
+  display: inline; }
+
+.tableWithoutBorder, .tableWithoutBorder tr td {
+  border: none !important; }
+
+label {
+  font-weight: bold; }
+
+.textAlignRight {
+  text-align: right; }
+

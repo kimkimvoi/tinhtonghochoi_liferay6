@@ -1,0 +1,20 @@
+.listallnewsbycategory-portlet * {
+  padding: 0;
+  margin: 0; }
+.listallnewsbycategory-portlet .portlet-topper {
+  border-width: 0; }
+.listallnewsbycategory-portlet .portlet-title {
+  display: none; }
+.listallnewsbycategory-portlet .portlet {
+  border: none;
+  background: none!important;
+  display: inline-block; }
+.listallnewsbycategory-portlet .tab_box_mn {
+  padding-top: 5px; }
+.listallnewsbycategory-portlet .portlet-topper-toolbar {
+  z-index: 1000; }
+.listallnewsbycategory-portlet a {
+  color: #333333;
+  outline: medium none;
+  text-decoration: none; }
+

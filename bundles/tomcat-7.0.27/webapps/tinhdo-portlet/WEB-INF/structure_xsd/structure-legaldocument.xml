@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+
+<root>
+	<dynamic-element name="document_symbol" type="text" index-type="keyword" repeatable="false">
+		<meta-data>
+			<entry name="required"><![CDATA[true]]></entry>
+			<entry name="label"><![CDATA[Ký hiệu văn bản]]></entry>
+		</meta-data>
+	</dynamic-element>
+	<dynamic-element name="document_domain" type="list" index-type="keyword" repeatable="false">
+		<meta-data>
+			<entry name="displayAsTooltip"><![CDATA[true]]></entry>
+			<entry name="instructions"><![CDATA[Select tpye article]]></entry>
+			<entry name="label"><![CDATA[Lĩnh vực tài liệu]]></entry>
+			<entry name="predefinedValue"><![CDATA[]]></entry>
+		</meta-data>
+		<dynamic-element name="An ninh quốc phòng" type="An ninh quốc phòng" index-type="" repeatable="false"></dynamic-element>
+		<dynamic-element name="BC-VTB" type="BC-VTB" index-type="" repeatable="false"></dynamic-element>
+		<dynamic-element name="BC-XB" type="BC-XB" index-type="" repeatable="false"></dynamic-element>
+		<dynamic-element name="CNTT" type="CNTT" index-type="" repeatable="false"></dynamic-element>
+		<dynamic-element name="Công nghệp" type="Công nghệp" index-type="" repeatable="false"></dynamic-element>
+		<dynamic-element name="Dân sự" type="Dân sự" index-type="" repeatable="false"></dynamic-element>
+		<dynamic-element name="Doanh nghiệp - Thương mại" type="Doanh nghiệp - Thương mại" index-type="" repeatable="false"></dynamic-element>
+		<dynamic-element name="Đầu tư và xây dựng" type="Đầu tư và xây dựng" index-type="" repeatable="false"></dynamic-element>
+		<dynamic-element name="Giao thông công trình - Thuỷ lợi" type="Giao thông công trình - Thuỷ lợi" index-type="" repeatable="false"></dynamic-element>
+		<dynamic-element name="Nội chính" type="Nội chính" index-type="" repeatable="false"></dynamic-element>
+		<dynamic-element name="Môi trường" type="Môi trường" index-type="" repeatable="false"></dynamic-element>
+		<dynamic-element name="Khoa học công nghệ" type="Khoa học công nghệ" index-type="" repeatable="false"></dynamic-element>
+		<dynamic-element name="Kinh tế - Tài chính - Thương mại - Xã hội" type="Kinh tế - Tài chính - Thương mại - Xã hội" index-type="" repeatable="false"></dynamic-element>
+		<dynamic-element name="Kế hoạch đầu tư" type="Kế hoạch đầu tư" index-type="" repeatable="false"/>
+	</dynamic-element>
+	<dynamic-element name="document_form" type="list" index-type="keyword" repeatable="false">
+		<meta-data>
+			<entry name="displayAsTooltip"><![CDATA[true]]></entry>
+			<entry name="instructions"><![CDATA[Select tpye article]]></entry>
+			<entry name="label"><![CDATA[Loại văn bản]]></entry>
+			<entry name="predefinedValue"><![CDATA[]]></entry>
+		</meta-data>
+		<dynamic-element name="Nghị định" type="Nghị định" index-type="" repeatable="false"></dynamic-element>
+		<dynamic-element name="Luật" type="Luật" index-type="" repeatable="false"></dynamic-element>
+		<dynamic-element name="Kế hoạch" type="Kế hoạch" index-type="" repeatable="false"></dynamic-element>
+		<dynamic-element name="Giấy mời" type="Giấy mời" index-type="" repeatable="false"></dynamic-element>
+		<dynamic-element name="Chương trình" type="Chương trình" index-type="" repeatable="false"></dynamic-element>
+		<dynamic-element name="Chỉ thị" type="Chỉ thị" index-type="" repeatable="false"></dynamic-element>
+		<dynamic-element name="Công văn" type="Công văn" index-type="" repeatable="false"></dynamic-element>
+		<dynamic-element name="Báo cáo" type="Báo cáo" index-type="" repeatable="false"></dynamic-element>
+		<dynamic-element name="Nghị quyết" type="Nghị quyết" index-type="" repeatable="false"></dynamic-element>
+		<dynamic-element name="Quyết định" type="Quyết định" index-type="" repeatable="false"></dynamic-element>
+		<dynamic-element name="Tờ Trình" type="Tờ Trình" index-type="" repeatable="false"></dynamic-element>
+		<dynamic-element name="Thông báo" type="Thông báo" index-type="" repeatable="false"></dynamic-element>
+		<dynamic-element name="Văn bản mới ban hành" type="Văn bản mới ban hành" index-type="" repeatable="false"></dynamic-element>
+		<dynamic-element name="Thông tư" type="Thông tư" index-type="" repeatable="false"/>
+	</dynamic-element>
+	<dynamic-element name="document_description" type="text" index-type="text" repeatable="false">
+		<meta-data>
+			<entry name="label"><![CDATA[Trích yếu nội dung]]></entry>
+			<entry name="predefinedValue"><![CDATA[]]></entry>
+		</meta-data>
+	</dynamic-element>
+	<dynamic-element name="effect_date" type="text" index-type="text" repeatable="false">
+		<meta-data>
+			<entry name="label"><![CDATA[Ngày có hiệu lực]]></entry>
+			<entry name="predefinedValue"><![CDATA[]]></entry>
+		</meta-data>
+	</dynamic-element>
+	<dynamic-element name="grade_publisher" type="text" index-type="text" repeatable="false">
+		<meta-data>
+			<entry name="label"><![CDATA[Cấp ban hành]]></entry>
+			<entry name="predefinedValue"><![CDATA[]]></entry>
+		</meta-data>
+	</dynamic-element>
+	<dynamic-element name="organ_publisher" type="text" index-type="text" repeatable="false">
+		<meta-data>
+			<entry name="label"><![CDATA[Cơ quan ban hành]]></entry>
+			<entry name="predefinedValue"><![CDATA[]]></entry>
+		</meta-data>
+	</dynamic-element>
+	<dynamic-element name="signer" type="text" index-type="keyword" repeatable="false">
+		<meta-data>
+			<entry name="label"><![CDATA[Người ký]]></entry>
+			<entry name="predefinedValue"><![CDATA[]]></entry>
+		</meta-data>
+	</dynamic-element>
+	<dynamic-element name="file_attach" type="document_library" index-type="" repeatable="true">
+		<meta-data>
+			<entry name="label"><![CDATA[File đính kèm]]></entry>
+			<entry name="predefinedValue"><![CDATA[]]></entry>
+		</meta-data>
+	</dynamic-element>
+</root>

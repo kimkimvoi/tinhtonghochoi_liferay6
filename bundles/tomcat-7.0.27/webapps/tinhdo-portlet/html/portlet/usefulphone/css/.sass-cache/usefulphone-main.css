@@ -1,0 +1,42 @@
+.useful_phone_porlet .useful_phone_wapper {
+  border-color: -moz-use-text-color #CCCCCC #CCCCCC;
+  border-image: none;
+  border-style: none solid solid;
+  border-width: 0 1px 1px;
+  margin-bottom: 10px; }
+
+.useful_phone_porlet h2.title_tab {
+  margin-top: 0px; }
+
+.useful_phone_porlet .useful_phone_table_content {
+  margin: 7px; }
+
+h3.useful-phone-title-h3 {
+  font-size: 18px;
+  text-align: center;
+  color: #0000FF;
+  font-weight: bold; }
+
+.table-userfullcontact {
+  border: 2; }
+
+tr.tr-title-userfullcontact {
+  padding-top: 5;
+  padding-bottom: 5;
+  text-align: center;
+  font-weight: bold;
+  background-color: #E8E1FA; }
+
+tr.tr-title-userfullcontact td {
+  font-weight: bold; }
+
+tr.tr-content-userfullcontact {
+  padding-top: 5;
+  padding-bottom: 5;
+  text-align: center;
+  font-weight: bold;
+  background-color: #EFF3FB; }
+
+tr.tr-content-userfullcontact td {
+  font-weight: bold; }
+

@@ -1,0 +1,260 @@
+.publicadministrationprocedure-portlet { 
+	.portlet-content, .portlet-minimized .portlet-content-container { 
+		padding:0;
+	}
+	
+	.portlet-topper {
+		border-width: 0;
+	}
+	
+	.portlet-title {
+		display: none;
+	}
+	
+	.portlet-body {
+		background: none !important;
+		display: inline-block;
+	}
+
+h2.title_tab {
+	background-color: #FDA164;
+	color: #FFFFFF;
+	float: left;
+	font-size: 13px;
+	font-weight: bold;
+	height: 29px;
+	line-height: 29px;
+	text-align: center;
+	text-transform: uppercase;
+	width: 100%;
+}
+
+h2.title_tab span {
+	border-left: 7px solid #FFD126;
+	display: block;
+}
+
+h2.title_tab label {
+	border-left: 7px solid #FFD126;
+	display: block;
+	padding-left: 7px;
+	text-align: left;
+}
+
+h2.title_tab a {
+	color: #FFFFFF;
+}
+
+.box_dichvucong {
+	width: 100%;
+	display: inline-block;
+	background: #fff;
+}
+
+.dichvucong_left_content{
+	width: 19%;
+	float: left;
+}
+
+.dichvucong_left_content_wapper{
+	border-color: -moz-use-text-color #CCCCCC #CCCCCC;
+    border-image: none;
+    border-style: none solid solid;
+    border-width: 0 1px 1px;
+	padding-left: 0.5%;
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+}
+
+.dichvucong_right_content{
+	width: 	80%;
+	margin-left: 1%;
+	margin-bottom: 5px;
+	display: inline-block;
+	
+}
+
+.dich_vu_cong_right_content_wapper{
+	padding: 15px 5px 5px;	
+	border-color: -moz-use-text-color #CCCCCC #CCCCCC;
+    border-image: none;
+    border-style: none solid solid;
+    border-width: 0 1px 1px;
+}
+
+.box_dichvucong ul.list_tracuu {
+	width: 65%;
+	float: left;
+	margin-right: 30px;
+}
+
+.box_dichvucong ul.list_tracuu li {
+	width: 100%;
+	float: left;
+	margin-bottom: 10px;
+	list-style: none;
+}
+
+.box_dichvucong ul.list_tracuu li label {
+	float: left;
+	width: 150px;
+	line-height: 25px;
+	text-align: right;
+	color: #333;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.box_dichvucong ul.list_tracuu li .input {
+	width: 250px;
+	float: right;
+	border: 1px solid #ccc;
+	text-align: left;
+	color: #555;
+	font-size: 12px;
+	height: 23px;
+	line-height: 23px;
+}
+
+.box_dichvucong ul.list_tracuu li .buttons {
+	background: url("../../../images/button/buttons.png") no-repeat 0 0;
+	border: 0 none;
+	color: #FFFFFF;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 14px;
+	height: 26px;
+	line-height: 26px;
+	text-align: center;
+	width: 91px;
+	float: right;
+}
+
+.back_from_administration_procedure_details{
+	margin-bottom: 10px;
+}
+
+.box_dichvucong ul.list_tracuu li .select {
+	width: 252px;
+	float: right;
+	border: 1px solid #ccc;
+	text-align: left;
+	color: #555;
+	font-size: 12px;
+	line-height: 23px;
+	padding: 5px;
+}
+
+.box_dichvucong .boxlist_tracuu table {
+	width: 100%;
+	border: 1px solid #cdcdcd;
+	border-collapse: collapse;
+}
+
+.box_dichvucong .boxlist_tracuu table td,.boxlist_tracuu table th {
+	border: 1px solid #cdcdcd;
+	font-size: 12px;
+	color: #333;
+	padding: 3px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.box_dichvucong .boxlist_tracuu table td {
+	line-height: 20px;
+}
+
+.box_dichvucong .boxlist_tracuu table th {
+	font-weight: bold;
+	background-color: #efefef;
+	color: #111;
+}
+
+.box_dichvucong .boxlist_tracuu table tr:hover {
+	background-color: #fcf5d6;
+	cursor: pointer;
+}
+
+.box_dichvucong .boxlist_tracuu table td a {
+	color: #6F310A;
+}
+
+.box_dichvucong .boxlist_tracuu table td a:hover {
+	text-decoration: underline;
+}
+
+.pagingNumber {
+	background: none repeat scroll 0 0 #FFFFFF;
+	border: 1px solid #CCCCCC;
+	border-radius: 23px;
+	color: #333333;
+	font-size: 12px;
+	font-weight: bold;
+	height: 23px;
+	line-height: 23px;
+	margin-left: 6px;
+	padding: 5px 9px;
+	text-align: center;
+	width: 23px;
+}
+
+.box_dichvucong .publics_administration_procedure_details {
+}
+
+.publics_administration_procedure_details table {
+	width: 100%;
+	border: 1px solid #cdcdcd;
+	border-collapse: collapse;
+	margin-bottom: 20px;
+}
+
+.publics_administration_procedure_details table p {
+	text-align: justify;
+}
+
+.publics_administration_procedure_details table td,.publics_administration_procedure_details table th
+	{
+	border: 1px solid #cdcdcd;
+	font-size: 12px;
+	color: #333;
+	padding: 3px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.publics_administration_procedure_details table td {
+	line-height: 20px;
+}
+
+.publics_administration_procedure_details table th {
+	font-weight: bold;
+	background-color: #efefef;
+	color: #111;
+}
+
+#details_attach_document {
+	line-height: 0;
+}
+
+#details_attach_document .file_attach_icon {
+	background: url("../../../images/icons/icon_attachment.png") no-repeat;
+	height: 24px;
+	width: 24px;
+	float: left;
+}
+
+p {
+	margin-bottom: 0.3em;
+}
+
+.list_other_title {
+	margin-bottom: 0.5em;
+	font-size: 12px;
+	font-weight: bold;
+}
+.list_other_description {
+	margin-left: 10px;
+}
+
+
+}

@@ -1,0 +1,61 @@
+.videogallery-collection-portlet {
+	#video_list li { 
+		float:left;
+		list-style: outside none none;
+		margin: 5px;
+		width: 196px;
+		min-height: 185px;
+		max-height: 185px;
+		overflow: hidden;
+	}
+
+.video-play-icon-container {
+	display: inline-block;
+	position: relative;
+}
+
+.video-play-icon-container .video-play-icon {
+	position: absolute;
+	background:
+		url("https://cdn4.iconfinder.com/data/icons/socialmediaicons_v120/32/youtube.png")
+		repeat scroll 0% 0% transparent;
+	height: 32px;
+	width: 32px;
+	top: 43px;
+	left: 84px;
+	opacity: 0.6;
+}
+
+li:hover .video-play-icon-container .video-play-icon {
+	opacity: 1;
+}
+
+img {
+	border: 1px solid #ccc;
+	padding: 1px;
+}
+	@media all and (max-width: 768px) , only screen and
+		(-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px) , only
+		screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px) ,
+		only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width:
+		1024px) , only screen and (min-device-pixel-ratio: 2) and (max-width:
+		1024px) , only screen and (min-resolution: 192dpi) and (max-width:
+		1024px) , only screen and (min-resolution: 2dppx) and (max-width:
+	1024px) {
+		#video_list ul li { 
+			float:left;
+			list-style: outside none none;
+			margin: 5px;
+			width: 140px;
+			min-height: 185px;
+			max-height: 185px;
+			overflow: hidden;
+		}
+		div.video-play-icon img {
+			width: 140px !important;
+		}
+		.video-play-icon-container div.video-play-icon {
+			left: 56px;
+		}
+	}
+}

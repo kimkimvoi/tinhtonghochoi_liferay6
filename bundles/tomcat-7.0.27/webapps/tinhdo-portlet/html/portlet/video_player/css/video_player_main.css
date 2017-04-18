@@ -1,0 +1,118 @@
+.videoplayer-portlet{
+	.portlet-body {
+		background: none !important;
+	}
+	.box_bg {
+		background: none repeat scroll 0 0 #FFFFFF;
+		border: 1px solid #CCCCCC;
+		border-radius: 0 0 5px 5px;
+		min-height: 230px;
+		padding-bottom: 10px;
+		display: inline-block;
+		width: 248px;
+		margin-bottom:10px;
+	}
+	.video-player-block{
+		display:block;
+		height:190px;
+		margin: 5px auto auto;
+	    width: 240px;
+	}
+	
+	.box_bg ul.list_link_video {
+		float:left;
+		margin-left:6px;
+		width:236px;
+		margin-bottom:20px;
+		margin-top:5px;
+		}
+	.box_bg  ul.list_link_video li {
+		width:100%;
+		float:left;
+		background:url(../../../images/icons/icon_row_back.png) no-repeat 7px 10px;
+		padding-top:5px;
+		padding-bottom:6px;
+		font-size:12px;
+		text-align:left;
+		color:#2e02fb;
+		}
+	.box_bg  ul.list_link_video li a {
+		color:#2e02fb; 
+		padding-left:19px; 
+		float:left;
+		cursor: pointer;
+	}		
+	
+	.portlet{
+		display: inline-block;
+	}
+	
+	/*Video config*/
+	.video_Config_list{
+		width: 750px;
+		height: 282px;
+		overflow: auto;
+		border: 1px solid #CCCCCC;
+		margin-bottom: 10px;
+	}
+	.config_video {
+	    /* border: 1px solid #CCCCCC; */
+	    display: inline-block;
+	    height: 120px;
+	    margin: 10px 6px 6px 10px;
+	    overflow: hidden;
+	    position: relative;
+	    width: 168px;
+	}
+	.config_video div.box_video {
+	    background: url("/public-theme/images/common/bg_video.png") no-repeat scroll center center rgba(0, 0, 0, 0);
+	    display: inline-block;
+	    height: 120px;
+	    left: 20px;
+	    position: absolute;
+	    top: 0;
+	    width: 148px;
+	    z-index: 2;
+	}
+	
+	.config_video h3.title_video {
+	    bottom: 0;
+	    color: #FFFFFF;
+	    display: inline-block;
+	    font-size: 11px;
+	    height: 28px;
+	    left: 0;
+	    margin-bottom: 3px;
+	    overflow: hidden;
+	    padding-left: 3px;
+	    padding-right: 3px;
+	    position: absolute;
+	    text-align: left;
+	    width: 142px;
+	    z-index: 3;
+	    left: 20px;
+	}	
+	
+	.video_content{
+		height : 120px;;
+		width: 128px;
+		float: right;
+	}
+	
+	.video_content img{
+		float:right;
+		height : 120px;;
+		width: 148px;
+	}
+	
+	.video_checkbox{
+		position: absolute;
+		left: 1px;
+		top: 107px;
+		cursor: pointer;
+	}
+	
+	.config_video label{
+		cursor: pointer;
+	}
+}

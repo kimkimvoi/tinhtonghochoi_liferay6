@@ -1,0 +1,47 @@
+.operatorsteering-portlet { 
+
+	.operator_steering_result { 
+		padding:10px;
+	}
+
+	/*Css Table*/
+	.operator_steering_box table td, .operator_steering_box table th{
+		border: 1px solid #ccc;
+		font-size: 12px;
+		color: #333;
+		padding: 5px;
+	}
+	
+	.operator_steering_box table td a {
+		color: #6F310A;
+	}
+	
+	.operator_steering_box table td a:hover {
+		text-decoration: underline;
+	}
+	
+	.operator_steering_box table td.textcenter {
+		text-align: center;
+	}
+	
+	.operator_steering_box table tr.title {
+		background-color: #fcf3cb;
+	}
+	
+	.operator_steering_box table tr.title th {
+		background-color: #EFEFEF;
+	    color: #111111;
+	    font-weight: bold;
+	    /* text-align: center; */
+	}
+	
+	.operator_steering_box table tr:hover {
+		background-color: #fcf5d6;
+		cursor: pointer;
+	}
+	
+	.operator_steering_box table th {
+		padding: 5px;
+	}
+	/*Css Table*/
+}

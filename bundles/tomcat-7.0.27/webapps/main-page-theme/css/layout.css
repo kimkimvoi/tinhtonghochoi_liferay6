@@ -1,0 +1,86 @@
+/* ---------- Wrapper ---------- */
+.portlet-layout {
+	border-collapse: collapse;
+    border-spacing: 0;
+    clear: both;
+    display: table;
+    position: relative;
+    table-layout: auto;
+    width: 100%;
+}
+
+.portlet-column-content {
+	padding: 0;
+}
+
+.portlet-column-content-only, .ltr .portlet-column-content-first, .rtl .portlet-column-content-last {
+	padding: 0;
+}
+
+.portlet-column-content-only, .ltr .portlet-column-content-last, .rtl .portlet-column-content-first {
+	padding-right: 0;
+}
+
+/* ---------- Column widths ---------- */
+
+.portlet-column-content.empty {
+	padding: 50px;
+}
+
+#main-content.dragging .portlet-column {
+	border: 3px double #828F95;
+	height: 100px;
+	min-height: 100px;
+}
+
+.ie6, .ie7 {
+	div.portlet-layout {
+		height: 1%;
+	}
+
+	div.portlet-column {
+		float: left;
+		overflow: hidden;
+		width: 100%;
+	}
+
+	div.aui-column-last {
+		margin-right: -1px;
+	}
+
+	.portlet-column-content {
+		zoom: 1;
+	}
+}
+
+/* custom css of layout */
+
+.two_column .portlet-column {
+	display: table-cell;
+	vertical-align: top;
+}
+
+.left-content {
+    float: left;
+    margin-left: 6px;
+    width: 730px;
+}
+
+.c-column {
+	float: right;
+	margin-right: 5px;
+	position: relative;
+    right: 0;
+    top: 0;
+    width: 250px;
+}
+
+.box-content .margin {
+    padding-left: 16px;
+    padding-top: 16px;
+}
+
+.box-content {
+    float: left;
+    width: 340px;
+}

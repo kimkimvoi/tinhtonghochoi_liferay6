@@ -1,0 +1,58 @@
+.question-submit-portlet .portlet-body {
+  display: inline-block; }
+.question-submit-portlet .red {
+  color: red; }
+.question-submit-portlet input[type=text] {
+  width: 250px !important; }
+.question-submit-portlet #_questionsubmit_WAR_tinhdoportlet_questionTitle, .question-submit-portlet #_questionsubmit_WAR_tinhdoportlet_questionTypes {
+  width: 599px; }
+.question-submit-portlet #_questionsubmit_WAR_tinhdoportlet_questionTypes {
+  width: 603px;
+  padding: 5px; }
+.question-submit-portlet #_questionsubmit_WAR_tinhdoportlet_questionContent {
+  width: 599px;
+  height: 150px; }
+.question-submit-portlet .recaptcha_position {
+  left: 152px;
+  position: relative;
+  top: -79px; }
+.question-submit-portlet input.aui-form-validator-error, .question-submit-portlet textarea.aui-form-validator-error, .question-submit-portlet select.aui-form-validator-error {
+  border: 1px solid #ff0000; }
+.question-submit-portlet .rowbutton .btn {
+  padding: 0px; }
+.question-submit-portlet #img_question_submit img {
+  cursor: pointer;
+  height: 70px; }
+.question-submit-portlet #img_question_submit {
+  display: inline-block;
+  margin-bottom: 30px;
+  margin-top: 23px;
+  padding: 10px; }
+.question-submit-portlet ul.list_question {
+  margin: 0 1% 0 1% !important; }
+.question-submit-portlet .box_bg {
+  border: none !important;
+  float: left; }
+.question-submit-portlet .content_header {
+  width: 728px; }
+
+.portlet-dropzone {
+  padding: 0px !important; }
+
+.error_editor {
+  border: 1px solid red !important; }
+
+.error_mes, .error_mes_maxlength {
+  background-color: #333333;
+  color: #FFFFFF;
+  display: block;
+  margin-top: 2px;
+  padding: 5px;
+  z-index: 5;
+  position: absolute;
+  width: 96.8%;
+  display: none; }
+
+.error_mes:hover {
+  display: inline-block; }
+

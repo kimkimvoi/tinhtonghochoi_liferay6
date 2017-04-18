@@ -1,0 +1,88 @@
+.rightcategories-portlet #c-column {
+  width: 250px;
+  margin: 0 auto; }
+.rightcategories-portlet #c-column .box_map {
+  width: 236px;
+  float: left;
+  border: 1px solid #cccccc;
+  padding: 6px;
+  background-color: #fff;
+  overflow: hidden;
+  margin-bottom: 10px; }
+.rightcategories-portlet #c-column .box_map h2.title {
+  width: 100%;
+  float: left;
+  margin-bottom: 9px;
+  font-size: 13px;
+  text-align: center;
+  color: #ff6600;
+  font-weight: bold;
+  text-transform: uppercase; }
+.rightcategories-portlet #c-column .box-commons {
+  width: 100%;
+  float: left;
+  margin-bottom: 10px; }
+.rightcategories-portlet #c-column .box-commons .box-content {
+  border: 1px solid #ccc;
+  border-top: 0px;
+  background: #fff;
+  float: left;
+  width: 248px; }
+.rightcategories-portlet #c-column ul.list_danhmuc li a {
+  color: #000000;
+  float: left;
+  padding-left: 35px;
+  text-decoration: none; }
+.rightcategories-portlet #c-column ul.list_danhmuc {
+  width: 220px;
+  padding-left: 14px;
+  float: left;
+  padding-bottom: 20px;
+  padding-top: 20px; }
+.rightcategories-portlet #c-column ul.list_danhmuc li {
+  width: 100%;
+  float: left;
+  line-height: 25px;
+  padding-bottom: 10px;
+  font-size: 13px;
+  text-align: left;
+  font-weight: bold;
+  color: #000;
+  list-style: none; }
+.rightcategories-portlet #c-column ul.list_danhmuc li a {
+  color: #000;
+  float: left;
+  padding-left: 35px; }
+.rightcategories-portlet .icon_lich_lv {
+  background: url(/tinhdo-portlet/html/images/icons/Lichlv.png) no-repeat 0px 0px; }
+.rightcategories-portlet .icon_congbaotinh, .rightcategories-portlet .icon_vanbanphatquy, .rightcategories-portlet .icon_dichvucong {
+  background: url(/tinhdo-portlet/html/images/icons/CongBao.gif) no-repeat 0px 0px; }
+.rightcategories-portlet .icon_danhbadientu {
+  background: url(/tinhdo-portlet/html/images/icons/DanhBaDienTu.gif) no-repeat 0px 0px; }
+.rightcategories-portlet .icon_thutuchanhchinh {
+  background: url(/tinhdo-portlet/html/images/icons/icon_hanhchinh.png) no-repeat 0px 0px; }
+.rightcategories-portlet #c-column ul.list_link {
+  float: left;
+  width: 100%;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  border-top: 1px dotted #ccc;
+  padding-top: 5px; }
+.rightcategories-portlet ul.list_link li {
+  width: 100%;
+  float: left;
+  background: url(/tinhdo-portlet/html/images/icons/icon_row_back.png) no-repeat 7px 10px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  font-size: 12px;
+  text-align: left;
+  color: #2e02fb; }
+.rightcategories-portlet ul.list_link li a {
+  color: #2E02FB;
+  float: left;
+  padding-left: 19px;
+  text-decoration: none; }
+.rightcategories-portlet .portlet {
+  display: inline-block;
+  width: 100%; }
+
